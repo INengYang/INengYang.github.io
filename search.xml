@@ -9,21 +9,21 @@
 <p>两端中间空一行<br>（为什么看起来没变化？）</p>
 </li>
 </ol>
-<p><br/><br/></p>
+<p><br><br></p>
 <ol start="2">
-<li><p>字体<br> <em>斜体文本</em>   *斜体文本*<br> <em>斜体文本</em>   _斜体文本_<br> <strong>粗体文本</strong>    **粗体文本**<br> <strong>粗体文本</strong>    __粗体文本__<br> <em><strong>粗斜体文本</strong></em>    ***粗斜体文本***<br> <em><strong>粗斜体文本</strong></em>    ___粗斜体文本___<br><br/><br/></p>
+<li><p>字体<br> <em>斜体文本</em>   *斜体文本*<br> <em>斜体文本</em>   _斜体文本_<br> <strong>粗体文本</strong>    **粗体文本**<br> <strong>粗体文本</strong>    __粗体文本__<br> <em><strong>粗斜体文本</strong></em>    ***粗斜体文本***<br> <em><strong>粗斜体文本</strong></em>    ___粗斜体文本___<br><br><br></p>
 </li>
-<li><p>分割线<br>可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。<br>(***)<br>(* * *)<br>(—)<br>(___)<br><br/><br/></p>
+<li><p>分割线<br>可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。<br>(***)<br>(* * *)<br>(—)<br>(___)<br><br><br></p>
 </li>
-<li><p>删除线<br>两边各加~~<br><del>两边各加</del><br><br/><br/></p>
+<li><p>删除线<br>两边各加~~<br><del>两边各加</del><br><br><br></p>
 </li>
-<li><p>下划线<br><u>下划线</u><br>&lt;u&gt;下划线&lt;&#x2F;u&gt;<br><br/><br/></p>
+<li><p>下划线<br><u>下划线</u><br>&lt;u&gt;下划线&lt;&#x2F;u&gt;<br><br><br></p>
 </li>
 <li><p>脚注<br>创建脚注：[^要注明的文本]</p>
 <p>脚注[^歪比歪比]<br>[^歪比歪比]: 所以是个脚注</p>
 </li>
 </ol>
-<p><br/><br/></p>
+<p><br><br></p>
 <ol start="7">
 <li><p>列表</p>
 <ol>
@@ -46,7 +46,7 @@
 </li>
 <li>第二项:<ul>
 <li>s</li>
-<li>a<br><br/><br/></li>
+<li>a<br><br><br></li>
 </ul>
 </li>
 </ol>
@@ -69,22 +69,22 @@
 </blockquote>
 </li>
 </ol>
-<p><br/><br/></p>
+<p><br><br></p>
 <ol start="9">
-<li><p>代码:<br> &amp;emsp;如果是段落上的一个函数或片段的代码可以用反引号把它包起来（`）<br> <code>int i = 1</code>     `int i &#x3D; 1`<br><br/><br/></p>
+<li><p>代码:<br> &amp;emsp;如果是段落上的一个函数或片段的代码可以用反引号把它包起来（`）<br> <code>int i = 1</code>     `int i &#x3D; 1`<br><br><br></p>
 <ol>
 <li>代码区块：<br> 用 &#96;&#96;&#96; 包裹一段代码，并指定一种语言（也可以不指定） <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> i = <span class="number">1</span>;</span><br><span class="line">cout &lt; &lt; i &lt; &lt; endl;</span><br></pre></td></tr></table></figure>
  `&#96;&#96;c++<br> int i &#x3D; 1;<br> cout &lt; &lt; i &lt; &lt; endl;<br> `&#96;&#96;</li>
 </ol>
 </li>
 </ol>
-<p><br/><br/></p>
+<p><br><br></p>
 <ol start="10">
 <li><p>链接：<br>[链接名称](链接地址)<br>或者<br>&lt;链接地址&gt;</p>
 <p><a href="https://www.runoob.com/">菜鸟教程</a><br><a href="https://www.runoob.com/">https://www.runoob.com</a></p>
 </li>
 </ol>
-<p><br/><br/></p>
+<p><br><br></p>
 <ol start="11">
 <li><p>图片：<br><img src="http://r91oo274o.hd-bkt.clouddn.com/test.png" alt="tom" title="tom"></p>
 <center>急</center>
@@ -95,9 +95,9 @@
 
 <img src="http://r91oo274o.hd-bkt.clouddn.com/test.png">
 
-<p>![alt 属性文本](文件夹下的图片 “可选标题”)<br>![alt 属性文本](图片链接 “可选标题”)<br></br></br></p>
+<p>![alt 属性文本](文件夹下的图片 “可选标题”)<br>![alt 属性文本](图片链接 “可选标题”)<br><br><br></p>
 <p>&lt;img src&#x3D;”url” width&#x3D;”400” height&#x3D;”400” alt&#x3D;”” title&#x3D;”” style&#x3D;”zoom:50%;”&#x2F;&gt;<br>其中，src：该图片的网址<br>alt：是图片没有加载成功时，显示的文字<br>title：该图片的标题<br>style：设置缩放</p>
-<p></br></br><br>表格和其他应该用不上，暂时不写</p>
+<p><br><br><br>表格和其他应该用不上，暂时不写</p>
 </li>
 </ol>
 <h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><h6 id="最高六级标题"><a href="#最高六级标题" class="headerlink" title="最高六级标题"></a>最高六级标题</h6>]]></content>
@@ -122,69 +122,6 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>计算时间复杂度的练习</title>
-    <url>/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/</url>
-    <content><![CDATA[<p><img src="/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-07-37.png" title="例1"></p>
-<ol>
-<li>很容易看出语句频度最大的语句是<code>for(int j = 0;j &lt; n;j++)</code></li>
-<li>其执行次数为n(n+1),即n^2^<ul>
-<li>对于循环来说直接找嵌套最深的语句也可以，即<code>y++;</code>,执行次数为n^2^</li>
-</ul>
-</li>
-<li>T(n)&#x3D;O(n^2^)</li>
-</ol>
-<p>####例1</p>
-<p><img src="/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-17-41.png"></p>
-<ol>
-<li>嵌套最深的语句为<code>sum[i] += x[i][j];</code> </li>
-<li>执行次数为 m $\times$ n 次</li>
-<li>T(n)&#x3D;O(m $\times$ n)</li>
-</ol>
-<p>####虽然但是这是例2<br><img src="/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-21-45.png"></p>
-<ol>
-<li>嵌套最深语句为<code>c[i][j] = c[i][j] + a[i][k] * b[k][j];</code></li>
-<li>执行次数为n^3^</li>
-<li>T(n)&#x3D;O(n^3^)</li>
-</ol>
-<p>####例3</p>
-<p><img src="/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-26-30.png"></p>
-<ol>
-<li>可以看出嵌套最深语句是<code>x=x+1</code> </li>
-<li>但是计算时间复杂度时，需要用级数求和法</li>
-<li>语句频度 &#x3D; $\sum_{i&#x3D;1}^n$$\sum_{j&#x3D;1}^i$$\sum_{k&#x3D;1}^j$1 &#x3D; $\sum_{i&#x3D;1}^n$$\sum_{j&#x3D;1}^i$j &#x3D; $\sum_{i&#x3D;1}^n$$i(i+1) \over 2$ &#x3D;$1\over2$($\sum_{i&#x3D;1}^n$i^2^ + $\sum_{i&#x3D;1}^n$i) &#x3D;$1\over2$($n(n+1)(2n+1)\over 6$ + $n(n+1)\over2$) &#x3D; $n(n+1)(n+2)\over 6$</li>
-<li>f(n) &#x3D; n^3^</li>
-<li>T(n)&#x3D;O(n^3^)<ul>
-<li>（计算语句频度最后一个求和不会。。）</li>
-</ul>
-</li>
-</ol>
-<p>####例4</p>
-<p><img src="/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-22-00-05-42.png"></p>
-<ol>
-<li><p>执行次数最多为<code>i=i*2;</code></p>
-<ul>
-<li>关键要找出执行次数x与n的关系，并表示成n的函数</li>
-<li>执行1次，i&#x3D;1*2&#x3D;2；</li>
-<li>执行2次，i&#x3D;2*2&#x3D;2^2^；</li>
-<li>执行3次，i&#x3D;2^2^*2&#x3D;2^3^；</li>
-<li>…</li>
-<li>执行x次，i&#x3D;2^x^</li>
-</ul>
-</li>
-<li><p>设语句<code>i=i*2</code>执行x次,由循环条件，</p>
-<p> i&lt;&#x3D;n,   $\because$ 2^x^&lt; n , $\therefore$ x&lt;&#x3D;${log_2{n}}$</p>
-</li>
-<li><p>所以f(n)&#x3D;${log_2{n}}$</p>
-</li>
-<li><p>T(n)&#x3D;O(${log_2{n}}$)</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>算法与数据结构</category>
-      </categories>
   </entry>
   <entry>
     <title>算法与数据结构(1)</title>
@@ -259,6 +196,69 @@
 </ul>
 </li>
 </ol>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>算法与数据结构</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>计算时间复杂度的练习</title>
+    <url>/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/</url>
+    <content><![CDATA[<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-07-37.png" title="例1"></p>
+<ol>
+<li>很容易看出语句频度最大的语句是<code>for(int j = 0;j &lt; n;j++)</code></li>
+<li>其执行次数为n(n+1),即n^2^<ul>
+<li>对于循环来说直接找嵌套最深的语句也可以，即<code>y++;</code>,执行次数为n^2^</li>
+</ul>
+</li>
+<li>T(n)&#x3D;O(n^2^)</li>
+</ol>
+<p>####例1</p>
+<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-17-41.png"></p>
+<ol>
+<li>嵌套最深的语句为<code>sum[i] += x[i][j];</code> </li>
+<li>执行次数为 m $\times$ n 次</li>
+<li>T(n)&#x3D;O(m $\times$ n)</li>
+</ol>
+<p>####虽然但是这是例2<br><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-21-45.png"></p>
+<ol>
+<li>嵌套最深语句为<code>c[i][j] = c[i][j] + a[i][k] * b[k][j];</code></li>
+<li>执行次数为n^3^</li>
+<li>T(n)&#x3D;O(n^3^)</li>
+</ol>
+<p>####例3</p>
+<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-26-30.png"></p>
+<ol>
+<li>可以看出嵌套最深语句是<code>x=x+1</code> </li>
+<li>但是计算时间复杂度时，需要用级数求和法</li>
+<li>语句频度 &#x3D; $\sum_{i&#x3D;1}^n$$\sum_{j&#x3D;1}^i$$\sum_{k&#x3D;1}^j$1 &#x3D; $\sum_{i&#x3D;1}^n$$\sum_{j&#x3D;1}^i$j &#x3D; $\sum_{i&#x3D;1}^n$$i(i+1) \over 2$ &#x3D;$1\over2$($\sum_{i&#x3D;1}^n$i^2^ + $\sum_{i&#x3D;1}^n$i) &#x3D;$1\over2$($n(n+1)(2n+1)\over 6$ + $n(n+1)\over2$) &#x3D; $n(n+1)(n+2)\over 6$</li>
+<li>f(n) &#x3D; n^3^</li>
+<li>T(n)&#x3D;O(n^3^)<ul>
+<li>（计算语句频度最后一个求和不会。。）</li>
+</ul>
+</li>
+</ol>
+<p>####例4</p>
+<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-22-00-05-42.png"></p>
+<ol>
+<li><p>执行次数最多为<code>i=i*2;</code></p>
+<ul>
+<li>关键要找出执行次数x与n的关系，并表示成n的函数</li>
+<li>执行1次，i&#x3D;1*2&#x3D;2；</li>
+<li>执行2次，i&#x3D;2*2&#x3D;2^2^；</li>
+<li>执行3次，i&#x3D;2^2^*2&#x3D;2^3^；</li>
+<li>…</li>
+<li>执行x次，i&#x3D;2^x^</li>
+</ul>
+</li>
+<li><p>设语句<code>i=i*2</code>执行x次,由循环条件，</p>
+<p> i&lt;&#x3D;n,   $\because$ 2^x^&lt; n , $\therefore$ x&lt;&#x3D;${log_2{n}}$</p>
+</li>
+<li><p>所以f(n)&#x3D;${log_2{n}}$</p>
+</li>
+<li><p>T(n)&#x3D;O(${log_2{n}}$)</p>
 </li>
 </ol>
 ]]></content>
