@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/2022/03/08/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>Markdown学习</title>
     <url>/2022/03/08/Markdown%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><ol>
@@ -106,21 +124,83 @@
       </categories>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2022/03/08/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <title>算法与数据结构(1)</title>
+    <url>/2022/03/21/sk/</url>
+    <content><![CDATA[<p>写在前面：因为之前就学了数据结构的内容，所以这篇数据结构就跳过不写了</p>
+<h1 id="算法："><a href="#算法：" class="headerlink" title="算法："></a>算法：</h1><ol>
+<li><p>定义：<br>对特定问题求解方法和步骤的一种描述，它是指令的有限序列。其中每个指令表示一个或多个操作。<br>简而言之，<strong>算法就是解决问题的方法和步骤</strong></p>
+</li>
+<li><p>算法特性：</p>
+<ol>
+<li>有穷性：一个算法必须总是在执行有穷步之后结束，且每一步都在有穷时间内完成。</li>
+<li>确定性：算法中的每一条指令必须有确切的含义，没有二义性，在任何条件下，只有唯一的一条执行路径，即对于相同的输入只能得到相同的输出。 </li>
+<li>可行性：算法是可执行的，算法描述的操作可以通过已经实现的基本操作执行有限次来实现。</li>
+<li>输入：一个算法有0个或多个输入。</li>
+<li>输出：一个算法有一个或多个输出。</li>
+</ol>
+</li>
+<li><p>算法设计要求：</p>
+<ol>
+<li>正确性：程序对于精心选择的，典型、苛刻且带有刁难性的几组输入数据能够得出满足要求的结果。</li>
+<li>可读性</li>
+<li>健壮性：<ol>
+<li>指输入非法数据时，算法恰当的做出反应或进行相应处理而不是产生奇怪的输出结果。</li>
+<li>处理出错的方法，不应是中断程序的执行，而是返回一个表示错误或者错误性质的值，以便在更高的抽象层次上进行处理。</li>
+</ol>
+</li>
+<li>高效性</li>
+</ol>
+</li>
+<li><p>算法的效率：</p>
+<ul>
+<li>算法有时间效率和空间效率</li>
+</ul>
+<ol>
+<li>时间效率：<br> 时间效率可以用依据该算法编制的程序在计算机上执行所消耗的时间来度量<ul>
+<li>度量方法：<ol>
+<li>事后统计：<br>  将算法实现，测算时间和空间开销。</li>
+<li>事前分析：<br>  对算法所消耗资源的一种估算方法。</li>
+</ol>
+<ul>
+<li>多采用事前分析，事后统计的方法，编写程序耗费时间和精力，结果依赖于计算机软硬件因素。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>算法运行时间 &#x3D; 一个简单操作所需时间 $\times$ 简单操作次数<br>        &#x3D; $\sum$ 每条语句执行次数（每条语句频度） $\times$ 该语句执行一次所需时间<ul>
+<li>假设执行每条语句所需时间均为单位时间，此时对算法的运行时间的讨论就可以转化为讨论该算法中的所有语句的执行次数，即频度和。</li>
+<li>即算法耗费时间为算法每条语句的频度之和，表示为T(n)。</li>
+<li>额外的，一般只考虑算法中的基本操作执行的次数，且仅比较数量级</li>
+</ul>
+</li>
+<li>算法时间复杂度：<ul>
+<li>算法中基本语句（执行最多的语句）重复执行的次数是问题规模n的某个函数f(n)，算法时间的量度记作T(n) &#x3D; O(f(n))</li>
+<li>它表示随着n增大，算法执行的时间的增长率和f(n)的增长率相同，称为渐近时间复杂度。</li>
+<li>对于复杂的算法，可以将它分为几个容易估算的部分，然后利用加法法则和乘法法则计算时间复杂度<ol>
+<li>加法法则：<br> T(n) &#x3D; T1(n) + T2(n) &#x3D; O(f(n)) + O(g(n)) &#x3D;O(max(f(n),g(n)))</li>
+<li>乘法法则：<br> T(n) &#x3D; T1(n) $\times$ T2(n) &#x3D; O(f(n)) $\times$ O(g(n)) &#x3D; O(f(n) $\times$ g(n))</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li>算法空间复杂度：<br> S(n) &#x3D; O(f(n))<ul>
+<li>算法要占据的空间：<ol>
+<li>算法本身要占据的空间，输入&#x2F;输出，指令，常数，变量等</li>
+<li>算法要使用的辅助空间</li>
+</ol>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
 ]]></content>
+      <categories>
+        <category>算法与数据结构</category>
+      </categories>
   </entry>
 </search>
