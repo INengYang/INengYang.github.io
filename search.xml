@@ -132,58 +132,6 @@
       </categories>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2022/03/08/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>栈与递归</title>
-    <url>/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/</url>
-    <content><![CDATA[<p>首先，什么是递归？</p>
-<h4 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h4><ol>
-<li>定义：<ul>
-<li>若一个对象部分地包含它自己，或用它自己给它自己定义，则称这个对象是递归的。</li>
-<li>若一个过程直接或间接地调用自己，则称这个过程是递归的过程</li>
-</ul>
-</li>
-</ol>
-<ul>
-<li>举例：<br>  递归求n的阶乘  <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">long</span> <span class="title">Fac</span><span class="params">(<span class="type">long</span> n)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (n == <span class="number">0</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> n * <span class="built_in">Fac</span>(n<span class="number">-1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<ol start="2">
-<li><p>三种常常用到递归方法的情况：</p>
-<ul>
-<li>递归定义的数学函数，如阶乘函数，二阶斐波那契数列</li>
-<li>具有递归特性的数据结构，如二叉树，广义表</li>
-<li>可递归求解的问题，如迷宫问题，汉诺塔问题</li>
-</ul>
-</li>
-<li><p>递归问题求解方法<br><img src="/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/2022-03-28-20-41-31.png"><br><img src="/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/2022-03-28-20-43-00.png"></p>
-</li>
-</ol>
-<h4 id="栈与递归"><a href="#栈与递归" class="headerlink" title="栈与递归"></a>栈与递归</h4><p>函数递归调用遵循后调用的先返回，与栈类似。</p>
-<ul>
-<li>函数调用过程<br><img src="/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/2022-03-28-20-50-06.png"></li>
-</ul>
-]]></content>
-      <categories>
-        <category>算法与数据结构</category>
-      </categories>
-  </entry>
-  <entry>
     <title>算法与数据结构(2)</title>
     <url>/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/</url>
     <content><![CDATA[<p>顺序表多少有点摆烂，看看书吧。</p>
@@ -347,6 +295,58 @@
       </categories>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2022/03/08/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>栈与递归</title>
+    <url>/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/</url>
+    <content><![CDATA[<p>首先，什么是递归？</p>
+<h4 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h4><ol>
+<li>定义：<ul>
+<li>若一个对象部分地包含它自己，或用它自己给它自己定义，则称这个对象是递归的。</li>
+<li>若一个过程直接或间接地调用自己，则称这个过程是递归的过程</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>举例：<br>  递归求n的阶乘  <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">long</span> <span class="title">Fac</span><span class="params">(<span class="type">long</span> n)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (n == <span class="number">0</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> n * <span class="built_in">Fac</span>(n<span class="number">-1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ol start="2">
+<li><p>三种常常用到递归方法的情况：</p>
+<ul>
+<li>递归定义的数学函数，如阶乘函数，二阶斐波那契数列</li>
+<li>具有递归特性的数据结构，如二叉树，广义表</li>
+<li>可递归求解的问题，如迷宫问题，汉诺塔问题</li>
+</ul>
+</li>
+<li><p>递归问题求解方法<br><img src="/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/2022-03-28-20-41-31.png"><br><img src="/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/2022-03-28-20-43-00.png"></p>
+</li>
+</ol>
+<h4 id="栈与递归"><a href="#栈与递归" class="headerlink" title="栈与递归"></a>栈与递归</h4><p>函数递归调用遵循后调用的先返回，与栈类似。</p>
+<ul>
+<li>函数调用过程<br><img src="/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/2022-03-28-20-50-06.png"></li>
+</ul>
+]]></content>
+      <categories>
+        <category>算法与数据结构</category>
+      </categories>
+  </entry>
+  <entry>
     <title>算法与数据结构(3)</title>
     <url>/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/</url>
     <content><![CDATA[<p>栈和队列是限定插入和删除只能在表的“端点”进行的线性表。栈和队列是线性表的子集</p>
@@ -467,6 +467,69 @@
       </categories>
   </entry>
   <entry>
+    <title>计算时间复杂度的练习</title>
+    <url>/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/</url>
+    <content><![CDATA[<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-07-37.png"></p>
+<ol>
+<li>很容易看出语句频度最大的语句是<code>for(int j = 0;j &lt; n;j++)</code></li>
+<li>其执行次数为n(n+1),即n^2^<ul>
+<li>对于循环来说直接找嵌套最深的语句也可以，即<code>y++;</code>,执行次数为n^2^</li>
+</ul>
+</li>
+<li>T(n)&#x3D;O(n^2^)</li>
+</ol>
+<p>####例1</p>
+<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-17-41.png" title="例1"></p>
+<ol>
+<li>嵌套最深的语句为<code>sum[i] += x[i][j];</code> </li>
+<li>执行次数为 m $\times$ n 次</li>
+<li>T(n)&#x3D;O(m $\times$ n)</li>
+</ol>
+<p>####虽然但是这是例2<br><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-21-45.png"></p>
+<ol>
+<li>嵌套最深语句为<code>c[i][j] = c[i][j] + a[i][k] * b[k][j];</code></li>
+<li>执行次数为n^3^</li>
+<li>T(n)&#x3D;O(n^3^)</li>
+</ol>
+<p>####例3</p>
+<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-26-30.png"></p>
+<ol>
+<li>可以看出嵌套最深语句是<code>x=x+1</code> </li>
+<li>但是计算时间复杂度时，需要用级数求和法</li>
+<li>语句频度 &#x3D; $\sum_{i&#x3D;1}^n$$\sum_{j&#x3D;1}^i$$\sum_{k&#x3D;1}^j$1 &#x3D; $\sum_{i&#x3D;1}^n$$\sum_{j&#x3D;1}^i$j &#x3D; $\sum_{i&#x3D;1}^n$$i(i+1) \over 2$ &#x3D;$1\over2$($\sum_{i&#x3D;1}^n$i^2^ + $\sum_{i&#x3D;1}^n$i) &#x3D;$1\over2$($n(n+1)(2n+1)\over 6$ + $n(n+1)\over2$) &#x3D; $n(n+1)(n+2)\over 6$</li>
+<li>f(n) &#x3D; n^3^</li>
+<li>T(n)&#x3D;O(n^3^)<ul>
+<li>（计算语句频度最后一个求和不会。。）</li>
+</ul>
+</li>
+</ol>
+<p>####例4</p>
+<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-22-00-05-42.png"></p>
+<ol>
+<li><p>执行次数最多为<code>i=i*2;</code></p>
+<ul>
+<li>关键要找出执行次数x与n的关系，并表示成n的函数</li>
+<li>执行1次，i&#x3D;1*2&#x3D;2；</li>
+<li>执行2次，i&#x3D;2*2&#x3D;2^2^；</li>
+<li>执行3次，i&#x3D;2^2^*2&#x3D;2^3^；</li>
+<li>…</li>
+<li>执行x次，i&#x3D;2^x^</li>
+</ul>
+</li>
+<li><p>设语句<code>i=i*2</code>执行x次,由循环条件，</p>
+<p> i&lt;&#x3D;n,   $\because$ 2^x^&lt; n , $\therefore$ x&lt;&#x3D;${log_2{n}}$</p>
+</li>
+<li><p>所以f(n)&#x3D;${log_2{n}}$</p>
+</li>
+<li><p>T(n)&#x3D;O(${log_2{n}}$)</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>算法与数据结构</category>
+      </categories>
+  </entry>
+  <entry>
     <title>算法与数据结构(1)</title>
     <url>/2022/03/21/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
     <content><![CDATA[<p>写在前面：因为之前就学了数据结构的内容，所以这篇数据结构就偷懒跳过不写了</p>
@@ -539,69 +602,6 @@
 </ul>
 </li>
 </ol>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>算法与数据结构</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>计算时间复杂度的练习</title>
-    <url>/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/</url>
-    <content><![CDATA[<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-07-37.png"></p>
-<ol>
-<li>很容易看出语句频度最大的语句是<code>for(int j = 0;j &lt; n;j++)</code></li>
-<li>其执行次数为n(n+1),即n^2^<ul>
-<li>对于循环来说直接找嵌套最深的语句也可以，即<code>y++;</code>,执行次数为n^2^</li>
-</ul>
-</li>
-<li>T(n)&#x3D;O(n^2^)</li>
-</ol>
-<p>####例1</p>
-<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-17-41.png" title="例1"></p>
-<ol>
-<li>嵌套最深的语句为<code>sum[i] += x[i][j];</code> </li>
-<li>执行次数为 m $\times$ n 次</li>
-<li>T(n)&#x3D;O(m $\times$ n)</li>
-</ol>
-<p>####虽然但是这是例2<br><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-21-45.png"></p>
-<ol>
-<li>嵌套最深语句为<code>c[i][j] = c[i][j] + a[i][k] * b[k][j];</code></li>
-<li>执行次数为n^3^</li>
-<li>T(n)&#x3D;O(n^3^)</li>
-</ol>
-<p>####例3</p>
-<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-26-30.png"></p>
-<ol>
-<li>可以看出嵌套最深语句是<code>x=x+1</code> </li>
-<li>但是计算时间复杂度时，需要用级数求和法</li>
-<li>语句频度 &#x3D; $\sum_{i&#x3D;1}^n$$\sum_{j&#x3D;1}^i$$\sum_{k&#x3D;1}^j$1 &#x3D; $\sum_{i&#x3D;1}^n$$\sum_{j&#x3D;1}^i$j &#x3D; $\sum_{i&#x3D;1}^n$$i(i+1) \over 2$ &#x3D;$1\over2$($\sum_{i&#x3D;1}^n$i^2^ + $\sum_{i&#x3D;1}^n$i) &#x3D;$1\over2$($n(n+1)(2n+1)\over 6$ + $n(n+1)\over2$) &#x3D; $n(n+1)(n+2)\over 6$</li>
-<li>f(n) &#x3D; n^3^</li>
-<li>T(n)&#x3D;O(n^3^)<ul>
-<li>（计算语句频度最后一个求和不会。。）</li>
-</ul>
-</li>
-</ol>
-<p>####例4</p>
-<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-22-00-05-42.png"></p>
-<ol>
-<li><p>执行次数最多为<code>i=i*2;</code></p>
-<ul>
-<li>关键要找出执行次数x与n的关系，并表示成n的函数</li>
-<li>执行1次，i&#x3D;1*2&#x3D;2；</li>
-<li>执行2次，i&#x3D;2*2&#x3D;2^2^；</li>
-<li>执行3次，i&#x3D;2^2^*2&#x3D;2^3^；</li>
-<li>…</li>
-<li>执行x次，i&#x3D;2^x^</li>
-</ul>
-</li>
-<li><p>设语句<code>i=i*2</code>执行x次,由循环条件，</p>
-<p> i&lt;&#x3D;n,   $\because$ 2^x^&lt; n , $\therefore$ x&lt;&#x3D;${log_2{n}}$</p>
-</li>
-<li><p>所以f(n)&#x3D;${log_2{n}}$</p>
-</li>
-<li><p>T(n)&#x3D;O(${log_2{n}}$)</p>
 </li>
 </ol>
 ]]></content>
