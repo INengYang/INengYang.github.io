@@ -20,26 +20,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"inengyang.github.io","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.10.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="https://inengyang.github.io/categories/index.html">
+    <meta name="description" content="python中列表与字符串的相互转换">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python列表字符串转换">
+<meta property="og:url" content="https://inengyang.github.io/2022/03/31/python%E5%88%97%E8%A1%A8%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="python中列表与字符串的相互转换">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-03-20T12:10:46.000Z">
-<meta property="article:modified_time" content="2022-03-20T12:11:21.126Z">
+<meta property="article:published_time" content="2022-03-31T14:49:24.000Z">
+<meta property="article:modified_time" content="2022-03-31T14:59:43.396Z">
 <meta property="article:author" content="DXH">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://inengyang.github.io/categories/">
+<link rel="canonical" href="https://inengyang.github.io/2022/03/31/python%E5%88%97%E8%A1%A8%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":true,"permalink":"https://inengyang.github.io/categories/index.html","path":"categories/index.html","title":"categories"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://inengyang.github.io/2022/03/31/python%E5%88%97%E8%A1%A8%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2/","path":"2022/03/31/python列表字符串转换/","title":"python列表字符串转换"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>categories | Hexo
-</title>
+<title>python列表字符串转换 | Hexo</title>
   
 
 
@@ -128,7 +129,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -141,6 +142,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%97%E8%A1%A8%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="nav-number">1.</span> <span class="nav-text">列表转字符串</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E5%88%97%E8%A1%A8"><span class="nav-number">2.</span> <span class="nav-text">字符串转列表</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -195,41 +197,100 @@
 </noscript>
 
 
-    <div class="main-inner page posts-expand">
+    <div class="main-inner post posts-expand">
 
 
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://inengyang.github.io/2022/03/31/python%E5%88%97%E8%A1%A8%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="DXH">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+      <meta itemprop="description" content="">
+    </span>
     
-    
-    
-    <div class="post-block" lang="zh-CN"><header class="post-header">
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="python列表字符串转换 | Hexo">
+      <meta itemprop="description" content="python中列表与字符串的相互转换">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          python列表字符串转换
+        </h1>
 
-<h1 class="post-title" itemprop="name headline">categories
-</h1>
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
 
-<div class="post-meta-container">
+      <time title="创建时间：2022-03-31 22:49:24 / 修改时间：22:59:43" itemprop="dateCreated datePublished" datetime="2022-03-31T22:49:24+08:00">2022-03-31</time>
+    </span>
+
+  
 </div>
 
-</header>
+            <div class="post-description">python中列表与字符串的相互转换</div>
+        </div>
+      </header>
 
-      
-      
-      <div class="post-body"><div class="category-all-page">
-  <div class="category-all-title">
-    目前共计 3 个分类
-  </div>
-  <div class="category-all">
-    <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Markdown/">Markdown</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9C%89%E7%94%A8%E7%9A%84%E7%9F%A5%E8%AF%86/">有用的知识</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">算法与数据结构</a><span class="category-list-count">5</span></li></ul>
-  </div>
-</div>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h4 id="列表转字符串"><a href="#列表转字符串" class="headerlink" title="列表转字符串"></a>列表转字符串</h4><ol>
+<li><p>将列表转换为字符串的最基本用法和实现之一是使用join函数将字符串列表转换。 请记住，此方法只能使用仅包含字符串的列表。’ ‘之间是分隔符，如我们所见，每个元素在新字符串中都用单个空格分隔。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mylist=[<span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;b&#x27;</span>,<span class="string">&#x27;c&#x27;</span>] </span><br><span class="line"><span class="string">&#x27; &#x27;</span>.join(mylist) </span><br><span class="line"><span class="comment">#&#x27;a b c&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如前所述，我们可以转换仅包含字符串元素的列表。 但是，如果我们需要转换包含不同类型数据的列表，该怎么办？ 我们需要一些转换为字符串。 我们将使用str函数将不同的数据类型转换为字符串。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mylist = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]      </span><br><span class="line"><span class="string">&#x27; &#x27;</span>.join(<span class="built_in">str</span>(e) <span class="keyword">for</span> e <span class="keyword">in</span> mylist)        </span><br><span class="line"><span class="comment">#&#x27;1 2 3&#x27;</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>在写一个去除字符串中的空格时用到的，代码如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">trim</span>(<span class="params">s</span>):</span><br><span class="line">    list1 = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> s:</span><br><span class="line">        <span class="keyword">if</span> i != <span class="string">&#x27; &#x27;</span>:</span><br><span class="line">            list1.append(i)</span><br><span class="line">    s = <span class="string">&#x27;&#x27;</span>.join(list1)</span><br><span class="line">    <span class="keyword">return</span> s</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;输入：&quot;</span>)</span><br><span class="line">s = <span class="built_in">input</span>()</span><br><span class="line"><span class="built_in">print</span>(trim(s))</span><br></pre></td></tr></table></figure>
 
-      </div>
-      
-      
-      
+<h4 id="字符串转列表"><a href="#字符串转列表" class="headerlink" title="字符串转列表"></a>字符串转列表</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">s = <span class="string">&#x27;list&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(s.split())</span><br><span class="line">---&gt;[<span class="string">&#x27;list&#x27;</span>]</span><br></pre></td></tr></table></figure>
+<p>split()中可写分隔符(默认空格)，如</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">s = <span class="string">&#x27;a,list&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(s.split(<span class="string">&#x27;,&#x27;</span>))</span><br><span class="line">---&gt;[<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;list&#x27;</span>]</span><br></pre></td></tr></table></figure>
     </div>
 
     
     
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/03/28/end-%E4%B8%8E-i/" rel="prev" title="end=''与--i">
+                  <i class="fa fa-chevron-left"></i> end=''与--i
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
 
 
 </div>
