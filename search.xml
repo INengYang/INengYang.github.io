@@ -139,6 +139,24 @@
       </categories>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2022/03/08/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>end=&#39;&#39;与--i</title>
     <url>/2022/03/28/end-%E4%B8%8E-i/</url>
     <content><![CDATA[<h3 id="end-x3D-’’"><a href="#end-x3D-’’" class="headerlink" title="end&#x3D;’’"></a>end&#x3D;’’</h3><blockquote>
@@ -165,24 +183,6 @@
       </categories>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2022/03/08/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>python列表字符串转换</title>
     <url>/2022/03/31/python%E5%88%97%E8%A1%A8%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2/</url>
     <content><![CDATA[<h4 id="列表转字符串"><a href="#列表转字符串" class="headerlink" title="列表转字符串"></a>列表转字符串</h4><ol>
@@ -198,120 +198,6 @@
 <h4 id="字符串转列表"><a href="#字符串转列表" class="headerlink" title="字符串转列表"></a>字符串转列表</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&#x27;list&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(s.split())</span><br><span class="line">---&gt;[<span class="string">&#x27;list&#x27;</span>]</span><br></pre></td></tr></table></figure>
 <p>split()中可写分隔符(默认空格)，如</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&#x27;a,list&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(s.split(<span class="string">&#x27;,&#x27;</span>))</span><br><span class="line">---&gt;[<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;list&#x27;</span>]</span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
-    <title>栈与递归</title>
-    <url>/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/</url>
-    <content><![CDATA[<p>首先，什么是递归？</p>
-<h4 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h4><ol>
-<li>定义：<ul>
-<li>若一个对象部分地包含它自己，或用它自己给它自己定义，则称这个对象是递归的。</li>
-<li>若一个过程直接或间接地调用自己，则称这个过程是递归的过程</li>
-</ul>
-</li>
-</ol>
-<ul>
-<li>举例：<br>  递归求n的阶乘  <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">long</span> <span class="title">Fac</span><span class="params">(<span class="type">long</span> n)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (n == <span class="number">0</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> n * <span class="built_in">Fac</span>(n<span class="number">-1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<ol start="2">
-<li><p>三种常常用到递归方法的情况：</p>
-<ul>
-<li>递归定义的数学函数，如阶乘函数，二阶斐波那契数列</li>
-<li>具有递归特性的数据结构，如二叉树，广义表</li>
-<li>可递归求解的问题，如迷宫问题，汉诺塔问题</li>
-</ul>
-</li>
-<li><p>递归问题求解方法<br><img src="/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/2022-03-28-20-41-31.png"><br><img src="/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/2022-03-28-20-43-00.png"></p>
-</li>
-</ol>
-<h4 id="栈与递归"><a href="#栈与递归" class="headerlink" title="栈与递归"></a>栈与递归</h4><p>函数递归调用遵循后调用的先返回，与栈类似。</p>
-<ul>
-<li>函数调用过程<br><img src="/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/2022-03-28-20-50-06.png"></li>
-</ul>
-]]></content>
-      <categories>
-        <category>算法与数据结构</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>算法与数据结构(1)</title>
-    <url>/2022/03/21/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
-    <content><![CDATA[<p>写在前面：因为之前就学了数据结构的内容，所以这篇数据结构就偷懒跳过不写了</p>
-<h1 id="算法："><a href="#算法：" class="headerlink" title="算法："></a>算法：</h1><ol>
-<li><p>定义：<br>对特定问题求解方法和步骤的一种描述，它是指令的有限序列。其中每个指令表示一个或多个操作。<br>简而言之，<strong>算法就是解决问题的方法和步骤</strong></p>
-</li>
-<li><p>算法特性：</p>
-<ol>
-<li>有穷性：一个算法必须总是在执行有穷步之后结束，且每一步都在有穷时间内完成。</li>
-<li>确定性：算法中的每一条指令必须有确切的含义，没有二义性，在任何条件下，只有唯一的一条执行路径，即对于相同的输入只能得到相同的输出。 </li>
-<li>可行性：算法是可执行的，算法描述的操作可以通过已经实现的基本操作执行有限次来实现。</li>
-<li>输入：一个算法有0个或多个输入。</li>
-<li>输出：一个算法有一个或多个输出。</li>
-</ol>
-</li>
-<li><p>算法设计要求：</p>
-<ol>
-<li>正确性：程序对于精心选择的，典型、苛刻且带有刁难性的几组输入数据能够得出满足要求的结果。</li>
-<li>可读性</li>
-<li>健壮性：<ol>
-<li>指输入非法数据时，算法恰当的做出反应或进行相应处理而不是产生奇怪的输出结果。</li>
-<li>处理出错的方法，不应是中断程序的执行，而是返回一个表示错误或者错误性质的值，以便在更高的抽象层次上进行处理。</li>
-</ol>
-</li>
-<li>高效性</li>
-</ol>
-</li>
-<li><p>算法的效率：</p>
-<ul>
-<li>算法有时间效率和空间效率</li>
-</ul>
-<ol>
-<li>时间效率：<br> 时间效率可以用依据该算法编制的程序在计算机上执行所消耗的时间来度量<ul>
-<li>度量方法：<ol>
-<li>事后统计：<br>  将算法实现，测算时间和空间开销。</li>
-<li>事前分析：<br>  对算法所消耗资源的一种估算方法。</li>
-</ol>
-<ul>
-<li>多采用事前分析，事后统计的方法，编写程序耗费时间和精力，结果依赖于计算机软硬件因素。</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-<ul>
-<li>算法运行时间 &#x3D; 一个简单操作所需时间 $\times$ 简单操作次数<br>        &#x3D; $\sum$ 每条语句执行次数（每条语句频度） $\times$ 该语句执行一次所需时间<ul>
-<li>假设执行每条语句所需时间均为单位时间，此时对算法的运行时间的讨论就可以转化为讨论该算法中的所有语句的执行次数，即频度和。</li>
-<li>即算法耗费时间为算法每条语句的频度之和，表示为T(n)。</li>
-<li>额外的，一般只考虑算法中的基本操作执行的次数，且仅比较数量级</li>
-</ul>
-</li>
-<li>算法时间复杂度：<ul>
-<li>算法中基本语句（执行最多的语句）重复执行的次数是问题规模n的某个函数f(n)，算法时间的量度记作T(n) &#x3D; O(f(n))</li>
-<li>它表示随着n增大，算法执行的时间的增长率和f(n)的增长率相同，称为渐近时间复杂度。</li>
-<li>对于复杂的算法，可以将它分为几个容易估算的部分，然后利用加法法则和乘法法则计算时间复杂度<ol>
-<li>加法法则：<br> T(n) &#x3D; T1(n) + T2(n) &#x3D; O(f(n)) + O(g(n)) &#x3D;O(max(f(n),g(n)))</li>
-<li>乘法法则：<br> T(n) &#x3D; T1(n) $\times$ T2(n) &#x3D; O(f(n)) $\times$ O(g(n)) &#x3D; O(f(n) $\times$ g(n))</li>
-</ol>
-</li>
-</ul>
-</li>
-</ul>
-<ol start="2">
-<li>算法空间复杂度：<br> S(n) &#x3D; O(f(n))<ul>
-<li>算法要占据的空间：<ol>
-<li>算法本身要占据的空间，输入&#x2F;输出，指令，常数，变量等</li>
-<li>算法要使用的辅助空间</li>
-</ol>
-</li>
-</ul>
-</li>
-</ol>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>算法与数据结构</category>
-      </categories>
   </entry>
   <entry>
     <title>算法与数据结构(2)</title>
@@ -477,6 +363,183 @@
       </categories>
   </entry>
   <entry>
+    <title>算法与数据结构(1)</title>
+    <url>/2022/03/21/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<p>写在前面：因为之前就学了数据结构的内容，所以这篇数据结构就偷懒跳过不写了</p>
+<h1 id="算法："><a href="#算法：" class="headerlink" title="算法："></a>算法：</h1><ol>
+<li><p>定义：<br>对特定问题求解方法和步骤的一种描述，它是指令的有限序列。其中每个指令表示一个或多个操作。<br>简而言之，<strong>算法就是解决问题的方法和步骤</strong></p>
+</li>
+<li><p>算法特性：</p>
+<ol>
+<li>有穷性：一个算法必须总是在执行有穷步之后结束，且每一步都在有穷时间内完成。</li>
+<li>确定性：算法中的每一条指令必须有确切的含义，没有二义性，在任何条件下，只有唯一的一条执行路径，即对于相同的输入只能得到相同的输出。 </li>
+<li>可行性：算法是可执行的，算法描述的操作可以通过已经实现的基本操作执行有限次来实现。</li>
+<li>输入：一个算法有0个或多个输入。</li>
+<li>输出：一个算法有一个或多个输出。</li>
+</ol>
+</li>
+<li><p>算法设计要求：</p>
+<ol>
+<li>正确性：程序对于精心选择的，典型、苛刻且带有刁难性的几组输入数据能够得出满足要求的结果。</li>
+<li>可读性</li>
+<li>健壮性：<ol>
+<li>指输入非法数据时，算法恰当的做出反应或进行相应处理而不是产生奇怪的输出结果。</li>
+<li>处理出错的方法，不应是中断程序的执行，而是返回一个表示错误或者错误性质的值，以便在更高的抽象层次上进行处理。</li>
+</ol>
+</li>
+<li>高效性</li>
+</ol>
+</li>
+<li><p>算法的效率：</p>
+<ul>
+<li>算法有时间效率和空间效率</li>
+</ul>
+<ol>
+<li>时间效率：<br> 时间效率可以用依据该算法编制的程序在计算机上执行所消耗的时间来度量<ul>
+<li>度量方法：<ol>
+<li>事后统计：<br>  将算法实现，测算时间和空间开销。</li>
+<li>事前分析：<br>  对算法所消耗资源的一种估算方法。</li>
+</ol>
+<ul>
+<li>多采用事前分析，事后统计的方法，编写程序耗费时间和精力，结果依赖于计算机软硬件因素。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>算法运行时间 &#x3D; 一个简单操作所需时间 $\times$ 简单操作次数<br>        &#x3D; $\sum$ 每条语句执行次数（每条语句频度） $\times$ 该语句执行一次所需时间<ul>
+<li>假设执行每条语句所需时间均为单位时间，此时对算法的运行时间的讨论就可以转化为讨论该算法中的所有语句的执行次数，即频度和。</li>
+<li>即算法耗费时间为算法每条语句的频度之和，表示为T(n)。</li>
+<li>额外的，一般只考虑算法中的基本操作执行的次数，且仅比较数量级</li>
+</ul>
+</li>
+<li>算法时间复杂度：<ul>
+<li>算法中基本语句（执行最多的语句）重复执行的次数是问题规模n的某个函数f(n)，算法时间的量度记作T(n) &#x3D; O(f(n))</li>
+<li>它表示随着n增大，算法执行的时间的增长率和f(n)的增长率相同，称为渐近时间复杂度。</li>
+<li>对于复杂的算法，可以将它分为几个容易估算的部分，然后利用加法法则和乘法法则计算时间复杂度<ol>
+<li>加法法则：<br> T(n) &#x3D; T1(n) + T2(n) &#x3D; O(f(n)) + O(g(n)) &#x3D;O(max(f(n),g(n)))</li>
+<li>乘法法则：<br> T(n) &#x3D; T1(n) $\times$ T2(n) &#x3D; O(f(n)) $\times$ O(g(n)) &#x3D; O(f(n) $\times$ g(n))</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li>算法空间复杂度：<br> S(n) &#x3D; O(f(n))<ul>
+<li>算法要占据的空间：<ol>
+<li>算法本身要占据的空间，输入&#x2F;输出，指令，常数，变量等</li>
+<li>算法要使用的辅助空间</li>
+</ol>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>算法与数据结构</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>计算时间复杂度的练习</title>
+    <url>/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/</url>
+    <content><![CDATA[<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-07-37.png"></p>
+<ol>
+<li>很容易看出语句频度最大的语句是<code>for(int j = 0;j &lt; n;j++)</code></li>
+<li>其执行次数为n(n+1),即n^2^<ul>
+<li>对于循环来说直接找嵌套最深的语句也可以，即<code>y++;</code>,执行次数为n^2^</li>
+</ul>
+</li>
+<li>T(n)&#x3D;O(n^2^)</li>
+</ol>
+<p>####例1</p>
+<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-17-41.png" title="例1"></p>
+<ol>
+<li>嵌套最深的语句为<code>sum[i] += x[i][j];</code> </li>
+<li>执行次数为 m $\times$ n 次</li>
+<li>T(n)&#x3D;O(m $\times$ n)</li>
+</ol>
+<p>####虽然但是这是例2<br><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-21-45.png"></p>
+<ol>
+<li>嵌套最深语句为<code>c[i][j] = c[i][j] + a[i][k] * b[k][j];</code></li>
+<li>执行次数为n^3^</li>
+<li>T(n)&#x3D;O(n^3^)</li>
+</ol>
+<p>####例3</p>
+<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-26-30.png"></p>
+<ol>
+<li>可以看出嵌套最深语句是<code>x=x+1</code> </li>
+<li>但是计算时间复杂度时，需要用级数求和法</li>
+<li>语句频度 &#x3D; $\sum_{i&#x3D;1}^n$$\sum_{j&#x3D;1}^i$$\sum_{k&#x3D;1}^j$1 &#x3D; $\sum_{i&#x3D;1}^n$$\sum_{j&#x3D;1}^i$j &#x3D; $\sum_{i&#x3D;1}^n$$i(i+1) \over 2$ &#x3D;$1\over2$($\sum_{i&#x3D;1}^n$i^2^ + $\sum_{i&#x3D;1}^n$i) &#x3D;$1\over2$($n(n+1)(2n+1)\over 6$ + $n(n+1)\over2$) &#x3D; $n(n+1)(n+2)\over 6$</li>
+<li>f(n) &#x3D; n^3^</li>
+<li>T(n)&#x3D;O(n^3^)<ul>
+<li>（计算语句频度最后一个求和不会。。）</li>
+</ul>
+</li>
+</ol>
+<p>####例4</p>
+<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-22-00-05-42.png"></p>
+<ol>
+<li><p>执行次数最多为<code>i=i*2;</code></p>
+<ul>
+<li>关键要找出执行次数x与n的关系，并表示成n的函数</li>
+<li>执行1次，i&#x3D;1*2&#x3D;2；</li>
+<li>执行2次，i&#x3D;2*2&#x3D;2^2^；</li>
+<li>执行3次，i&#x3D;2^2^*2&#x3D;2^3^；</li>
+<li>…</li>
+<li>执行x次，i&#x3D;2^x^</li>
+</ul>
+</li>
+<li><p>设语句<code>i=i*2</code>执行x次,由循环条件，</p>
+<p> i&lt;&#x3D;n,   $\because$ 2^x^&lt; n , $\therefore$ x&lt;&#x3D;${log_2{n}}$</p>
+</li>
+<li><p>所以f(n)&#x3D;${log_2{n}}$</p>
+</li>
+<li><p>T(n)&#x3D;O(${log_2{n}}$)</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>算法与数据结构</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>栈与递归</title>
+    <url>/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/</url>
+    <content><![CDATA[<p>首先，什么是递归？</p>
+<h4 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h4><ol>
+<li>定义：<ul>
+<li>若一个对象部分地包含它自己，或用它自己给它自己定义，则称这个对象是递归的。</li>
+<li>若一个过程直接或间接地调用自己，则称这个过程是递归的过程</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>举例：<br>  递归求n的阶乘  <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">long</span> <span class="title">Fac</span><span class="params">(<span class="type">long</span> n)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (n == <span class="number">0</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> n * <span class="built_in">Fac</span>(n<span class="number">-1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ol start="2">
+<li><p>三种常常用到递归方法的情况：</p>
+<ul>
+<li>递归定义的数学函数，如阶乘函数，二阶斐波那契数列</li>
+<li>具有递归特性的数据结构，如二叉树，广义表</li>
+<li>可递归求解的问题，如迷宫问题，汉诺塔问题</li>
+</ul>
+</li>
+<li><p>递归问题求解方法<br><img src="/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/2022-03-28-20-41-31.png"><br><img src="/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/2022-03-28-20-43-00.png"></p>
+</li>
+</ol>
+<h4 id="栈与递归"><a href="#栈与递归" class="headerlink" title="栈与递归"></a>栈与递归</h4><p>函数递归调用遵循后调用的先返回，与栈类似。</p>
+<ul>
+<li>函数调用过程<br><img src="/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/2022-03-28-20-50-06.png"></li>
+</ul>
+]]></content>
+      <categories>
+        <category>算法与数据结构</category>
+      </categories>
+  </entry>
+  <entry>
     <title>算法与数据结构(3)</title>
     <url>/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/</url>
     <content><![CDATA[<p>栈和队列是限定插入和删除只能在表的“端点”进行的线性表。栈和队列是线性表的子集</p>
@@ -577,7 +640,7 @@
 </ol>
 <h3 id="栈与递归"><a href="#栈与递归" class="headerlink" title="栈与递归"></a>栈与递归</h3><p>移步 <a href="https://inengyang.github.io/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/">栈与递归</a></p>
 <h2 id="队列"><a href="#队列" class="headerlink" title="队列"></a>队列</h2><ol>
-<li><p>定义：<br> 队列是一种先进先出（FIFO）的线性表。在表尾插入，在表头删除。</p>
+<li><p>定义：<br> 队列是一种先进先出（FIFO）的线性表。在表尾（队尾）插入，在表头（队头）删除。</p>
 </li>
 <li><p>逻辑结构：<br> 与线性表相同，同为一对一结构</p>
 </li>
@@ -591,69 +654,86 @@
 <ul>
 <li>队列的示意图<br><img src="/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-03-27-22-48-56.png"></li>
 </ul>
-]]></content>
-      <categories>
-        <category>算法与数据结构</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>计算时间复杂度的练习</title>
-    <url>/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/</url>
-    <content><![CDATA[<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-07-37.png"></p>
-<ol>
-<li>很容易看出语句频度最大的语句是<code>for(int j = 0;j &lt; n;j++)</code></li>
-<li>其执行次数为n(n+1),即n^2^<ul>
-<li>对于循环来说直接找嵌套最深的语句也可以，即<code>y++;</code>,执行次数为n^2^</li>
-</ul>
-</li>
-<li>T(n)&#x3D;O(n^2^)</li>
-</ol>
-<p>####例1</p>
-<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-17-41.png" title="例1"></p>
-<ol>
-<li>嵌套最深的语句为<code>sum[i] += x[i][j];</code> </li>
-<li>执行次数为 m $\times$ n 次</li>
-<li>T(n)&#x3D;O(m $\times$ n)</li>
-</ol>
-<p>####虽然但是这是例2<br><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-21-45.png"></p>
-<ol>
-<li>嵌套最深语句为<code>c[i][j] = c[i][j] + a[i][k] * b[k][j];</code></li>
-<li>执行次数为n^3^</li>
-<li>T(n)&#x3D;O(n^3^)</li>
-</ol>
-<p>####例3</p>
-<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-26-30.png"></p>
-<ol>
-<li>可以看出嵌套最深语句是<code>x=x+1</code> </li>
-<li>但是计算时间复杂度时，需要用级数求和法</li>
-<li>语句频度 &#x3D; $\sum_{i&#x3D;1}^n$$\sum_{j&#x3D;1}^i$$\sum_{k&#x3D;1}^j$1 &#x3D; $\sum_{i&#x3D;1}^n$$\sum_{j&#x3D;1}^i$j &#x3D; $\sum_{i&#x3D;1}^n$$i(i+1) \over 2$ &#x3D;$1\over2$($\sum_{i&#x3D;1}^n$i^2^ + $\sum_{i&#x3D;1}^n$i) &#x3D;$1\over2$($n(n+1)(2n+1)\over 6$ + $n(n+1)\over2$) &#x3D; $n(n+1)(n+2)\over 6$</li>
-<li>f(n) &#x3D; n^3^</li>
-<li>T(n)&#x3D;O(n^3^)<ul>
-<li>（计算语句频度最后一个求和不会。。）</li>
-</ul>
-</li>
-</ol>
-<p>####例4</p>
-<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-22-00-05-42.png"></p>
-<ol>
-<li><p>执行次数最多为<code>i=i*2;</code></p>
+<h3 id="队列的顺序表示————用一维数组base-MAXQSIZE"><a href="#队列的顺序表示————用一维数组base-MAXQSIZE" class="headerlink" title="队列的顺序表示————用一维数组base[MAXQSIZE]"></a>队列的顺序表示————用一维数组base[MAXQSIZE]</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> MAXQSIZE 100 <span class="comment">//最大队列长度</span></span></span><br><span class="line">Typedef <span class="keyword">struct</span></span><br><span class="line">&#123;</span><br><span class="line">    QElemType *base;</span><br><span class="line">    <span class="type">int</span> front;<span class="comment">//头指针</span></span><br><span class="line">    <span class="type">int</span> rear;<span class="comment">//尾指针</span></span><br><span class="line">&#125;SqQueue;</span><br></pre></td></tr></table></figure>
+
 <ul>
-<li>关键要找出执行次数x与n的关系，并表示成n的函数</li>
-<li>执行1次，i&#x3D;1*2&#x3D;2；</li>
-<li>执行2次，i&#x3D;2*2&#x3D;2^2^；</li>
-<li>执行3次，i&#x3D;2^2^*2&#x3D;2^3^；</li>
-<li>…</li>
-<li>执行x次，i&#x3D;2^x^</li>
+<li><p>初始化</p>
+  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">front = rear = 0</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>入队</p>
+  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">base[rear] = x;</span><br><span class="line">rear++;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>出队</p>
+  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">x = base[front]; front++;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>空队标志</p>
+  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">front == rear;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>溢出<br>  当rear &#x3D; MAXQSIZE 时，不能再入队，发生溢出</p>
+<ul>
+<li><p>真溢出<br>  若front &#x3D; 0<br>  rear &#x3D; MAXQSIZE 时，再入队————真溢出<br>  <img src="/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-28-46.png"></p>
+</li>
+<li><p>假溢出<br>  front !&#x3D; 0<br>  rear &#x3D; MAXQSIZE 时，再入队————假溢出<br>  <img src="/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-29-18.png"></p>
+</li>
+<li><p>解决假溢出——引入循环队列<br>  将base[0]接在base[MAXQSIZE-1]之后，若rear +1 &#x3D;&#x3D;MAXQSIZE，则令rear&#x3D;0;——就是想象把队列变成一个圈。<br>  <img src="/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-27-43.png"><br>  实现方法：对MAXQSIZE模运算<br>  base[n] 对 MAXQSIZE取模都是n，只有MAXQSIZE会等于0，就能做到base[0]接在base[MAXQSIZE-1]之后</p>
+<ul>
+<li>插入元素：  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Q.base[Q.rear] = x;</span><br><span class="line">Q.rear = (Q.rear+1) % MAXQSIZE</span><br></pre></td></tr></table></figure></li>
+<li>删除元素：  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">x = Q.base[Q.front]</span><br><span class="line">Q.front = (Q.front+1) % MAXQSIZE</span><br></pre></td></tr></table></figure></li>
 </ul>
 </li>
-<li><p>设语句<code>i=i*2</code>执行x次,由循环条件，</p>
-<p> i&lt;&#x3D;n,   $\because$ 2^x^&lt; n , $\therefore$ x&lt;&#x3D;${log_2{n}}$</p>
+</ul>
 </li>
-<li><p>所以f(n)&#x3D;${log_2{n}}$</p>
-</li>
-<li><p>T(n)&#x3D;O(${log_2{n}}$)</p>
-</li>
+<li><p>顺序循环队列中的队空队满</p>
+<p>  顺序循环队列中队空和队满时都是front &#x3D;&#x3D; rear</p>
+<ul>
+<li><p>解决方案：</p>
+<ol>
+<li>另外设一个标志区别队空和队满，比如设置一个数组存放对应元素？</li>
+<li>另设一个变量，记录元素个数</li>
+<li>少用一个元素空间<br>  说实话觉得第二种好。。</li>
 </ol>
+</li>
+<li><p>循环队列解决队满时判断方法——少用一个元素空间<br>  <img src="/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-26-52.png"><br>  此时队满：队尾指针+1，就与队头指针重合<br>  队满标志：(rear+1) % MAXQSIZE &#x3D; front</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="循环队列"><a href="#循环队列" class="headerlink" title="循环队列"></a>循环队列</h3><ol>
+<li><p>类型定义</p>
+ <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> MAXQSIZE 100 <span class="comment">//最大队列长度</span></span></span><br><span class="line">Typedef <span class="keyword">struct</span></span><br><span class="line">&#123;</span><br><span class="line">    QElemType *base;</span><br><span class="line">    <span class="type">int</span> front;<span class="comment">//头指针,若队列不空，指向队列头元素</span></span><br><span class="line">    <span class="type">int</span> rear;<span class="comment">//尾指针，若队列不空，指向队列尾元素的下一个位置</span></span><br><span class="line">&#125;SqQueue;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>队列初始化</p>
+ <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">Status <span class="title">InitQueue</span><span class="params">(SqQueue &amp;Q)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Q.base = <span class="keyword">new</span> QElemType[MAXQSIZE]</span><br><span class="line">    <span class="keyword">if</span>(!Q.base) <span class="built_in">exit</span>(OVERFLOW);<span class="comment">//存储分配失败</span></span><br><span class="line">    Q.front = Q.rear = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>求队列长度</p>
+ <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">QueueLength</span><span class="params">(SqQueue Q)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span>((Q.rear - Q.front + MAXQSIZE) % MAXQSIZE)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p> 这里是考虑到了<br> <img src="/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-40-09.png"><br> 第二种队列的情况 </p>
+</li>
+<li><p>循环队列入队</p>
+ <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">Status <span class="title">EnQueue</span><span class="params">(SqQueue &amp;Q,QElemType e)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>((Q.rear+<span class="number">1</span>)%MAXQSIZE==Q.front) <span class="keyword">return</span> ERROR<span class="comment">//队满</span></span><br><span class="line">    Q.base[Q.rear]=e;</span><br><span class="line">    Q.rear=(Q.rear+<span class="number">1</span>)%MAXQSIZE;</span><br><span class="line">    <span class="keyword">return</span> OK;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+</li>
+<li><p>循环队列出队</p>
+ <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">    <span class="function">Status <span class="title">DeQueue</span><span class="params">(SqQueue &amp;Q,QElemType &amp;e)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(Q.front==Q.rear) <span class="keyword">return</span> ERROR;<span class="comment">//队列为空</span></span><br><span class="line">        e = Q.base[Q.front];</span><br><span class="line">        Q.front = (Q.front + <span class="number">1</span>)%MAXQSIZE;</span><br><span class="line">        <span class="keyword">return</span> OK;</span><br><span class="line">    &#125;</span><br><span class="line">    ```  </span><br><span class="line"></span><br><span class="line"><span class="number">6.</span> 取队头元素</span><br><span class="line">    ```c++</span><br><span class="line">    <span class="function">SElemType <span class="title">GetHead</span><span class="params">(SqQueue Q)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(Q.front != Q.rear) <span class="comment">//队列不为空</span></span><br><span class="line">            <span class="keyword">return</span> Q.base[Q.front];<span class="comment">//返回队头指针元素，队头指针不变</span></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="链队"><a href="#链队" class="headerlink" title="链队"></a>链队</h3><p>   若用户无法估计所用队列的长度，宜用链队</p>
+<ol>
+<li>链队的类型定义<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">    <span class="meta">#<span class="keyword">define</span> MAXQSIZE 100</span></span><br><span class="line">    <span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">Qnode</span></span><br><span class="line">    &#123;</span><br><span class="line">        QElemType data;</span><br><span class="line">        <span class="keyword">struct</span> <span class="title class_">Qnode</span> *next;</span><br><span class="line">    &#125;QNode,*QueuePtr;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">typedef</span> <span class="keyword">struct</span> </span><br><span class="line">    &#123;</span><br><span class="line">        QueuePtr front;<span class="comment">//头指针</span></span><br><span class="line">        QueuePtr rear;<span class="comment">//尾指针</span></span><br><span class="line">    &#125;LinkQueue;</span><br><span class="line">  ```      </span><br><span class="line"></span><br><span class="line"><span class="number">2.</span> 链队列的初始化</span><br><span class="line">    ```c++</span><br><span class="line">    <span class="function">Status <span class="title">InitQueue</span><span class="params">(LinkQueue &amp;Q)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        Q.front = Q.rear = <span class="keyword">new</span> QNode</span><br><span class="line">        <span class="keyword">if</span>(!Q.front) <span class="built_in">exit</span>(OVERFLOW)</span><br><span class="line">        Q.front-&gt;next = <span class="literal">NULL</span>;</span><br><span class="line">        <span class="keyword">return</span> OK;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<pre><code>3. 销毁链队列
+
+    <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">Status <span class="title">DestoryQueue</span><span class="params">(LinkQueue &amp;Q)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">while</span>(Q.front)</span><br><span class="line">    &#123;</span><br><span class="line">        p=Q.front-&gt;;<span class="keyword">delete</span> Q.front;Q.front=p;</span><br><span class="line">    &#125;<span class="comment">//或者把p改成Q.rear</span></span><br><span class="line">    <span class="comment">//Q.rear=Q.front-&gt;;delete Q.front;Q.front=Q.rear;</span></span><br><span class="line">    <span class="keyword">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+4. 入队
+
+    <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">Status <span class="title">EnQueue</span><span class="params">(LinkQueue &amp;Q,QElemType e)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    p = <span class="keyword">new</span> QNode</span><br><span class="line">    <span class="keyword">if</span>(!p) <span class="built_in">exit</span>(OVERFLOW);</span><br><span class="line">    p-&gt;data = e;p-&gt;next = <span class="literal">NULL</span>;</span><br><span class="line">    Q.rear-&gt;next = p;</span><br><span class="line">    Q.rear = p;</span><br><span class="line">    <span class="keyword">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+5. 出队
+
+    <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">Status <span class="title">DeQueue</span><span class="params">(LinkQueue &amp;Q,QElemType &amp;e)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(Q.front==Q.rear) <span class="keyword">return</span> ERROR;</span><br><span class="line">    p=Q.front-&gt;next; e=p-&gt;data;</span><br><span class="line">    Q.front-&gt;next = p-&gt;next;</span><br><span class="line">    <span class="keyword">if</span>(Q.rear==p) Q.rear==Q.front;</span><br><span class="line">    <span class="keyword">delete</span> p;</span><br><span class="line">    <span class="keyword">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+6. 求队头元素
+    <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">Status <span class="title">GetHead</span><span class="params">(LinkQueue &amp;Q,QElemType &amp;e)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(Q.front==Q.rear) <span class="keyword">return</span> ERROR;</span><br><span class="line">    e=Q.front-&gt;next-&gt;data;</span><br><span class="line">    <span class="keyword">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</code></pre>
 ]]></content>
       <categories>
         <category>算法与数据结构</category>
