@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.0.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" integrity="sha256-jTIdiMuX/e3DGJUGwl3pKSxuc6YOuqtJYkM0bGQESA4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"inengyang.github.io","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.10.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="串、数组与广义表">
+<meta property="og:type" content="article">
+<meta property="og:title" content="算法与数据结构-4">
+<meta property="og:url" content="https://inengyang.github.io/2022/04/04/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-4/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="串、数组与广义表">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://inengyang.github.io/2022/04/04/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-4/2022-04-04-15-14-20.png">
+<meta property="og:image" content="https://inengyang.github.io/2022/04/04/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-4/2022-04-04-15-31-45.png">
+<meta property="og:image" content="https://inengyang.github.io/2022/04/04/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-4/2022-04-04-19-58-40.png">
+<meta property="og:image" content="https://inengyang.github.io/2022/04/04/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-4/2022-04-04-20-04-45.png">
+<meta property="og:image" content="https://inengyang.github.io/2022/04/04/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-4/2022-04-04-20-05-37.png">
+<meta property="article:published_time" content="2022-04-04T07:08:07.000Z">
+<meta property="article:modified_time" content="2022-04-04T12:14:42.049Z">
+<meta property="article:author" content="DXH">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://inengyang.github.io/2022/04/04/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-4/2022-04-04-15-14-20.png">
+
+
+<link rel="canonical" href="https://inengyang.github.io/2022/04/04/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-4/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://inengyang.github.io/2022/04/04/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-4/","path":"2022/04/04/算法与数据结构-4/","title":"算法与数据结构-4"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>算法与数据结构-4 | Hexo</title>
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Hexo</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%B2"><span class="nav-number">1.</span> <span class="nav-text">串</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A1%BA%E5%BA%8F%E4%B8%B2"><span class="nav-number">1.1.</span> <span class="nav-text">顺序串</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%93%BE%E4%B8%B2"><span class="nav-number">1.2.</span> <span class="nav-text">链串</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%B2%E7%9A%84%E6%A8%A1%E5%BC%8F%E5%8C%B9%E9%85%8D%E7%AE%97%E6%B3%95"><span class="nav-number">1.3.</span> <span class="nav-text">串的模式匹配算法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#BF%E7%AE%97%E6%B3%95"><span class="nav-number">1.3.1.</span> <span class="nav-text">BF算法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#KMP%E7%AE%97%E6%B3%95"><span class="nav-number">1.3.2.</span> <span class="nav-text">KMP算法</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="DXH"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">DXH</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/INengYang" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;INengYang" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://inengyang.github.io/2022/04/04/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="DXH">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+      <meta itemprop="description" content="">
+    </span>
+    
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="算法与数据结构-4 | Hexo">
+      <meta itemprop="description" content="串、数组与广义表">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          算法与数据结构-4
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-04-04 15:08:07 / 修改时间：20:14:42" itemprop="dateCreated datePublished" datetime="2022-04-04T15:08:07+08:00">2022-04-04</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" itemprop="url" rel="index"><span itemprop="name">算法与数据结构</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+            <div class="post-description">串、数组与广义表</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="串"><a href="#串" class="headerlink" title="串"></a>串</h2><ol>
+<li><p>定义：零个或多个任意字符组成的有限序列</p>
+<p> <img src="/2022/04/04/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-4/2022-04-04-15-14-20.png"></p>
+</li>
+</ol>
+<ul>
+<li>子串：一个串中任意个连续字符组成的子序列（含空串）称为该串的子串<br> 真子串是指不包含自身的所有子串。</li>
+<li>主串：包含子串的串相应地称为主串</li>
+<li>字符位置：字符在序列中的序号为该字符在串中的位置</li>
+<li>空格串：由一个或多个空格组成的串，与空串不同。</li>
+<li>串相等：当且仅当两个串的长度相等且各个对应位置上的字符都相同时，这两个串才是相等的。所有空串都是相等的。</li>
+</ul>
+<ol start="2">
+<li>串中元素逻辑关系与线性表的相同，串可以采用与线性表相同的存储结构</li>
+</ol>
+<h3 id="顺序串"><a href="#顺序串" class="headerlink" title="顺序串"></a>顺序串</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> MAXLEN 255</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">char</span> ch[MAXLEN+<span class="number">1</span>];<span class="comment">//存储串的一维数组，+1可以使下标为0-256，应该会方便研究一些算法。</span></span><br><span class="line">    <span class="type">int</span> length;<span class="comment">//串的当前长度</span></span><br><span class="line">&#125;SString;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>ps：研究串的某些算法时，通常从数组的一号位置开始存储，会方便一些。<br>顺序串用的比较多，因为对串进行插入和删除比较少，在查找和匹配时用顺序串比较方便。</li>
+</ul>
+<h3 id="链串"><a href="#链串" class="headerlink" title="链串"></a>链串</h3><p>链串可以将多个字符放在一个结点中，克服存储密度低的缺点。<br><img src="/2022/04/04/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-4/2022-04-04-15-31-45.png"><br>被称为，块链结构</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> CHUNKSIZE 80</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">Chunk</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">char</span> ch[CHUNKSIZE];</span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">Chunk</span> *next;</span><br><span class="line">&#125;Chunk;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span></span><br><span class="line">&#123;</span><br><span class="line">    Chunk *head,*tail;<span class="comment">//串的头指针和尾指针</span></span><br><span class="line">    <span class="type">int</span> curlen;<span class="comment">//串的当前长度</span></span><br><span class="line">&#125;LString;</span><br></pre></td></tr></table></figure>
+
+<h3 id="串的模式匹配算法"><a href="#串的模式匹配算法" class="headerlink" title="串的模式匹配算法"></a>串的模式匹配算法</h3><ol>
+<li>算法目的：确定主串中所含子串（模式串）第一次出现的位置（定位）</li>
+<li>算法应用：<ul>
+<li>搜索引擎，拼写检查，语言翻译，数据压缩</li>
+</ul>
+</li>
+<li>算法种类：<ul>
+<li>BF算法（暴力破解），时间效率差一些</li>
+<li>KMP算法，速度快一些</li>
+</ul>
+</li>
+</ol>
+<h4 id="BF算法"><a href="#BF算法" class="headerlink" title="BF算法"></a>BF算法</h4><p>亦称简单匹配算法，采用穷举法的思路。</p>
+<ul>
+<li>算法思路：<br>  Index(S,T,pos)<br>  主串S：a a a a b c d<br>  模式串T: a b c<br>  将主串的第pos个字符和模式串的第一个字符比较，<ul>
+<li>若相等，继续逐个比较后续字符；</li>
+<li>若不等，从主串pos的下一个字符起，重新与模式串的第一个字符比较<ul>
+<li>直到主串的一个连续子串字符序列与模式串相等。返回值为S中与T匹配的第一个子序列第一个字符的序号，即匹配成功。</li>
+<li>否则，匹配失败，返回值0</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> Index <span class="title">BF</span><span class="params">(SString S, SString T,<span class="type">int</span> pos)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> i = pos, j = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(i&lt;=S.length &amp;&amp; j&lt;= T.length)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(s.ch[i]==t.ch[j])</span><br><span class="line">        &#123;</span><br><span class="line">            ++i;</span><br><span class="line">            ++j;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            i = i-j+<span class="number">2</span>;</span><br><span class="line">            j=<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (j&gt;=T.length) <span class="keyword">return</span> i-T.length<span class="comment">//返回匹配的第一个字符下标</span></span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> <span class="number">0</span>;<span class="comment">//匹配失败</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>算法时间复杂度：<br>  最好情况：一次匹配即成功，有m个字符，时间复杂度就为O(m)<br>  最差情况：<ul>
+<li>若n为主串长度，m为子串长度，主串前面n-m个位置都部分匹配到了子串的最后一位，即这n-m位各比较了m次</li>
+<li>最后m位也各比较了一次</li>
+<li>所以总次数为(n-m)*m+m &#x3D; (n-m+1)*m</li>
+<li>若m &lt;&lt; n,则算法时间复杂度为O(n<em>m),平均为$n</em>m\over2$</li>
+</ul>
+</li>
+</ul>
+<h4 id="KMP算法"><a href="#KMP算法" class="headerlink" title="KMP算法"></a>KMP算法</h4><p>大概就是利用部分匹配结果中与模式串相同的字符，从而加快模式串的滑动速度<br><img src="/2022/04/04/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-4/2022-04-04-19-58-40.png"></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> Index <span class="title">KMP</span><span class="params">(SString S, SString T,<span class="type">int</span> pos)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> i = pos, j = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(i&lt;=S.length &amp;&amp; j&lt;= T.length)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(j==<span class="number">0</span> || s.ch[i]==t.ch[j])</span><br><span class="line">        &#123;</span><br><span class="line">            ++i;</span><br><span class="line">            ++j;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            j = next[j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (j&gt;=T.length) <span class="keyword">return</span> i-T.length<span class="comment">//返回匹配的第一个字符下标</span></span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> <span class="number">0</span>;<span class="comment">//匹配失败</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">get_next</span><span class="params">(SString T,<span class="type">int</span> &amp;next[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    i=<span class="number">1</span>;next[<span class="number">1</span>]=<span class="number">0</span>;j=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(i&lt;T.length)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(j==<span class="number">0</span> || T.ch[i]==T.ch[j])</span><br><span class="line">        &#123;</span><br><span class="line">            ++i;++j;</span><br><span class="line">            next[i]=j;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            j=next[j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>定义next[j]:<br><img src="/2022/04/04/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-4/2022-04-04-20-04-45.png"><br><img src="/2022/04/04/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-4/2022-04-04-20-05-37.png"></p>
+<p>  比如说，j&#x3D;6的b字符，从6b的前一个字符（5a）开始与第一个字符（1a）比较，发现匹配成功，此时有k-1个元素相同，所以k&#x3D;2；再从6b的前两个字符（4a5a）与1a2b比较，匹配失败，之后以此类推。</p>
+</li>
+<li><p>next函数改进(好难。。整不明白)</p>
+  <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">get_nextval</span><span class="params">(SString T,<span class="type">int</span> &amp;nextval[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    i=<span class="number">1</span>;nextval[<span class="number">1</span>]=<span class="number">0</span>;j=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(i&lt;T.length)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(j==<span class="number">0</span> || T.ch[i]==T.ch[j])</span><br><span class="line">        &#123;</span><br><span class="line">            ++i;++j;</span><br><span class="line">            <span class="keyword">if</span>(T.ch[i] != T.ch[j]) nextval[i]=j;</span><br><span class="line">            <span class="keyword">else</span> nextval[i] = nextval[j];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            j=nextval[j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/04/03/4-3Python/" rel="prev" title="4.3Python">
+                  <i class="fa fa-chevron-left"></i> 4.3Python
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">DXH</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+<div class="powered-by">
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <i class="fa fa-user-md"></i>
+    <span id="busuanzi_container_site_uv">
+        本站访客数:<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span id="busuanzi_container_site_pv">
+        本站访问量<span id="busuanzi_value_site_pv"></span>
+    </span>
+</div>
+
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+</body>
+</html>
