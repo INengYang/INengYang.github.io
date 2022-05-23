@@ -1,42 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>4.3Python</title>
-    <url>/2022/04/03/4-3Python/</url>
-    <content><![CDATA[<h4 id="Python输入列表"><a href="#Python输入列表" class="headerlink" title="Python输入列表"></a>Python输入列表</h4><ol>
-<li><p>split()</p>
- <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">nums = <span class="built_in">input</span>(<span class="string">&quot;输入：&quot;</span>).split()</span><br><span class="line"><span class="built_in">print</span>(nums)</span><br></pre></td></tr></table></figure>
-<p> 输出：</p>
- <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">输入：<span class="number">1</span> <span class="number">2</span> <span class="number">3</span> <span class="number">4</span></span><br><span class="line">[<span class="string">&#x27;1&#x27;</span>, <span class="string">&#x27;2&#x27;</span>, <span class="string">&#x27;3&#x27;</span>, <span class="string">&#x27;4&#x27;</span>]</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>map()</p>
-<p> map()会根据提供的函数对指定序列做映射。<br> map(function, iterable, …)</p>
- <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="built_in">input</span>(<span class="string">&quot;输入：&quot;</span>).split()</span><br><span class="line"><span class="built_in">print</span>(s)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,s))</span><br></pre></td></tr></table></figure>
-
-<p> 运行</p>
- <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">输入：<span class="number">1</span> <span class="number">2</span> <span class="number">3</span></span><br><span class="line">[<span class="string">&#x27;1&#x27;</span>, <span class="string">&#x27;2&#x27;</span>, <span class="string">&#x27;3&#x27;</span>]</span><br><span class="line">&lt;<span class="built_in">map</span> <span class="built_in">object</span> at <span class="number">0x0000022C58D8B4F0</span>&gt;</span><br></pre></td></tr></table></figure>
-<p> python3 中 map返回值不是列表而是iterators，可以用用list方法转换成列表  </p>
-<p> 这样似乎更方便</p>
- <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">array = <span class="built_in">list</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>(<span class="string">&quot;输入用空格分隔的数字：&quot;</span>).split())) </span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>关于map()，更多还是去看教程吧。</p>
-<h4 id="input输入多个数"><a href="#input输入多个数" class="headerlink" title="input输入多个数"></a>input输入多个数</h4><p>还是map()和split()<br>a, b, c &#x3D; map(int, input().split())</p>
-<h4 id="获取列表下标"><a href="#获取列表下标" class="headerlink" title="获取列表下标"></a>获取列表下标</h4><ul>
-<li><p>列表.index()</p>
-<p>  如：</p>
-  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">target_list = [<span class="number">35</span>, <span class="number">67</span>, <span class="number">6</span>, <span class="number">77</span>, <span class="number">89</span>, <span class="number">98</span>]</span><br><span class="line"><span class="built_in">print</span>(target_list.index(<span class="number">89</span>))</span><br></pre></td></tr></table></figure>
-<p>  运行：</p>
-  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="number">4</span></span><br></pre></td></tr></table></figure>
-
-<p>  不过当时是为了查找元素对应的下标，可以这么写：</p>
-  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> target_list:</span><br><span class="line"><span class="keyword">if</span> i == <span class="number">89</span>:</span><br><span class="line">    <span class="comment">#输出89的下标</span></span><br><span class="line">    <span class="built_in">print</span>(target_list.index(i))</span><br><span class="line">    <span class="comment">#将89改为88</span></span><br><span class="line">    target_list[target_list.index(i)] = <span class="number">88</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-]]></content>
-      <categories>
-        <category>有用的知识</category>
-      </categories>
-  </entry>
-  <entry>
     <title>First-plan</title>
     <url>/2022/04/08/First-plan/</url>
     <content><![CDATA[<p>简单地列一下目前要做的事情。</p>
@@ -77,22 +41,40 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2022/03/08/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <title>4.3Python</title>
+    <url>/2022/04/03/4-3Python/</url>
+    <content><![CDATA[<h4 id="Python输入列表"><a href="#Python输入列表" class="headerlink" title="Python输入列表"></a>Python输入列表</h4><ol>
+<li><p>split()</p>
+ <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">nums = <span class="built_in">input</span>(<span class="string">&quot;输入：&quot;</span>).split()</span><br><span class="line"><span class="built_in">print</span>(nums)</span><br></pre></td></tr></table></figure>
+<p> 输出：</p>
+ <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">输入：<span class="number">1</span> <span class="number">2</span> <span class="number">3</span> <span class="number">4</span></span><br><span class="line">[<span class="string">&#x27;1&#x27;</span>, <span class="string">&#x27;2&#x27;</span>, <span class="string">&#x27;3&#x27;</span>, <span class="string">&#x27;4&#x27;</span>]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>map()</p>
+<p> map()会根据提供的函数对指定序列做映射。<br> map(function, iterable, …)</p>
+ <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="built_in">input</span>(<span class="string">&quot;输入：&quot;</span>).split()</span><br><span class="line"><span class="built_in">print</span>(s)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,s))</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p> 运行</p>
+ <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">输入：<span class="number">1</span> <span class="number">2</span> <span class="number">3</span></span><br><span class="line">[<span class="string">&#x27;1&#x27;</span>, <span class="string">&#x27;2&#x27;</span>, <span class="string">&#x27;3&#x27;</span>]</span><br><span class="line">&lt;<span class="built_in">map</span> <span class="built_in">object</span> at <span class="number">0x0000022C58D8B4F0</span>&gt;</span><br></pre></td></tr></table></figure>
+<p> python3 中 map返回值不是列表而是iterators，可以用用list方法转换成列表  </p>
+<p> 这样似乎更方便</p>
+ <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">array = <span class="built_in">list</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>(<span class="string">&quot;输入用空格分隔的数字：&quot;</span>).split())) </span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>关于map()，更多还是去看教程吧。</p>
+<h4 id="input输入多个数"><a href="#input输入多个数" class="headerlink" title="input输入多个数"></a>input输入多个数</h4><p>还是map()和split()<br>a, b, c &#x3D; map(int, input().split())</p>
+<h4 id="获取列表下标"><a href="#获取列表下标" class="headerlink" title="获取列表下标"></a>获取列表下标</h4><ul>
+<li><p>列表.index()</p>
+<p>  如：</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">target_list = [<span class="number">35</span>, <span class="number">67</span>, <span class="number">6</span>, <span class="number">77</span>, <span class="number">89</span>, <span class="number">98</span>]</span><br><span class="line"><span class="built_in">print</span>(target_list.index(<span class="number">89</span>))</span><br></pre></td></tr></table></figure>
+<p>  运行：</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="number">4</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>  不过当时是为了查找元素对应的下标，可以这么写：</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> target_list:</span><br><span class="line"><span class="keyword">if</span> i == <span class="number">89</span>:</span><br><span class="line">    <span class="comment">#输出89的下标</span></span><br><span class="line">    <span class="built_in">print</span>(target_list.index(i))</span><br><span class="line">    <span class="comment">#将89改为88</span></span><br><span class="line">    target_list[target_list.index(i)] = <span class="number">88</span></span><br></pre></td></tr></table></figure></li>
+</ul>
 ]]></content>
+      <categories>
+        <category>有用的知识</category>
+      </categories>
   </entry>
   <entry>
     <title>Markdown学习</title>
@@ -200,6 +182,24 @@
       </categories>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2022/03/08/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>end=&#39;&#39;与--i</title>
     <url>/2022/03/28/end-%E4%B8%8E-i/</url>
     <content><![CDATA[<h3 id="end-x3D-’’"><a href="#end-x3D-’’" class="headerlink" title="end&#x3D;’’"></a>end&#x3D;’’</h3><blockquote>
@@ -243,6 +243,27 @@
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&#x27;a,list&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(s.split(<span class="string">&#x27;,&#x27;</span>))</span><br><span class="line">---&gt;[<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;list&#x27;</span>]</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
+    <title>python3.6安装pycrypto</title>
+    <url>/2022/04/22/python3-6%E5%AE%89%E8%A3%85pycrypto/</url>
+    <content><![CDATA[<p>在学习爬取网易云评论时需要用到pycrypto，但是python3.6似乎直接pip下载会有点困难，查了很多之后终于解决了。</p>
+<p>查到的切实有效的办法是这个<a href="https://blog.csdn.net/wg5foc08/article/details/100286913">链接</a>, 值得一提的是，顺带还学到了想找到vs的安装位置，直接桌面右键-&gt;打开文件所在位置就好。。</p>
+<p>ps:<br>在这之前还更新了pip：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python -m pip install --upgrade pip</span><br></pre></td></tr></table></figure>
+<p>但是这样报错了，所以使用下面的方法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python -m ensurepip</span><br><span class="line"></span><br><span class="line">python -m pip install --upgrade pip</span><br></pre></td></tr></table></figure>
+
+<p>安装完成之后（此时文件夹已经存在），发现还是不能使用，所以继续搜索，尝试了这个<a href="https://blog.csdn.net/wdschn/article/details/80806613?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165061776616780271964810%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=165061776616780271964810&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-80806613.142%5Ev9%5Econtrol,157%5Ev4%5Econtrol&utm_term=python3.6%E5%AE%89%E8%A3%85crypto&spm=1018.2226.3001.4187">链接</a>中的办法,但很遗憾，没有效果。</p>
+<p>然后尝试下载：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install pycryptodemo</span><br></pre></td></tr></table></figure>
+<p>仍然木大。。<br>还尝试改变首字母大小写什么的，当然也是没有作用。</p>
+<p>但经一篇文章启发，我本地是有python的，而pycharm项目中会自己生成自己的python3.6（大概是这个意思），pycharm又在用anaconda，所以去对比了一下两边的库，发现anaconda中是没有Crypto这个文件夹的（同时自己的python中是有的。。），最后复制一份到pycharm的库中就好了。<br>（不过用到现在还不知道anaconda到底是啥，令人感叹。）</p>
+<p>本以为就此可以结束了，但又报错了，这次是“cannot import name ‘_AES’”，原因，简而言之就是计算机是64位的，但pip下载的pycrypto是32位的。<br>通过这篇<a href="https://blog.csdn.net/ychgyyn/article/details/88621236?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165062321216781683948872%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=165062321216781683948872&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-88621236.142%5Ev9%5Econtrol,157%5Ev4%5Econtrol&utm_term=cannot+import+name+_AES&spm=1018.2226.3001.4187">文章</a>解决了。</p>
+]]></content>
+      <categories>
+        <category>有用的知识</category>
+      </categories>
+  </entry>
+  <entry>
     <title>python爬虫-1</title>
     <url>/2022/04/10/python%E7%88%AC%E8%99%AB-1/</url>
     <content><![CDATA[<h3 id="Web请求过程"><a href="#Web请求过程" class="headerlink" title="Web请求过程"></a>Web请求过程</h3><ol>
@@ -274,27 +295,6 @@
 ]]></content>
       <categories>
         <category>爬虫</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>python3.6安装pycrypto</title>
-    <url>/2022/04/22/python3-6%E5%AE%89%E8%A3%85pycrypto/</url>
-    <content><![CDATA[<p>在学习爬取网易云评论时需要用到pycrypto，但是python3.6似乎直接pip下载会有点困难，查了很多之后终于解决了。</p>
-<p>查到的切实有效的办法是这个<a href="https://blog.csdn.net/wg5foc08/article/details/100286913">链接</a>, 值得一提的是，顺带还学到了想找到vs的安装位置，直接桌面右键-&gt;打开文件所在位置就好。。</p>
-<p>ps:<br>在这之前还更新了pip：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python -m pip install --upgrade pip</span><br></pre></td></tr></table></figure>
-<p>但是这样报错了，所以使用下面的方法：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python -m ensurepip</span><br><span class="line"></span><br><span class="line">python -m pip install --upgrade pip</span><br></pre></td></tr></table></figure>
-
-<p>安装完成之后（此时文件夹已经存在），发现还是不能使用，所以继续搜索，尝试了这个<a href="https://blog.csdn.net/wdschn/article/details/80806613?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165061776616780271964810%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=165061776616780271964810&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-80806613.142%5Ev9%5Econtrol,157%5Ev4%5Econtrol&utm_term=python3.6%E5%AE%89%E8%A3%85crypto&spm=1018.2226.3001.4187">链接</a>中的办法,但很遗憾，没有效果。</p>
-<p>然后尝试下载：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install pycryptodemo</span><br></pre></td></tr></table></figure>
-<p>仍然木大。。<br>还尝试改变首字母大小写什么的，当然也是没有作用。</p>
-<p>但经一篇文章启发，我本地是有python的，而pycharm项目中会自己生成自己的python3.6（大概是这个意思），pycharm又在用anaconda，所以去对比了一下两边的库，发现anaconda中是没有Crypto这个文件夹的（同时自己的python中是有的。。），最后复制一份到pycharm的库中就好了。<br>（不过用到现在还不知道anaconda到底是啥，令人感叹。）</p>
-<p>本以为就此可以结束了，但又报错了，这次是“cannot import name ‘_AES’”，原因，简而言之就是计算机是64位的，但pip下载的pycrypto是32位的。<br>通过这篇<a href="https://blog.csdn.net/ychgyyn/article/details/88621236?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165062321216781683948872%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=165062321216781683948872&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-88621236.142%5Ev9%5Econtrol,157%5Ev4%5Econtrol&utm_term=cannot+import+name+_AES&spm=1018.2226.3001.4187">文章</a>解决了。</p>
-]]></content>
-      <categories>
-        <category>有用的知识</category>
       </categories>
   </entry>
   <entry>
