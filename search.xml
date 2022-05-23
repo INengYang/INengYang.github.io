@@ -1,108 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>First-plan</title>
-    <url>/2022/04/08/First-plan/</url>
-    <content><![CDATA[<p>简单地列一下目前要做的事情。</p>
-<ol>
-<li>算法与数据结构学习</li>
-<li>python学习，主要是数据开发与爬虫相关的内容</li>
-<li>英语学习，目前是六级听力和词汇</li>
-<li>看书和平时的锻炼</li>
-<li>c++ 这个，暂时先列出来吧</li>
-</ol>
-<p>目测解封还需要一个月左右，所以大胆地写一下一个月后要达到的目标</p>
-<ol>
-<li>熟练掌握算法与数据结构的内容，能做到老师布置的作业自主完成</li>
-<li>可以自主写代码爬取一些内容并进行数据分析</li>
-<li>词汇量增长至少1000词，听力感觉有点玄学，到时做六级真题验收吧</li>
-<li>看完传习录；锻炼这个也没法准确设置一个目标，至少做到一周四练，根据具体情况随时调整</li>
-<li>c++主要是看c++ primer，计划开始实行后看情况吧。</li>
-</ol>
-<p>另外还有刷编程题的计划，但之后进行补充。</p>
-<p>具体到每天每周的实行，这有点难想，目前有个不成熟的想法：</p>
-<ol>
-<li><p>首先要早睡早起，这大概是最困难的。最迟8点就该起床。</p>
-</li>
-<li><p>起床后首先是英语的学习，背单词和听力</p>
-</li>
-<li><p>顺利的话大概在十点左右结束英语，此时要上课（不过下周与下下周可以不太关心这个），根据上课情况来规划之后干什么</p>
-<ol>
-<li>如果说没课或者不太重要的课，学python</li>
-<li>反之，上课</li>
-<li>但是星期三的话就写算法与数据结构作业</li>
-</ol>
-</li>
-<li><p>午饭之后感觉会累，所以先这么安排：看书-&gt;锻炼-&gt;算法与数据结构学习</p>
-</li>
-<li><p>晚上就根据每天的情况来安排。</p>
-</li>
-</ol>
-]]></content>
-  </entry>
-  <entry>
-    <title>4.3Python</title>
-    <url>/2022/04/03/4-3Python/</url>
-    <content><![CDATA[<h4 id="Python输入列表"><a href="#Python输入列表" class="headerlink" title="Python输入列表"></a>Python输入列表</h4><ol>
-<li><p>split()</p>
- <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">nums = <span class="built_in">input</span>(<span class="string">&quot;输入：&quot;</span>).split()</span><br><span class="line"><span class="built_in">print</span>(nums)</span><br></pre></td></tr></table></figure>
-<p> 输出：</p>
- <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">输入：<span class="number">1</span> <span class="number">2</span> <span class="number">3</span> <span class="number">4</span></span><br><span class="line">[<span class="string">&#x27;1&#x27;</span>, <span class="string">&#x27;2&#x27;</span>, <span class="string">&#x27;3&#x27;</span>, <span class="string">&#x27;4&#x27;</span>]</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>map()</p>
-<p> map()会根据提供的函数对指定序列做映射。<br> map(function, iterable, …)</p>
- <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="built_in">input</span>(<span class="string">&quot;输入：&quot;</span>).split()</span><br><span class="line"><span class="built_in">print</span>(s)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,s))</span><br></pre></td></tr></table></figure>
-
-<p> 运行</p>
- <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">输入：<span class="number">1</span> <span class="number">2</span> <span class="number">3</span></span><br><span class="line">[<span class="string">&#x27;1&#x27;</span>, <span class="string">&#x27;2&#x27;</span>, <span class="string">&#x27;3&#x27;</span>]</span><br><span class="line">&lt;<span class="built_in">map</span> <span class="built_in">object</span> at <span class="number">0x0000022C58D8B4F0</span>&gt;</span><br></pre></td></tr></table></figure>
-<p> python3 中 map返回值不是列表而是iterators，可以用用list方法转换成列表  </p>
-<p> 这样似乎更方便</p>
- <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">array = <span class="built_in">list</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>(<span class="string">&quot;输入用空格分隔的数字：&quot;</span>).split())) </span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>关于map()，更多还是去看教程吧。</p>
-<h4 id="input输入多个数"><a href="#input输入多个数" class="headerlink" title="input输入多个数"></a>input输入多个数</h4><p>还是map()和split()<br>a, b, c &#x3D; map(int, input().split())</p>
-<h4 id="获取列表下标"><a href="#获取列表下标" class="headerlink" title="获取列表下标"></a>获取列表下标</h4><ul>
-<li><p>列表.index()</p>
-<p>  如：</p>
-  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">target_list = [<span class="number">35</span>, <span class="number">67</span>, <span class="number">6</span>, <span class="number">77</span>, <span class="number">89</span>, <span class="number">98</span>]</span><br><span class="line"><span class="built_in">print</span>(target_list.index(<span class="number">89</span>))</span><br></pre></td></tr></table></figure>
-<p>  运行：</p>
-  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="number">4</span></span><br></pre></td></tr></table></figure>
-
-<p>  不过当时是为了查找元素对应的下标，可以这么写：</p>
-  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> target_list:</span><br><span class="line"><span class="keyword">if</span> i == <span class="number">89</span>:</span><br><span class="line">    <span class="comment">#输出89的下标</span></span><br><span class="line">    <span class="built_in">print</span>(target_list.index(i))</span><br><span class="line">    <span class="comment">#将89改为88</span></span><br><span class="line">    target_list[target_list.index(i)] = <span class="number">88</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-]]></content>
-      <categories>
-        <category>有用的知识</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>end=&#39;&#39;与--i</title>
-    <url>/2022/03/28/end-%E4%B8%8E-i/</url>
-    <content><![CDATA[<h3 id="end-x3D-’’"><a href="#end-x3D-’’" class="headerlink" title="end&#x3D;’’"></a>end&#x3D;’’</h3><blockquote>
-<p>Python</p>
-</blockquote>
-<ul>
-<li>原理解释：为末尾end传递一个空字符串，这样print函数不会在字符串末尾添加一个换行符，而是添加一个空字符串，其实这也是一个语法要求，表示这个语句没结束。</li>
-</ul>
-<p>print默认是打印一行，结尾加换行。</p>
-<p>原文链接：<a href="https://blog.csdn.net/qq_40318284/article/details/96835229">https://blog.csdn.net/qq_40318284/article/details/96835229</a></p>
-<p>在打印</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">    *</span><br><span class="line">   ***</span><br><span class="line">  *****</span><br><span class="line"> *******</span><br><span class="line">*********</span><br></pre></td></tr></table></figure>
-<p>时遇到的问题</p>
-<p>当时想的是怎么能让空格和*在同一行上打印出来，然后看到了例子的代码</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">row = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&#x27;请输入行数: &#x27;</span>))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(row):</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(row - i - <span class="number">1</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27; &#x27;</span>, end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span> * i + <span class="number">1</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;*&#x27;</span>, end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="built_in">print</span>()</span><br></pre></td></tr></table></figure>
-<p>就去查了end&#x3D;’’的用法。</p>
-<p>自己写的：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&#x27;输入打印行数：&#x27;</span>))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,n+<span class="number">1</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27; &#x27;</span> * (n - i),end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;*&#x27;</span> * (<span class="number">2</span> * i -<span class="number">1</span>))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="–-i与i-–"><a href="#–-i与i-–" class="headerlink" title="–(++)i与i(++)–"></a>–(++)i与i(++)–</h3><p>–i 是先执行i&#x3D;i-1,然后再使用i的值, 这时的i值就是表达式–i的值。i– 是先使用i的值作为表达式i–的值,然后,执行i&#x3D;i-1操作。<br>++i和i++同理。</p>
-]]></content>
-      <categories>
-        <category>有用的知识</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Markdown学习</title>
     <url>/2022/03/08/Markdown%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><ol>
@@ -208,6 +106,108 @@
       </categories>
   </entry>
   <entry>
+    <title>First-plan</title>
+    <url>/2022/04/08/First-plan/</url>
+    <content><![CDATA[<p>简单地列一下目前要做的事情。</p>
+<ol>
+<li>算法与数据结构学习</li>
+<li>python学习，主要是数据开发与爬虫相关的内容</li>
+<li>英语学习，目前是六级听力和词汇</li>
+<li>看书和平时的锻炼</li>
+<li>c++ 这个，暂时先列出来吧</li>
+</ol>
+<p>目测解封还需要一个月左右，所以大胆地写一下一个月后要达到的目标</p>
+<ol>
+<li>熟练掌握算法与数据结构的内容，能做到老师布置的作业自主完成</li>
+<li>可以自主写代码爬取一些内容并进行数据分析</li>
+<li>词汇量增长至少1000词，听力感觉有点玄学，到时做六级真题验收吧</li>
+<li>看完传习录；锻炼这个也没法准确设置一个目标，至少做到一周四练，根据具体情况随时调整</li>
+<li>c++主要是看c++ primer，计划开始实行后看情况吧。</li>
+</ol>
+<p>另外还有刷编程题的计划，但之后进行补充。</p>
+<p>具体到每天每周的实行，这有点难想，目前有个不成熟的想法：</p>
+<ol>
+<li><p>首先要早睡早起，这大概是最困难的。最迟8点就该起床。</p>
+</li>
+<li><p>起床后首先是英语的学习，背单词和听力</p>
+</li>
+<li><p>顺利的话大概在十点左右结束英语，此时要上课（不过下周与下下周可以不太关心这个），根据上课情况来规划之后干什么</p>
+<ol>
+<li>如果说没课或者不太重要的课，学python</li>
+<li>反之，上课</li>
+<li>但是星期三的话就写算法与数据结构作业</li>
+</ol>
+</li>
+<li><p>午饭之后感觉会累，所以先这么安排：看书-&gt;锻炼-&gt;算法与数据结构学习</p>
+</li>
+<li><p>晚上就根据每天的情况来安排。</p>
+</li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
+    <title>4.3Python</title>
+    <url>/2022/04/03/4-3Python/</url>
+    <content><![CDATA[<h4 id="Python输入列表"><a href="#Python输入列表" class="headerlink" title="Python输入列表"></a>Python输入列表</h4><ol>
+<li><p>split()</p>
+ <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">nums = <span class="built_in">input</span>(<span class="string">&quot;输入：&quot;</span>).split()</span><br><span class="line"><span class="built_in">print</span>(nums)</span><br></pre></td></tr></table></figure>
+<p> 输出：</p>
+ <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">输入：<span class="number">1</span> <span class="number">2</span> <span class="number">3</span> <span class="number">4</span></span><br><span class="line">[<span class="string">&#x27;1&#x27;</span>, <span class="string">&#x27;2&#x27;</span>, <span class="string">&#x27;3&#x27;</span>, <span class="string">&#x27;4&#x27;</span>]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>map()</p>
+<p> map()会根据提供的函数对指定序列做映射。<br> map(function, iterable, …)</p>
+ <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="built_in">input</span>(<span class="string">&quot;输入：&quot;</span>).split()</span><br><span class="line"><span class="built_in">print</span>(s)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,s))</span><br></pre></td></tr></table></figure>
+
+<p> 运行</p>
+ <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">输入：<span class="number">1</span> <span class="number">2</span> <span class="number">3</span></span><br><span class="line">[<span class="string">&#x27;1&#x27;</span>, <span class="string">&#x27;2&#x27;</span>, <span class="string">&#x27;3&#x27;</span>]</span><br><span class="line">&lt;<span class="built_in">map</span> <span class="built_in">object</span> at <span class="number">0x0000022C58D8B4F0</span>&gt;</span><br></pre></td></tr></table></figure>
+<p> python3 中 map返回值不是列表而是iterators，可以用用list方法转换成列表  </p>
+<p> 这样似乎更方便</p>
+ <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">array = <span class="built_in">list</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>(<span class="string">&quot;输入用空格分隔的数字：&quot;</span>).split())) </span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>关于map()，更多还是去看教程吧。</p>
+<h4 id="input输入多个数"><a href="#input输入多个数" class="headerlink" title="input输入多个数"></a>input输入多个数</h4><p>还是map()和split()<br>a, b, c &#x3D; map(int, input().split())</p>
+<h4 id="获取列表下标"><a href="#获取列表下标" class="headerlink" title="获取列表下标"></a>获取列表下标</h4><ul>
+<li><p>列表.index()</p>
+<p>  如：</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">target_list = [<span class="number">35</span>, <span class="number">67</span>, <span class="number">6</span>, <span class="number">77</span>, <span class="number">89</span>, <span class="number">98</span>]</span><br><span class="line"><span class="built_in">print</span>(target_list.index(<span class="number">89</span>))</span><br></pre></td></tr></table></figure>
+<p>  运行：</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="number">4</span></span><br></pre></td></tr></table></figure>
+
+<p>  不过当时是为了查找元素对应的下标，可以这么写：</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> target_list:</span><br><span class="line"><span class="keyword">if</span> i == <span class="number">89</span>:</span><br><span class="line">    <span class="comment">#输出89的下标</span></span><br><span class="line">    <span class="built_in">print</span>(target_list.index(i))</span><br><span class="line">    <span class="comment">#将89改为88</span></span><br><span class="line">    target_list[target_list.index(i)] = <span class="number">88</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>有用的知识</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>end=&#39;&#39;与--i</title>
+    <url>/2022/03/28/end-%E4%B8%8E-i/</url>
+    <content><![CDATA[<h3 id="end-x3D-’’"><a href="#end-x3D-’’" class="headerlink" title="end&#x3D;’’"></a>end&#x3D;’’</h3><blockquote>
+<p>Python</p>
+</blockquote>
+<ul>
+<li>原理解释：为末尾end传递一个空字符串，这样print函数不会在字符串末尾添加一个换行符，而是添加一个空字符串，其实这也是一个语法要求，表示这个语句没结束。</li>
+</ul>
+<p>print默认是打印一行，结尾加换行。</p>
+<p>原文链接：<a href="https://blog.csdn.net/qq_40318284/article/details/96835229">https://blog.csdn.net/qq_40318284/article/details/96835229</a></p>
+<p>在打印</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">    *</span><br><span class="line">   ***</span><br><span class="line">  *****</span><br><span class="line"> *******</span><br><span class="line">*********</span><br></pre></td></tr></table></figure>
+<p>时遇到的问题</p>
+<p>当时想的是怎么能让空格和*在同一行上打印出来，然后看到了例子的代码</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">row = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&#x27;请输入行数: &#x27;</span>))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(row):</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(row - i - <span class="number">1</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27; &#x27;</span>, end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span> * i + <span class="number">1</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;*&#x27;</span>, end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="built_in">print</span>()</span><br></pre></td></tr></table></figure>
+<p>就去查了end&#x3D;’’的用法。</p>
+<p>自己写的：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&#x27;输入打印行数：&#x27;</span>))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,n+<span class="number">1</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27; &#x27;</span> * (n - i),end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;*&#x27;</span> * (<span class="number">2</span> * i -<span class="number">1</span>))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="–-i与i-–"><a href="#–-i与i-–" class="headerlink" title="–(++)i与i(++)–"></a>–(++)i与i(++)–</h3><p>–i 是先执行i&#x3D;i-1,然后再使用i的值, 这时的i值就是表达式–i的值。i– 是先使用i的值作为表达式i–的值,然后,执行i&#x3D;i-1操作。<br>++i和i++同理。</p>
+]]></content>
+      <categories>
+        <category>有用的知识</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2022/03/08/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -224,6 +224,23 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>python列表字符串转换</title>
+    <url>/2022/03/31/python%E5%88%97%E8%A1%A8%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2/</url>
+    <content><![CDATA[<h4 id="列表转字符串"><a href="#列表转字符串" class="headerlink" title="列表转字符串"></a>列表转字符串</h4><ol>
+<li><p>将列表转换为字符串的最基本用法和实现之一是使用join函数将字符串列表转换。 请记住，此方法只能使用仅包含字符串的列表。’ ‘之间是分隔符，如我们所见，每个元素在新字符串中都用单个空格分隔。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">mylist=[<span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;b&#x27;</span>,<span class="string">&#x27;c&#x27;</span>] </span><br><span class="line"><span class="string">&#x27; &#x27;</span>.join(mylist) </span><br><span class="line"><span class="comment">#&#x27;a b c&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如前所述，我们可以转换仅包含字符串元素的列表。 但是，如果我们需要转换包含不同类型数据的列表，该怎么办？ 我们需要一些转换为字符串。 我们将使用str函数将不同的数据类型转换为字符串。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">mylist = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]      </span><br><span class="line"><span class="string">&#x27; &#x27;</span>.join(<span class="built_in">str</span>(e) <span class="keyword">for</span> e <span class="keyword">in</span> mylist)        </span><br><span class="line"><span class="comment">#&#x27;1 2 3&#x27;</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>在写一个去除字符串中的空格时用到的，代码如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">trim</span>(<span class="params">s</span>):</span><br><span class="line">    list1 = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> s:</span><br><span class="line">        <span class="keyword">if</span> i != <span class="string">&#x27; &#x27;</span>:</span><br><span class="line">            list1.append(i)</span><br><span class="line">    s = <span class="string">&#x27;&#x27;</span>.join(list1)</span><br><span class="line">    <span class="keyword">return</span> s</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;输入：&quot;</span>)</span><br><span class="line">s = <span class="built_in">input</span>()</span><br><span class="line"><span class="built_in">print</span>(trim(s))</span><br></pre></td></tr></table></figure>
+
+<h4 id="字符串转列表"><a href="#字符串转列表" class="headerlink" title="字符串转列表"></a>字符串转列表</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&#x27;list&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(s.split())</span><br><span class="line">---&gt;[<span class="string">&#x27;list&#x27;</span>]</span><br></pre></td></tr></table></figure>
+<p>split()中可写分隔符(默认空格)，如</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&#x27;a,list&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(s.split(<span class="string">&#x27;,&#x27;</span>))</span><br><span class="line">---&gt;[<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;list&#x27;</span>]</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>python3.6安装pycrypto</title>
@@ -245,23 +262,6 @@
       <categories>
         <category>有用的知识</category>
       </categories>
-  </entry>
-  <entry>
-    <title>python列表字符串转换</title>
-    <url>/2022/03/31/python%E5%88%97%E8%A1%A8%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2/</url>
-    <content><![CDATA[<h4 id="列表转字符串"><a href="#列表转字符串" class="headerlink" title="列表转字符串"></a>列表转字符串</h4><ol>
-<li><p>将列表转换为字符串的最基本用法和实现之一是使用join函数将字符串列表转换。 请记住，此方法只能使用仅包含字符串的列表。’ ‘之间是分隔符，如我们所见，每个元素在新字符串中都用单个空格分隔。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">mylist=[<span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;b&#x27;</span>,<span class="string">&#x27;c&#x27;</span>] </span><br><span class="line"><span class="string">&#x27; &#x27;</span>.join(mylist) </span><br><span class="line"><span class="comment">#&#x27;a b c&#x27;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>如前所述，我们可以转换仅包含字符串元素的列表。 但是，如果我们需要转换包含不同类型数据的列表，该怎么办？ 我们需要一些转换为字符串。 我们将使用str函数将不同的数据类型转换为字符串。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">mylist = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]      </span><br><span class="line"><span class="string">&#x27; &#x27;</span>.join(<span class="built_in">str</span>(e) <span class="keyword">for</span> e <span class="keyword">in</span> mylist)        </span><br><span class="line"><span class="comment">#&#x27;1 2 3&#x27;</span></span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>在写一个去除字符串中的空格时用到的，代码如下：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">trim</span>(<span class="params">s</span>):</span><br><span class="line">    list1 = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> s:</span><br><span class="line">        <span class="keyword">if</span> i != <span class="string">&#x27; &#x27;</span>:</span><br><span class="line">            list1.append(i)</span><br><span class="line">    s = <span class="string">&#x27;&#x27;</span>.join(list1)</span><br><span class="line">    <span class="keyword">return</span> s</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;输入：&quot;</span>)</span><br><span class="line">s = <span class="built_in">input</span>()</span><br><span class="line"><span class="built_in">print</span>(trim(s))</span><br></pre></td></tr></table></figure>
-
-<h4 id="字符串转列表"><a href="#字符串转列表" class="headerlink" title="字符串转列表"></a>字符串转列表</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&#x27;list&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(s.split())</span><br><span class="line">---&gt;[<span class="string">&#x27;list&#x27;</span>]</span><br></pre></td></tr></table></figure>
-<p>split()中可写分隔符(默认空格)，如</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&#x27;a,list&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(s.split(<span class="string">&#x27;,&#x27;</span>))</span><br><span class="line">---&gt;[<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;list&#x27;</span>]</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>python爬虫-1</title>
