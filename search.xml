@@ -1,42 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>4.3Python</title>
-    <url>/2022/04/03/4-3Python/</url>
-    <content><![CDATA[<h4 id="Python输入列表"><a href="#Python输入列表" class="headerlink" title="Python输入列表"></a>Python输入列表</h4><ol>
-<li><p>split()</p>
- <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">nums = <span class="built_in">input</span>(<span class="string">&quot;输入：&quot;</span>).split()</span><br><span class="line"><span class="built_in">print</span>(nums)</span><br></pre></td></tr></table></figure>
-<p> 输出：</p>
- <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">输入：<span class="number">1</span> <span class="number">2</span> <span class="number">3</span> <span class="number">4</span></span><br><span class="line">[<span class="string">&#x27;1&#x27;</span>, <span class="string">&#x27;2&#x27;</span>, <span class="string">&#x27;3&#x27;</span>, <span class="string">&#x27;4&#x27;</span>]</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>map()</p>
-<p> map()会根据提供的函数对指定序列做映射。<br> map(function, iterable, …)</p>
- <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="built_in">input</span>(<span class="string">&quot;输入：&quot;</span>).split()</span><br><span class="line"><span class="built_in">print</span>(s)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,s))</span><br></pre></td></tr></table></figure>
-
-<p> 运行</p>
- <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">输入：<span class="number">1</span> <span class="number">2</span> <span class="number">3</span></span><br><span class="line">[<span class="string">&#x27;1&#x27;</span>, <span class="string">&#x27;2&#x27;</span>, <span class="string">&#x27;3&#x27;</span>]</span><br><span class="line">&lt;<span class="built_in">map</span> <span class="built_in">object</span> at <span class="number">0x0000022C58D8B4F0</span>&gt;</span><br></pre></td></tr></table></figure>
-<p> python3 中 map返回值不是列表而是iterators，可以用用list方法转换成列表  </p>
-<p> 这样似乎更方便</p>
- <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">array = <span class="built_in">list</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>(<span class="string">&quot;输入用空格分隔的数字：&quot;</span>).split())) </span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>关于map()，更多还是去看教程吧。</p>
-<h4 id="input输入多个数"><a href="#input输入多个数" class="headerlink" title="input输入多个数"></a>input输入多个数</h4><p>还是map()和split()<br>a, b, c &#x3D; map(int, input().split())</p>
-<h4 id="获取列表下标"><a href="#获取列表下标" class="headerlink" title="获取列表下标"></a>获取列表下标</h4><ul>
-<li><p>列表.index()</p>
-<p>  如：</p>
-  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">target_list = [<span class="number">35</span>, <span class="number">67</span>, <span class="number">6</span>, <span class="number">77</span>, <span class="number">89</span>, <span class="number">98</span>]</span><br><span class="line"><span class="built_in">print</span>(target_list.index(<span class="number">89</span>))</span><br></pre></td></tr></table></figure>
-<p>  运行：</p>
-  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="number">4</span></span><br></pre></td></tr></table></figure>
-
-<p>  不过当时是为了查找元素对应的下标，可以这么写：</p>
-  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> target_list:</span><br><span class="line"><span class="keyword">if</span> i == <span class="number">89</span>:</span><br><span class="line">    <span class="comment">#输出89的下标</span></span><br><span class="line">    <span class="built_in">print</span>(target_list.index(i))</span><br><span class="line">    <span class="comment">#将89改为88</span></span><br><span class="line">    target_list[target_list.index(i)] = <span class="number">88</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-]]></content>
-      <categories>
-        <category>有用的知识</category>
-      </categories>
-  </entry>
-  <entry>
     <title>First-plan</title>
     <url>/2022/04/08/First-plan/</url>
     <content><![CDATA[<p>简单地列一下目前要做的事情。</p>
@@ -75,6 +39,42 @@
 </li>
 </ol>
 ]]></content>
+  </entry>
+  <entry>
+    <title>4.3Python</title>
+    <url>/2022/04/03/4-3Python/</url>
+    <content><![CDATA[<h4 id="Python输入列表"><a href="#Python输入列表" class="headerlink" title="Python输入列表"></a>Python输入列表</h4><ol>
+<li><p>split()</p>
+ <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">nums = <span class="built_in">input</span>(<span class="string">&quot;输入：&quot;</span>).split()</span><br><span class="line"><span class="built_in">print</span>(nums)</span><br></pre></td></tr></table></figure>
+<p> 输出：</p>
+ <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">输入：<span class="number">1</span> <span class="number">2</span> <span class="number">3</span> <span class="number">4</span></span><br><span class="line">[<span class="string">&#x27;1&#x27;</span>, <span class="string">&#x27;2&#x27;</span>, <span class="string">&#x27;3&#x27;</span>, <span class="string">&#x27;4&#x27;</span>]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>map()</p>
+<p> map()会根据提供的函数对指定序列做映射。<br> map(function, iterable, …)</p>
+ <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="built_in">input</span>(<span class="string">&quot;输入：&quot;</span>).split()</span><br><span class="line"><span class="built_in">print</span>(s)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,s))</span><br></pre></td></tr></table></figure>
+
+<p> 运行</p>
+ <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">输入：<span class="number">1</span> <span class="number">2</span> <span class="number">3</span></span><br><span class="line">[<span class="string">&#x27;1&#x27;</span>, <span class="string">&#x27;2&#x27;</span>, <span class="string">&#x27;3&#x27;</span>]</span><br><span class="line">&lt;<span class="built_in">map</span> <span class="built_in">object</span> at <span class="number">0x0000022C58D8B4F0</span>&gt;</span><br></pre></td></tr></table></figure>
+<p> python3 中 map返回值不是列表而是iterators，可以用用list方法转换成列表  </p>
+<p> 这样似乎更方便</p>
+ <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">array = <span class="built_in">list</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>(<span class="string">&quot;输入用空格分隔的数字：&quot;</span>).split())) </span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>关于map()，更多还是去看教程吧。</p>
+<h4 id="input输入多个数"><a href="#input输入多个数" class="headerlink" title="input输入多个数"></a>input输入多个数</h4><p>还是map()和split()<br>a, b, c &#x3D; map(int, input().split())</p>
+<h4 id="获取列表下标"><a href="#获取列表下标" class="headerlink" title="获取列表下标"></a>获取列表下标</h4><ul>
+<li><p>列表.index()</p>
+<p>  如：</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">target_list = [<span class="number">35</span>, <span class="number">67</span>, <span class="number">6</span>, <span class="number">77</span>, <span class="number">89</span>, <span class="number">98</span>]</span><br><span class="line"><span class="built_in">print</span>(target_list.index(<span class="number">89</span>))</span><br></pre></td></tr></table></figure>
+<p>  运行：</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="number">4</span></span><br></pre></td></tr></table></figure>
+
+<p>  不过当时是为了查找元素对应的下标，可以这么写：</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> target_list:</span><br><span class="line"><span class="keyword">if</span> i == <span class="number">89</span>:</span><br><span class="line">    <span class="comment">#输出89的下标</span></span><br><span class="line">    <span class="built_in">print</span>(target_list.index(i))</span><br><span class="line">    <span class="comment">#将89改为88</span></span><br><span class="line">    target_list[target_list.index(i)] = <span class="number">88</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>有用的知识</category>
+      </categories>
   </entry>
   <entry>
     <title>Markdown学习</title>
@@ -224,27 +224,6 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>python3.6安装pycrypto</title>
-    <url>/2022/04/22/python3-6%E5%AE%89%E8%A3%85pycrypto/</url>
-    <content><![CDATA[<p>在学习爬取网易云评论时需要用到pycrypto，但是python3.6似乎直接pip下载会有点困难，查了很多之后终于解决了。</p>
-<p>查到的切实有效的办法是这个<a href="https://blog.csdn.net/wg5foc08/article/details/100286913">链接</a>, 值得一提的是，顺带还学到了想找到vs的安装位置，直接桌面右键-&gt;打开文件所在位置就好。。</p>
-<p>ps:<br>在这之前还更新了pip：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python -m pip install --upgrade pip</span><br></pre></td></tr></table></figure>
-<p>但是这样报错了，所以使用下面的方法：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python -m ensurepip</span><br><span class="line"></span><br><span class="line">python -m pip install --upgrade pip</span><br></pre></td></tr></table></figure>
-
-<p>安装完成之后（此时文件夹已经存在），发现还是不能使用，所以继续搜索，尝试了这个<a href="https://blog.csdn.net/wdschn/article/details/80806613?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165061776616780271964810%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=165061776616780271964810&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-80806613.142%5Ev9%5Econtrol,157%5Ev4%5Econtrol&utm_term=python3.6%E5%AE%89%E8%A3%85crypto&spm=1018.2226.3001.4187">链接</a>中的办法,但很遗憾，没有效果。</p>
-<p>然后尝试下载：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install pycryptodemo</span><br></pre></td></tr></table></figure>
-<p>仍然木大。。<br>还尝试改变首字母大小写什么的，当然也是没有作用。</p>
-<p>但经一篇文章启发，我本地是有python的，而pycharm项目中会自己生成自己的python3.6（大概是这个意思），pycharm又在用anaconda，所以去对比了一下两边的库，发现anaconda中是没有Crypto这个文件夹的（同时自己的python中是有的。。），最后复制一份到pycharm的库中就好了。<br>（不过用到现在还不知道anaconda到底是啥，令人感叹。）</p>
-<p>本以为就此可以结束了，但又报错了，这次是“cannot import name ‘_AES’”，原因，简而言之就是计算机是64位的，但pip下载的pycrypto是32位的。<br>通过这篇<a href="https://blog.csdn.net/ychgyyn/article/details/88621236?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165062321216781683948872%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=165062321216781683948872&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-88621236.142%5Ev9%5Econtrol,157%5Ev4%5Econtrol&utm_term=cannot+import+name+_AES&spm=1018.2226.3001.4187">文章</a>解决了。</p>
-]]></content>
-      <categories>
-        <category>有用的知识</category>
-      </categories>
   </entry>
   <entry>
     <title>python列表字符串转换</title>
@@ -769,6 +748,69 @@
       </categories>
   </entry>
   <entry>
+    <title>计算时间复杂度的练习</title>
+    <url>/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/</url>
+    <content><![CDATA[<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-07-37.png"></p>
+<ol>
+<li>很容易看出语句频度最大的语句是<code>for(int j = 0;j &lt; n;j++)</code></li>
+<li>其执行次数为n(n+1),即n^2^<ul>
+<li>对于循环来说直接找嵌套最深的语句也可以，即<code>y++;</code>,执行次数为n^2^</li>
+</ul>
+</li>
+<li>T(n)&#x3D;O(n^2^)</li>
+</ol>
+<p>####例1</p>
+<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-17-41.png" title="例1"></p>
+<ol>
+<li>嵌套最深的语句为<code>sum[i] += x[i][j];</code> </li>
+<li>执行次数为 m $\times$ n 次</li>
+<li>T(n)&#x3D;O(m $\times$ n)</li>
+</ol>
+<p>####虽然但是这是例2<br><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-21-45.png"></p>
+<ol>
+<li>嵌套最深语句为<code>c[i][j] = c[i][j] + a[i][k] * b[k][j];</code></li>
+<li>执行次数为n^3^</li>
+<li>T(n)&#x3D;O(n^3^)</li>
+</ol>
+<p>####例3</p>
+<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-26-30.png"></p>
+<ol>
+<li>可以看出嵌套最深语句是<code>x=x+1</code> </li>
+<li>但是计算时间复杂度时，需要用级数求和法</li>
+<li>语句频度 &#x3D; $\sum_{i&#x3D;1}^n$$\sum_{j&#x3D;1}^i$$\sum_{k&#x3D;1}^j$1 &#x3D; $\sum_{i&#x3D;1}^n$$\sum_{j&#x3D;1}^i$j &#x3D; $\sum_{i&#x3D;1}^n$$i(i+1) \over 2$ &#x3D;$1\over2$($\sum_{i&#x3D;1}^n$i^2^ + $\sum_{i&#x3D;1}^n$i) &#x3D;$1\over2$($n(n+1)(2n+1)\over 6$ + $n(n+1)\over2$) &#x3D; $n(n+1)(n+2)\over 6$</li>
+<li>f(n) &#x3D; n^3^</li>
+<li>T(n)&#x3D;O(n^3^)<ul>
+<li>（计算语句频度最后一个求和不会。。）</li>
+</ul>
+</li>
+</ol>
+<p>####例4</p>
+<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-22-00-05-42.png"></p>
+<ol>
+<li><p>执行次数最多为<code>i=i*2;</code></p>
+<ul>
+<li>关键要找出执行次数x与n的关系，并表示成n的函数</li>
+<li>执行1次，i&#x3D;1*2&#x3D;2；</li>
+<li>执行2次，i&#x3D;2*2&#x3D;2^2^；</li>
+<li>执行3次，i&#x3D;2^2^*2&#x3D;2^3^；</li>
+<li>…</li>
+<li>执行x次，i&#x3D;2^x^</li>
+</ul>
+</li>
+<li><p>设语句<code>i=i*2</code>执行x次,由循环条件，</p>
+<p> i&lt;&#x3D;n,   $\because$ 2^x^&lt; n , $\therefore$ x&lt;&#x3D;${log_2{n}}$</p>
+</li>
+<li><p>所以f(n)&#x3D;${log_2{n}}$</p>
+</li>
+<li><p>T(n)&#x3D;O(${log_2{n}}$)</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>算法与数据结构</category>
+      </categories>
+  </entry>
+  <entry>
     <title>算法与数据结构(1)</title>
     <url>/2022/03/21/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
     <content><![CDATA[<p>写在前面：因为之前就学了数据结构的内容，所以这篇数据结构就偷懒跳过不写了</p>
@@ -841,69 +883,6 @@
 </ul>
 </li>
 </ol>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>算法与数据结构</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>计算时间复杂度的练习</title>
-    <url>/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/</url>
-    <content><![CDATA[<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-07-37.png"></p>
-<ol>
-<li>很容易看出语句频度最大的语句是<code>for(int j = 0;j &lt; n;j++)</code></li>
-<li>其执行次数为n(n+1),即n^2^<ul>
-<li>对于循环来说直接找嵌套最深的语句也可以，即<code>y++;</code>,执行次数为n^2^</li>
-</ul>
-</li>
-<li>T(n)&#x3D;O(n^2^)</li>
-</ol>
-<p>####例1</p>
-<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-17-41.png" title="例1"></p>
-<ol>
-<li>嵌套最深的语句为<code>sum[i] += x[i][j];</code> </li>
-<li>执行次数为 m $\times$ n 次</li>
-<li>T(n)&#x3D;O(m $\times$ n)</li>
-</ol>
-<p>####虽然但是这是例2<br><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-21-45.png"></p>
-<ol>
-<li>嵌套最深语句为<code>c[i][j] = c[i][j] + a[i][k] * b[k][j];</code></li>
-<li>执行次数为n^3^</li>
-<li>T(n)&#x3D;O(n^3^)</li>
-</ol>
-<p>####例3</p>
-<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-26-30.png"></p>
-<ol>
-<li>可以看出嵌套最深语句是<code>x=x+1</code> </li>
-<li>但是计算时间复杂度时，需要用级数求和法</li>
-<li>语句频度 &#x3D; $\sum_{i&#x3D;1}^n$$\sum_{j&#x3D;1}^i$$\sum_{k&#x3D;1}^j$1 &#x3D; $\sum_{i&#x3D;1}^n$$\sum_{j&#x3D;1}^i$j &#x3D; $\sum_{i&#x3D;1}^n$$i(i+1) \over 2$ &#x3D;$1\over2$($\sum_{i&#x3D;1}^n$i^2^ + $\sum_{i&#x3D;1}^n$i) &#x3D;$1\over2$($n(n+1)(2n+1)\over 6$ + $n(n+1)\over2$) &#x3D; $n(n+1)(n+2)\over 6$</li>
-<li>f(n) &#x3D; n^3^</li>
-<li>T(n)&#x3D;O(n^3^)<ul>
-<li>（计算语句频度最后一个求和不会。。）</li>
-</ul>
-</li>
-</ol>
-<p>####例4</p>
-<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-22-00-05-42.png"></p>
-<ol>
-<li><p>执行次数最多为<code>i=i*2;</code></p>
-<ul>
-<li>关键要找出执行次数x与n的关系，并表示成n的函数</li>
-<li>执行1次，i&#x3D;1*2&#x3D;2；</li>
-<li>执行2次，i&#x3D;2*2&#x3D;2^2^；</li>
-<li>执行3次，i&#x3D;2^2^*2&#x3D;2^3^；</li>
-<li>…</li>
-<li>执行x次，i&#x3D;2^x^</li>
-</ul>
-</li>
-<li><p>设语句<code>i=i*2</code>执行x次,由循环条件，</p>
-<p> i&lt;&#x3D;n,   $\because$ 2^x^&lt; n , $\therefore$ x&lt;&#x3D;${log_2{n}}$</p>
-</li>
-<li><p>所以f(n)&#x3D;${log_2{n}}$</p>
-</li>
-<li><p>T(n)&#x3D;O(${log_2{n}}$)</p>
 </li>
 </ol>
 ]]></content>
