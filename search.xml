@@ -1,90 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>end=&#39;&#39;与--i</title>
-    <url>/2022/03/28/end-%E4%B8%8E-i/</url>
-    <content><![CDATA[<h3 id="end-x3D-’’"><a href="#end-x3D-’’" class="headerlink" title="end&#x3D;’’"></a>end&#x3D;’’</h3><blockquote>
-<p>Python</p>
-</blockquote>
-<ul>
-<li>原理解释：为末尾end传递一个空字符串，这样print函数不会在字符串末尾添加一个换行符，而是添加一个空字符串，其实这也是一个语法要求，表示这个语句没结束。</li>
-</ul>
-<p>print默认是打印一行，结尾加换行。</p>
-<p>原文链接：<a href="https://blog.csdn.net/qq_40318284/article/details/96835229">https://blog.csdn.net/qq_40318284/article/details/96835229</a></p>
-<p>在打印</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">    *</span><br><span class="line">   ***</span><br><span class="line">  *****</span><br><span class="line"> *******</span><br><span class="line">*********</span><br></pre></td></tr></table></figure>
-<p>时遇到的问题</p>
-<p>当时想的是怎么能让空格和*在同一行上打印出来，然后看到了例子的代码</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">row = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&#x27;请输入行数: &#x27;</span>))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(row):</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(row - i - <span class="number">1</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27; &#x27;</span>, end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span> * i + <span class="number">1</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;*&#x27;</span>, end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="built_in">print</span>()</span><br></pre></td></tr></table></figure>
-<p>就去查了end&#x3D;’’的用法。</p>
-<p>自己写的：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&#x27;输入打印行数：&#x27;</span>))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,n+<span class="number">1</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27; &#x27;</span> * (n - i),end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;*&#x27;</span> * (<span class="number">2</span> * i -<span class="number">1</span>))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="–-i与i-–"><a href="#–-i与i-–" class="headerlink" title="–(++)i与i(++)–"></a>–(++)i与i(++)–</h3><p>–i 是先执行i&#x3D;i-1,然后再使用i的值, 这时的i值就是表达式–i的值。i– 是先使用i的值作为表达式i–的值,然后,执行i&#x3D;i-1操作。<br>++i和i++同理。</p>
-]]></content>
-      <categories>
-        <category>有用的知识</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>First-plan</title>
-    <url>/2022/04/08/First-plan/</url>
-    <content><![CDATA[<p>简单地列一下目前要做的事情。</p>
-<ol>
-<li>算法与数据结构学习</li>
-<li>python学习，主要是数据开发与爬虫相关的内容</li>
-<li>英语学习，目前是六级听力和词汇</li>
-<li>看书和平时的锻炼</li>
-<li>c++ 这个，暂时先列出来吧</li>
-</ol>
-<p>目测解封还需要一个月左右，所以大胆地写一下一个月后要达到的目标</p>
-<ol>
-<li>熟练掌握算法与数据结构的内容，能做到老师布置的作业自主完成</li>
-<li>可以自主写代码爬取一些内容并进行数据分析</li>
-<li>词汇量增长至少1000词，听力感觉有点玄学，到时做六级真题验收吧</li>
-<li>看完传习录；锻炼这个也没法准确设置一个目标，至少做到一周四练，根据具体情况随时调整</li>
-<li>c++主要是看c++ primer，计划开始实行后看情况吧。</li>
-</ol>
-<p>另外还有刷编程题的计划，但之后进行补充。</p>
-<p>具体到每天每周的实行，这有点难想，目前有个不成熟的想法：</p>
-<ol>
-<li><p>首先要早睡早起，这大概是最困难的。最迟8点就该起床。</p>
-</li>
-<li><p>起床后首先是英语的学习，背单词和听力</p>
-</li>
-<li><p>顺利的话大概在十点左右结束英语，此时要上课（不过下周与下下周可以不太关心这个），根据上课情况来规划之后干什么</p>
-<ol>
-<li>如果说没课或者不太重要的课，学python</li>
-<li>反之，上课</li>
-<li>但是星期三的话就写算法与数据结构作业</li>
-</ol>
-</li>
-<li><p>午饭之后感觉会累，所以先这么安排：看书-&gt;锻炼-&gt;算法与数据结构学习</p>
-</li>
-<li><p>晚上就根据每天的情况来安排。</p>
-</li>
-</ol>
-]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2022/03/08/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>4.3Python</title>
     <url>/2022/04/03/4-3Python/</url>
     <content><![CDATA[<h4 id="Python输入列表"><a href="#Python输入列表" class="headerlink" title="Python输入列表"></a>Python输入列表</h4><ol>
@@ -119,6 +35,24 @@
       <categories>
         <category>有用的知识</category>
       </categories>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2022/03/08/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
   </entry>
   <entry>
     <title>Markdown学习</title>
@@ -226,6 +160,72 @@
       </categories>
   </entry>
   <entry>
+    <title>end=&#39;&#39;与--i</title>
+    <url>/2022/03/28/end-%E4%B8%8E-i/</url>
+    <content><![CDATA[<h3 id="end-x3D-’’"><a href="#end-x3D-’’" class="headerlink" title="end&#x3D;’’"></a>end&#x3D;’’</h3><blockquote>
+<p>Python</p>
+</blockquote>
+<ul>
+<li>原理解释：为末尾end传递一个空字符串，这样print函数不会在字符串末尾添加一个换行符，而是添加一个空字符串，其实这也是一个语法要求，表示这个语句没结束。</li>
+</ul>
+<p>print默认是打印一行，结尾加换行。</p>
+<p>原文链接：<a href="https://blog.csdn.net/qq_40318284/article/details/96835229">https://blog.csdn.net/qq_40318284/article/details/96835229</a></p>
+<p>在打印</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">    *</span><br><span class="line">   ***</span><br><span class="line">  *****</span><br><span class="line"> *******</span><br><span class="line">*********</span><br></pre></td></tr></table></figure>
+<p>时遇到的问题</p>
+<p>当时想的是怎么能让空格和*在同一行上打印出来，然后看到了例子的代码</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">row = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&#x27;请输入行数: &#x27;</span>))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(row):</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(row - i - <span class="number">1</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27; &#x27;</span>, end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span> * i + <span class="number">1</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;*&#x27;</span>, end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="built_in">print</span>()</span><br></pre></td></tr></table></figure>
+<p>就去查了end&#x3D;’’的用法。</p>
+<p>自己写的：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&#x27;输入打印行数：&#x27;</span>))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,n+<span class="number">1</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27; &#x27;</span> * (n - i),end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;*&#x27;</span> * (<span class="number">2</span> * i -<span class="number">1</span>))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="–-i与i-–"><a href="#–-i与i-–" class="headerlink" title="–(++)i与i(++)–"></a>–(++)i与i(++)–</h3><p>–i 是先执行i&#x3D;i-1,然后再使用i的值, 这时的i值就是表达式–i的值。i– 是先使用i的值作为表达式i–的值,然后,执行i&#x3D;i-1操作。<br>++i和i++同理。</p>
+]]></content>
+      <categories>
+        <category>有用的知识</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>First-plan</title>
+    <url>/2022/04/08/First-plan/</url>
+    <content><![CDATA[<p>简单地列一下目前要做的事情。</p>
+<ol>
+<li>算法与数据结构学习</li>
+<li>python学习，主要是数据开发与爬虫相关的内容</li>
+<li>英语学习，目前是六级听力和词汇</li>
+<li>看书和平时的锻炼</li>
+<li>c++ 这个，暂时先列出来吧</li>
+</ol>
+<p>目测解封还需要一个月左右，所以大胆地写一下一个月后要达到的目标</p>
+<ol>
+<li>熟练掌握算法与数据结构的内容，能做到老师布置的作业自主完成</li>
+<li>可以自主写代码爬取一些内容并进行数据分析</li>
+<li>词汇量增长至少1000词，听力感觉有点玄学，到时做六级真题验收吧</li>
+<li>看完传习录；锻炼这个也没法准确设置一个目标，至少做到一周四练，根据具体情况随时调整</li>
+<li>c++主要是看c++ primer，计划开始实行后看情况吧。</li>
+</ol>
+<p>另外还有刷编程题的计划，但之后进行补充。</p>
+<p>具体到每天每周的实行，这有点难想，目前有个不成熟的想法：</p>
+<ol>
+<li><p>首先要早睡早起，这大概是最困难的。最迟8点就该起床。</p>
+</li>
+<li><p>起床后首先是英语的学习，背单词和听力</p>
+</li>
+<li><p>顺利的话大概在十点左右结束英语，此时要上课（不过下周与下下周可以不太关心这个），根据上课情况来规划之后干什么</p>
+<ol>
+<li>如果说没课或者不太重要的课，学python</li>
+<li>反之，上课</li>
+<li>但是星期三的话就写算法与数据结构作业</li>
+</ol>
+</li>
+<li><p>午饭之后感觉会累，所以先这么安排：看书-&gt;锻炼-&gt;算法与数据结构学习</p>
+</li>
+<li><p>晚上就根据每天的情况来安排。</p>
+</li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
     <title>python3.6安装pycrypto</title>
     <url>/2022/04/22/python3-6%E5%AE%89%E8%A3%85pycrypto/</url>
     <content><![CDATA[<p>在学习爬取网易云评论时需要用到pycrypto，但是python3.6似乎直接pip下载会有点困难，查了很多之后终于解决了。</p>
@@ -281,6 +281,23 @@
       </categories>
   </entry>
   <entry>
+    <title>python列表字符串转换</title>
+    <url>/2022/03/31/python%E5%88%97%E8%A1%A8%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2/</url>
+    <content><![CDATA[<h4 id="列表转字符串"><a href="#列表转字符串" class="headerlink" title="列表转字符串"></a>列表转字符串</h4><ol>
+<li><p>将列表转换为字符串的最基本用法和实现之一是使用join函数将字符串列表转换。 请记住，此方法只能使用仅包含字符串的列表。’ ‘之间是分隔符，如我们所见，每个元素在新字符串中都用单个空格分隔。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">mylist=[<span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;b&#x27;</span>,<span class="string">&#x27;c&#x27;</span>] </span><br><span class="line"><span class="string">&#x27; &#x27;</span>.join(mylist) </span><br><span class="line"><span class="comment">#&#x27;a b c&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如前所述，我们可以转换仅包含字符串元素的列表。 但是，如果我们需要转换包含不同类型数据的列表，该怎么办？ 我们需要一些转换为字符串。 我们将使用str函数将不同的数据类型转换为字符串。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">mylist = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]      </span><br><span class="line"><span class="string">&#x27; &#x27;</span>.join(<span class="built_in">str</span>(e) <span class="keyword">for</span> e <span class="keyword">in</span> mylist)        </span><br><span class="line"><span class="comment">#&#x27;1 2 3&#x27;</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>在写一个去除字符串中的空格时用到的，代码如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">trim</span>(<span class="params">s</span>):</span><br><span class="line">    list1 = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> s:</span><br><span class="line">        <span class="keyword">if</span> i != <span class="string">&#x27; &#x27;</span>:</span><br><span class="line">            list1.append(i)</span><br><span class="line">    s = <span class="string">&#x27;&#x27;</span>.join(list1)</span><br><span class="line">    <span class="keyword">return</span> s</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;输入：&quot;</span>)</span><br><span class="line">s = <span class="built_in">input</span>()</span><br><span class="line"><span class="built_in">print</span>(trim(s))</span><br></pre></td></tr></table></figure>
+
+<h4 id="字符串转列表"><a href="#字符串转列表" class="headerlink" title="字符串转列表"></a>字符串转列表</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&#x27;list&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(s.split())</span><br><span class="line">---&gt;[<span class="string">&#x27;list&#x27;</span>]</span><br></pre></td></tr></table></figure>
+<p>split()中可写分隔符(默认空格)，如</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&#x27;a,list&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(s.split(<span class="string">&#x27;,&#x27;</span>))</span><br><span class="line">---&gt;[<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;list&#x27;</span>]</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
     <title>栈与递归</title>
     <url>/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/</url>
     <content><![CDATA[<p>首先，什么是递归？</p>
@@ -309,186 +326,6 @@
 <ul>
 <li>函数调用过程<br><img src="/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/2022-03-28-20-50-06.png"></li>
 </ul>
-]]></content>
-      <categories>
-        <category>算法与数据结构</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>python列表字符串转换</title>
-    <url>/2022/03/31/python%E5%88%97%E8%A1%A8%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2/</url>
-    <content><![CDATA[<h4 id="列表转字符串"><a href="#列表转字符串" class="headerlink" title="列表转字符串"></a>列表转字符串</h4><ol>
-<li><p>将列表转换为字符串的最基本用法和实现之一是使用join函数将字符串列表转换。 请记住，此方法只能使用仅包含字符串的列表。’ ‘之间是分隔符，如我们所见，每个元素在新字符串中都用单个空格分隔。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">mylist=[<span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;b&#x27;</span>,<span class="string">&#x27;c&#x27;</span>] </span><br><span class="line"><span class="string">&#x27; &#x27;</span>.join(mylist) </span><br><span class="line"><span class="comment">#&#x27;a b c&#x27;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>如前所述，我们可以转换仅包含字符串元素的列表。 但是，如果我们需要转换包含不同类型数据的列表，该怎么办？ 我们需要一些转换为字符串。 我们将使用str函数将不同的数据类型转换为字符串。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">mylist = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]      </span><br><span class="line"><span class="string">&#x27; &#x27;</span>.join(<span class="built_in">str</span>(e) <span class="keyword">for</span> e <span class="keyword">in</span> mylist)        </span><br><span class="line"><span class="comment">#&#x27;1 2 3&#x27;</span></span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>在写一个去除字符串中的空格时用到的，代码如下：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">trim</span>(<span class="params">s</span>):</span><br><span class="line">    list1 = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> s:</span><br><span class="line">        <span class="keyword">if</span> i != <span class="string">&#x27; &#x27;</span>:</span><br><span class="line">            list1.append(i)</span><br><span class="line">    s = <span class="string">&#x27;&#x27;</span>.join(list1)</span><br><span class="line">    <span class="keyword">return</span> s</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;输入：&quot;</span>)</span><br><span class="line">s = <span class="built_in">input</span>()</span><br><span class="line"><span class="built_in">print</span>(trim(s))</span><br></pre></td></tr></table></figure>
-
-<h4 id="字符串转列表"><a href="#字符串转列表" class="headerlink" title="字符串转列表"></a>字符串转列表</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&#x27;list&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(s.split())</span><br><span class="line">---&gt;[<span class="string">&#x27;list&#x27;</span>]</span><br></pre></td></tr></table></figure>
-<p>split()中可写分隔符(默认空格)，如</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&#x27;a,list&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(s.split(<span class="string">&#x27;,&#x27;</span>))</span><br><span class="line">---&gt;[<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;list&#x27;</span>]</span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
-    <title>算法与数据结构(2)</title>
-    <url>/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/</url>
-    <content><![CDATA[<p>顺序表多少有点摆烂，看看书吧。</p>
-<h1 id="线性表"><a href="#线性表" class="headerlink" title="线性表"></a>线性表</h1><ol>
-<li>定义：<br>  由n(n&gt;&#x3D;0)个数据元素（结点）a<del>1</del>,a<del>2</del>,a<del>3</del>,…a<del>n</del>组成的有限序列。<ul>
-<li>数据元素的个数n定义为表的长度。</li>
-<li>n&#x3D;0时称为空表。</li>
-<li>将非空的线性表（n&gt;0）记作：(a<del>1</del>,a<del>2</del>,a<del>3</del>,…a<del>n</del>)</li>
-<li>这里的数据元素a<del>i</del>（1&lt;&#x3D;i&lt;&#x3D;n)只是一个抽象的符号，其具体含义在不同情况下可以不同</li>
-<li>同一线性表中的元素必定具有相同特性，数据元素间的关系是线性关系。</li>
-</ul>
-</li>
-<li>逻辑特征：<br>  <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-22-17-22-47.png">  </li>
-<li>类型定义：<br>  <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-22-18-42-57.png"></li>
-</ol>
-<h3 id="线性表的顺序表示"><a href="#线性表的顺序表示" class="headerlink" title="线性表的顺序表示"></a>线性表的顺序表示</h3><ul>
-<li>顺序存储定义：把逻辑上相邻的数据元素存储在物理上相邻的存储单元中的存储结构。（逻辑上相邻，物理上也相邻）</li>
-<li>线性表存储结构占用一片连续的存储空间。</li>
-<li>在访问线性表时，可以快速计算出任何一个数据元素的存储地址。因此可以粗略认为，访问每个元素花费时间相等。是<strong>随机存取法</strong>。 </li>
-<li>线性表基本操作：<br>  <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-00-41-35.png"></li>
-<li>顺序表优缺点：<ol>
-<li>优点：<ul>
-<li>存储密度大</li>
-<li>可以随机存取表中任一元素</li>
-</ul>
-</li>
-<li>缺点：<ul>
-<li>在插入、删除某一元素时，需要移动大量元素   </li>
-<li>浪费存储空间</li>
-<li>属于静态存储形式，数据元素的个数不能自由扩充</li>
-</ul>
-</li>
-</ol>
-</li>
-</ul>
-<h3 id="线性表的链式表示"><a href="#线性表的链式表示" class="headerlink" title="线性表的链式表示"></a>线性表的链式表示</h3><ul>
-<li><p>链式存储定义：用一组物理位置任意的存储单元来存放线性表的数据元素</p>
-</li>
-<li><p>这组存储单元既可以是连续的，也可以是不连续的，甚至是零散分布在内存中的任意位置上。</p>
-</li>
-<li><p>链表特点：</p>
-<ul>
-<li>结点在存储器中的位置是任意的，即逻辑上相邻的数据元素在物理上不一定相邻。</li>
-<li>访问时只能通过头指针进入链表，并通过每个结点的指针域依次向后顺序扫描其余结点，所以寻找第一个结点和最后一个结点所花费的时间不等。是<strong>顺序存取法</strong>。</li>
-</ul>
-</li>
-<li><p>链式存储结构术语：</p>
-<ul>
-<li><p>结点：数据元素的存储映像。由数据域和指针域组成。</p>
-<ul>
-<li>各结点由两个域组成：<ul>
-<li>数据域：存储元素数值数据</li>
-<li>指针域：存储后继结点的存储位置</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>链表：n个结点由指针链组成一个链表</p>
-<ul>
-<li>单链表、双链表和循环链表：<ul>
-<li>结点只有一个指针域的链表，称为<strong>单链表</strong>或线性链表<br>  <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-15-53-33.png"></li>
-<li>结点有两个指针域的链表，称为<strong>双链表</strong><br>  <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-15-54-32.png"> </li>
-<li>首尾相接的链表称为<strong>循环链表</strong><br>  <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-15-55-37.png"></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>头指针、头结点和首元结点：</p>
-<ul>
-<li>头指针：指向链表中第一个结点的指针</li>
-<li>首元结点：链表中存储第一个数据元素的结点</li>
-<li>头结点：在链表的首元结点之前附设的一个结点<br> <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-15-58-21.png"></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>关于链表的一些讨论：</p>
-<ul>
-<li>如何表示空表？<ul>
-<li>无头结点时，头指针为空时表示空表</li>
-<li>有头结点时，当头结点的指针域为空时表示空表</li>
-</ul>
-</li>
-<li>设置头结点有什么好处？<ol>
-<li>便于首元结点的处理<ul>
-<li>首元结点的地址保存在头结点的指针域中，所以在链表的第一个位置上的操作和其它位置一致，无须进行特殊处理</li>
-</ul>
-</li>
-<li>便于空表和非空表的统一处理<ul>
-<li>无论链表是否为空，头指针都是指向头结点的非空指针，因此空表和非空表的处理也就统一了。</li>
-</ul>
-</li>
-</ol>
-</li>
-<li>头结点的数据域中装的是什么？<ul>
-<li>头结点的数据域可以为空，也可以存放线性表长度等附加信息，但此结点不能计入链表长度值。</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>链式存储结构优缺点：</p>
-<ul>
-<li>优点：<ol>
-<li>结点空间可以动态申请和释放</li>
-<li>数据元素的逻辑次序靠结点的指针来指示，插入和删除时不需要移动数据元素</li>
-</ol>
-</li>
-<li>缺点：<ol>
-<li>存储密度[^1]小，每个节点的指针需额外占用存储空间。当每个结点的数据域所占字节不多时，指针域所占存储空间比重显得很大。<br>[^1]: 存储密度是指结点数据本身所占的存储量和整个结点结构中所占存储量之比，即：<br>存储密度 &#x3D; 结点数据本身占用空间&#x2F;节点占用的空间总量<br>一般，存储密度越大，存储空间利用率就越高。顺序表存储密度为1，而链表存储密度小于1.</li>
-<li>链式存储结构是非随机存取结构。对任一结点的操作都要从头指针依指针链查找到该结点，这增加了算法的复杂度。</li>
-</ol>
-</li>
-</ul>
-</li>
-</ul>
-<h4 id="单链表"><a href="#单链表" class="headerlink" title="单链表"></a>单链表</h4><p><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-16-12-17.png"></p>
-<ul>
-<li>单链表由头指针唯一确定，因此单链表可以用头指针的名字来命名。若头指针名是L，则把链表称为表L。</li>
-</ul>
-<p><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-16-16-06.png"></p>
-<p>这里 next 包含了下一个结点</p>
-<ul>
-<li><p>通常，<br>   定义链表L：LinkList L；<br>   定义结点指针p：LNode *p；<br>   虽然说LinkList和LNode是等价的。</p>
-</li>
-<li><p>为了统一链表的操作，通常这样定义链表：</p>
-</li>
-</ul>
-<p><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-16-22-34.png"></p>
-<center>存储学生学号姓名成绩的单链表节点类型定义</center>
-
-<ul>
-<li>单链表基本操作：<br><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-20-57-10.png"><br>（操作的算法还是自己多动手去吧。）</li>
-</ul>
-<h4 id="循环链表"><a href="#循环链表" class="headerlink" title="循环链表"></a>循环链表</h4><ul>
-<li><p>是一种头尾相接的链表，即表中最后一个结点的指针域指向头结点，整个链表形成一个环。<br><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-13-57.png"></p>
-</li>
-<li><p>优点：从任何一个结点出发均可找到表中其他结点</p>
-</li>
-<li><p>循环链表的空表<br><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-18-03-33.png"> </p>
-</li>
-<li><p>循环链表中涉及遍历操作时，终止条件时判断是否等于头指针</p>
-</li>
-<li><p>表的操作常常在表的首尾位置上进行。循环链表一般带尾指针（方便）</p>
-</li>
-</ul>
-<h4 id="双向链表"><a href="#双向链表" class="headerlink" title="双向链表"></a>双向链表</h4><ul>
-<li><p>在单链表的每个结点里再增加一个指向其直接前驱的指针域prior，这样链表中就形成了有两个方向不同的链，故称为双链表。<br><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-17-34.png"><br><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-18-11.png"></p>
-</li>
-<li><p>双向链表的对称性（设指针p指向某一结点）：<br>p-&gt;prior-&gt;next &#x3D; p &#x3D; p-&gt;next-&gt;prior</p>
-<h5 id="双向循环链表"><a href="#双向循环链表" class="headerlink" title="双向循环链表"></a>双向循环链表</h5></li>
-<li><p>让双向链表的头结点的前驱指针指向链表的最后一个结点</p>
-</li>
-<li><p>让最后一个结点的后继指针指向头结点。<br><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-19-35.png"></p>
-</li>
-</ul>
-<h4 id="单链表、循环链表和双向链表比较"><a href="#单链表、循环链表和双向链表比较" class="headerlink" title="单链表、循环链表和双向链表比较"></a>单链表、循环链表和双向链表比较</h4><p><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-40-35.png"></p>
-<h3 id="链表和顺序表比较"><a href="#链表和顺序表比较" class="headerlink" title="链表和顺序表比较"></a>链表和顺序表比较</h3><p><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-55-10.png"></p>
 ]]></content>
       <categories>
         <category>算法与数据结构</category>
@@ -689,6 +526,169 @@
 6. 求队头元素
     <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">Status <span class="title">GetHead</span><span class="params">(LinkQueue &amp;Q,QElemType &amp;e)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(Q.front==Q.rear) <span class="keyword">return</span> ERROR;</span><br><span class="line">    e=Q.front-&gt;next-&gt;data;</span><br><span class="line">    <span class="keyword">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </code></pre>
+]]></content>
+      <categories>
+        <category>算法与数据结构</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>算法与数据结构(2)</title>
+    <url>/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/</url>
+    <content><![CDATA[<p>顺序表多少有点摆烂，看看书吧。</p>
+<h1 id="线性表"><a href="#线性表" class="headerlink" title="线性表"></a>线性表</h1><ol>
+<li>定义：<br>  由n(n&gt;&#x3D;0)个数据元素（结点）a<del>1</del>,a<del>2</del>,a<del>3</del>,…a<del>n</del>组成的有限序列。<ul>
+<li>数据元素的个数n定义为表的长度。</li>
+<li>n&#x3D;0时称为空表。</li>
+<li>将非空的线性表（n&gt;0）记作：(a<del>1</del>,a<del>2</del>,a<del>3</del>,…a<del>n</del>)</li>
+<li>这里的数据元素a<del>i</del>（1&lt;&#x3D;i&lt;&#x3D;n)只是一个抽象的符号，其具体含义在不同情况下可以不同</li>
+<li>同一线性表中的元素必定具有相同特性，数据元素间的关系是线性关系。</li>
+</ul>
+</li>
+<li>逻辑特征：<br>  <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-22-17-22-47.png">  </li>
+<li>类型定义：<br>  <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-22-18-42-57.png"></li>
+</ol>
+<h3 id="线性表的顺序表示"><a href="#线性表的顺序表示" class="headerlink" title="线性表的顺序表示"></a>线性表的顺序表示</h3><ul>
+<li>顺序存储定义：把逻辑上相邻的数据元素存储在物理上相邻的存储单元中的存储结构。（逻辑上相邻，物理上也相邻）</li>
+<li>线性表存储结构占用一片连续的存储空间。</li>
+<li>在访问线性表时，可以快速计算出任何一个数据元素的存储地址。因此可以粗略认为，访问每个元素花费时间相等。是<strong>随机存取法</strong>。 </li>
+<li>线性表基本操作：<br>  <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-00-41-35.png"></li>
+<li>顺序表优缺点：<ol>
+<li>优点：<ul>
+<li>存储密度大</li>
+<li>可以随机存取表中任一元素</li>
+</ul>
+</li>
+<li>缺点：<ul>
+<li>在插入、删除某一元素时，需要移动大量元素   </li>
+<li>浪费存储空间</li>
+<li>属于静态存储形式，数据元素的个数不能自由扩充</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<h3 id="线性表的链式表示"><a href="#线性表的链式表示" class="headerlink" title="线性表的链式表示"></a>线性表的链式表示</h3><ul>
+<li><p>链式存储定义：用一组物理位置任意的存储单元来存放线性表的数据元素</p>
+</li>
+<li><p>这组存储单元既可以是连续的，也可以是不连续的，甚至是零散分布在内存中的任意位置上。</p>
+</li>
+<li><p>链表特点：</p>
+<ul>
+<li>结点在存储器中的位置是任意的，即逻辑上相邻的数据元素在物理上不一定相邻。</li>
+<li>访问时只能通过头指针进入链表，并通过每个结点的指针域依次向后顺序扫描其余结点，所以寻找第一个结点和最后一个结点所花费的时间不等。是<strong>顺序存取法</strong>。</li>
+</ul>
+</li>
+<li><p>链式存储结构术语：</p>
+<ul>
+<li><p>结点：数据元素的存储映像。由数据域和指针域组成。</p>
+<ul>
+<li>各结点由两个域组成：<ul>
+<li>数据域：存储元素数值数据</li>
+<li>指针域：存储后继结点的存储位置</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>链表：n个结点由指针链组成一个链表</p>
+<ul>
+<li>单链表、双链表和循环链表：<ul>
+<li>结点只有一个指针域的链表，称为<strong>单链表</strong>或线性链表<br>  <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-15-53-33.png"></li>
+<li>结点有两个指针域的链表，称为<strong>双链表</strong><br>  <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-15-54-32.png"> </li>
+<li>首尾相接的链表称为<strong>循环链表</strong><br>  <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-15-55-37.png"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>头指针、头结点和首元结点：</p>
+<ul>
+<li>头指针：指向链表中第一个结点的指针</li>
+<li>首元结点：链表中存储第一个数据元素的结点</li>
+<li>头结点：在链表的首元结点之前附设的一个结点<br> <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-15-58-21.png"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>关于链表的一些讨论：</p>
+<ul>
+<li>如何表示空表？<ul>
+<li>无头结点时，头指针为空时表示空表</li>
+<li>有头结点时，当头结点的指针域为空时表示空表</li>
+</ul>
+</li>
+<li>设置头结点有什么好处？<ol>
+<li>便于首元结点的处理<ul>
+<li>首元结点的地址保存在头结点的指针域中，所以在链表的第一个位置上的操作和其它位置一致，无须进行特殊处理</li>
+</ul>
+</li>
+<li>便于空表和非空表的统一处理<ul>
+<li>无论链表是否为空，头指针都是指向头结点的非空指针，因此空表和非空表的处理也就统一了。</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>头结点的数据域中装的是什么？<ul>
+<li>头结点的数据域可以为空，也可以存放线性表长度等附加信息，但此结点不能计入链表长度值。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>链式存储结构优缺点：</p>
+<ul>
+<li>优点：<ol>
+<li>结点空间可以动态申请和释放</li>
+<li>数据元素的逻辑次序靠结点的指针来指示，插入和删除时不需要移动数据元素</li>
+</ol>
+</li>
+<li>缺点：<ol>
+<li>存储密度[^1]小，每个节点的指针需额外占用存储空间。当每个结点的数据域所占字节不多时，指针域所占存储空间比重显得很大。<br>[^1]: 存储密度是指结点数据本身所占的存储量和整个结点结构中所占存储量之比，即：<br>存储密度 &#x3D; 结点数据本身占用空间&#x2F;节点占用的空间总量<br>一般，存储密度越大，存储空间利用率就越高。顺序表存储密度为1，而链表存储密度小于1.</li>
+<li>链式存储结构是非随机存取结构。对任一结点的操作都要从头指针依指针链查找到该结点，这增加了算法的复杂度。</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="单链表"><a href="#单链表" class="headerlink" title="单链表"></a>单链表</h4><p><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-16-12-17.png"></p>
+<ul>
+<li>单链表由头指针唯一确定，因此单链表可以用头指针的名字来命名。若头指针名是L，则把链表称为表L。</li>
+</ul>
+<p><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-16-16-06.png"></p>
+<p>这里 next 包含了下一个结点</p>
+<ul>
+<li><p>通常，<br>   定义链表L：LinkList L；<br>   定义结点指针p：LNode *p；<br>   虽然说LinkList和LNode是等价的。</p>
+</li>
+<li><p>为了统一链表的操作，通常这样定义链表：</p>
+</li>
+</ul>
+<p><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-16-22-34.png"></p>
+<center>存储学生学号姓名成绩的单链表节点类型定义</center>
+
+<ul>
+<li>单链表基本操作：<br><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-20-57-10.png"><br>（操作的算法还是自己多动手去吧。）</li>
+</ul>
+<h4 id="循环链表"><a href="#循环链表" class="headerlink" title="循环链表"></a>循环链表</h4><ul>
+<li><p>是一种头尾相接的链表，即表中最后一个结点的指针域指向头结点，整个链表形成一个环。<br><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-13-57.png"></p>
+</li>
+<li><p>优点：从任何一个结点出发均可找到表中其他结点</p>
+</li>
+<li><p>循环链表的空表<br><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-18-03-33.png"> </p>
+</li>
+<li><p>循环链表中涉及遍历操作时，终止条件时判断是否等于头指针</p>
+</li>
+<li><p>表的操作常常在表的首尾位置上进行。循环链表一般带尾指针（方便）</p>
+</li>
+</ul>
+<h4 id="双向链表"><a href="#双向链表" class="headerlink" title="双向链表"></a>双向链表</h4><ul>
+<li><p>在单链表的每个结点里再增加一个指向其直接前驱的指针域prior，这样链表中就形成了有两个方向不同的链，故称为双链表。<br><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-17-34.png"><br><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-18-11.png"></p>
+</li>
+<li><p>双向链表的对称性（设指针p指向某一结点）：<br>p-&gt;prior-&gt;next &#x3D; p &#x3D; p-&gt;next-&gt;prior</p>
+<h5 id="双向循环链表"><a href="#双向循环链表" class="headerlink" title="双向循环链表"></a>双向循环链表</h5></li>
+<li><p>让双向链表的头结点的前驱指针指向链表的最后一个结点</p>
+</li>
+<li><p>让最后一个结点的后继指针指向头结点。<br><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-19-35.png"></p>
+</li>
+</ul>
+<h4 id="单链表、循环链表和双向链表比较"><a href="#单链表、循环链表和双向链表比较" class="headerlink" title="单链表、循环链表和双向链表比较"></a>单链表、循环链表和双向链表比较</h4><p><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-40-35.png"></p>
+<h3 id="链表和顺序表比较"><a href="#链表和顺序表比较" class="headerlink" title="链表和顺序表比较"></a>链表和顺序表比较</h3><p><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-55-10.png"></p>
 ]]></content>
       <categories>
         <category>算法与数据结构</category>
