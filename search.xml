@@ -182,32 +182,6 @@
       </categories>
   </entry>
   <entry>
-    <title>end=&#39;&#39;与--i</title>
-    <url>/2022/03/28/end-%E4%B8%8E-i/</url>
-    <content><![CDATA[<h3 id="end-x3D-’’"><a href="#end-x3D-’’" class="headerlink" title="end&#x3D;’’"></a>end&#x3D;’’</h3><blockquote>
-<p>Python</p>
-</blockquote>
-<ul>
-<li>原理解释：为末尾end传递一个空字符串，这样print函数不会在字符串末尾添加一个换行符，而是添加一个空字符串，其实这也是一个语法要求，表示这个语句没结束。</li>
-</ul>
-<p>print默认是打印一行，结尾加换行。</p>
-<p>原文链接：<a href="https://blog.csdn.net/qq_40318284/article/details/96835229">https://blog.csdn.net/qq_40318284/article/details/96835229</a></p>
-<p>在打印</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">    *</span><br><span class="line">   ***</span><br><span class="line">  *****</span><br><span class="line"> *******</span><br><span class="line">*********</span><br></pre></td></tr></table></figure>
-<p>时遇到的问题</p>
-<p>当时想的是怎么能让空格和*在同一行上打印出来，然后看到了例子的代码</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">row = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&#x27;请输入行数: &#x27;</span>))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(row):</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(row - i - <span class="number">1</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27; &#x27;</span>, end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span> * i + <span class="number">1</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;*&#x27;</span>, end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="built_in">print</span>()</span><br></pre></td></tr></table></figure>
-<p>就去查了end&#x3D;’’的用法。</p>
-<p>自己写的：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&#x27;输入打印行数：&#x27;</span>))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,n+<span class="number">1</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27; &#x27;</span> * (n - i),end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;*&#x27;</span> * (<span class="number">2</span> * i -<span class="number">1</span>))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="–-i与i-–"><a href="#–-i与i-–" class="headerlink" title="–(++)i与i(++)–"></a>–(++)i与i(++)–</h3><p>–i 是先执行i&#x3D;i-1,然后再使用i的值, 这时的i值就是表达式–i的值。i– 是先使用i的值作为表达式i–的值,然后,执行i&#x3D;i-1操作。<br>++i和i++同理。</p>
-]]></content>
-      <categories>
-        <category>有用的知识</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2022/03/08/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -262,6 +236,32 @@
 <h4 id="字符串转列表"><a href="#字符串转列表" class="headerlink" title="字符串转列表"></a>字符串转列表</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&#x27;list&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(s.split())</span><br><span class="line">---&gt;[<span class="string">&#x27;list&#x27;</span>]</span><br></pre></td></tr></table></figure>
 <p>split()中可写分隔符(默认空格)，如</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&#x27;a,list&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(s.split(<span class="string">&#x27;,&#x27;</span>))</span><br><span class="line">---&gt;[<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;list&#x27;</span>]</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>end=&#39;&#39;与--i</title>
+    <url>/2022/03/28/end-%E4%B8%8E-i/</url>
+    <content><![CDATA[<h3 id="end-x3D-’’"><a href="#end-x3D-’’" class="headerlink" title="end&#x3D;’’"></a>end&#x3D;’’</h3><blockquote>
+<p>Python</p>
+</blockquote>
+<ul>
+<li>原理解释：为末尾end传递一个空字符串，这样print函数不会在字符串末尾添加一个换行符，而是添加一个空字符串，其实这也是一个语法要求，表示这个语句没结束。</li>
+</ul>
+<p>print默认是打印一行，结尾加换行。</p>
+<p>原文链接：<a href="https://blog.csdn.net/qq_40318284/article/details/96835229">https://blog.csdn.net/qq_40318284/article/details/96835229</a></p>
+<p>在打印</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">    *</span><br><span class="line">   ***</span><br><span class="line">  *****</span><br><span class="line"> *******</span><br><span class="line">*********</span><br></pre></td></tr></table></figure>
+<p>时遇到的问题</p>
+<p>当时想的是怎么能让空格和*在同一行上打印出来，然后看到了例子的代码</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">row = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&#x27;请输入行数: &#x27;</span>))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(row):</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(row - i - <span class="number">1</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27; &#x27;</span>, end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span> * i + <span class="number">1</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;*&#x27;</span>, end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="built_in">print</span>()</span><br></pre></td></tr></table></figure>
+<p>就去查了end&#x3D;’’的用法。</p>
+<p>自己写的：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&#x27;输入打印行数：&#x27;</span>))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,n+<span class="number">1</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27; &#x27;</span> * (n - i),end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;*&#x27;</span> * (<span class="number">2</span> * i -<span class="number">1</span>))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="–-i与i-–"><a href="#–-i与i-–" class="headerlink" title="–(++)i与i(++)–"></a>–(++)i与i(++)–</h3><p>–i 是先执行i&#x3D;i-1,然后再使用i的值, 这时的i值就是表达式–i的值。i– 是先使用i的值作为表达式i–的值,然后,执行i&#x3D;i-1操作。<br>++i和i++同理。</p>
+]]></content>
+      <categories>
+        <category>有用的知识</category>
+      </categories>
   </entry>
   <entry>
     <title>python爬虫-1</title>
