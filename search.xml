@@ -37,72 +37,6 @@
       </categories>
   </entry>
   <entry>
-    <title>First-plan</title>
-    <url>/2022/04/08/First-plan/</url>
-    <content><![CDATA[<p>简单地列一下目前要做的事情。</p>
-<ol>
-<li>算法与数据结构学习</li>
-<li>python学习，主要是数据开发与爬虫相关的内容</li>
-<li>英语学习，目前是六级听力和词汇</li>
-<li>看书和平时的锻炼</li>
-<li>c++ 这个，暂时先列出来吧</li>
-</ol>
-<p>目测解封还需要一个月左右，所以大胆地写一下一个月后要达到的目标</p>
-<ol>
-<li>熟练掌握算法与数据结构的内容，能做到老师布置的作业自主完成</li>
-<li>可以自主写代码爬取一些内容并进行数据分析</li>
-<li>词汇量增长至少1000词，听力感觉有点玄学，到时做六级真题验收吧</li>
-<li>看完传习录；锻炼这个也没法准确设置一个目标，至少做到一周四练，根据具体情况随时调整</li>
-<li>c++主要是看c++ primer，计划开始实行后看情况吧。</li>
-</ol>
-<p>另外还有刷编程题的计划，但之后进行补充。</p>
-<p>具体到每天每周的实行，这有点难想，目前有个不成熟的想法：</p>
-<ol>
-<li><p>首先要早睡早起，这大概是最困难的。最迟8点就该起床。</p>
-</li>
-<li><p>起床后首先是英语的学习，背单词和听力</p>
-</li>
-<li><p>顺利的话大概在十点左右结束英语，此时要上课（不过下周与下下周可以不太关心这个），根据上课情况来规划之后干什么</p>
-<ol>
-<li>如果说没课或者不太重要的课，学python</li>
-<li>反之，上课</li>
-<li>但是星期三的话就写算法与数据结构作业</li>
-</ol>
-</li>
-<li><p>午饭之后感觉会累，所以先这么安排：看书-&gt;锻炼-&gt;算法与数据结构学习</p>
-</li>
-<li><p>晚上就根据每天的情况来安排。</p>
-</li>
-</ol>
-]]></content>
-  </entry>
-  <entry>
-    <title>end=&#39;&#39;与--i</title>
-    <url>/2022/03/28/end-%E4%B8%8E-i/</url>
-    <content><![CDATA[<h3 id="end-x3D-’’"><a href="#end-x3D-’’" class="headerlink" title="end&#x3D;’’"></a>end&#x3D;’’</h3><blockquote>
-<p>Python</p>
-</blockquote>
-<ul>
-<li>原理解释：为末尾end传递一个空字符串，这样print函数不会在字符串末尾添加一个换行符，而是添加一个空字符串，其实这也是一个语法要求，表示这个语句没结束。</li>
-</ul>
-<p>print默认是打印一行，结尾加换行。</p>
-<p>原文链接：<a href="https://blog.csdn.net/qq_40318284/article/details/96835229">https://blog.csdn.net/qq_40318284/article/details/96835229</a></p>
-<p>在打印</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">    *</span><br><span class="line">   ***</span><br><span class="line">  *****</span><br><span class="line"> *******</span><br><span class="line">*********</span><br></pre></td></tr></table></figure>
-<p>时遇到的问题</p>
-<p>当时想的是怎么能让空格和*在同一行上打印出来，然后看到了例子的代码</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">row = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&#x27;请输入行数: &#x27;</span>))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(row):</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(row - i - <span class="number">1</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27; &#x27;</span>, end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span> * i + <span class="number">1</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;*&#x27;</span>, end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="built_in">print</span>()</span><br></pre></td></tr></table></figure>
-<p>就去查了end&#x3D;’’的用法。</p>
-<p>自己写的：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&#x27;输入打印行数：&#x27;</span>))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,n+<span class="number">1</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27; &#x27;</span> * (n - i),end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;*&#x27;</span> * (<span class="number">2</span> * i -<span class="number">1</span>))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="–-i与i-–"><a href="#–-i与i-–" class="headerlink" title="–(++)i与i(++)–"></a>–(++)i与i(++)–</h3><p>–i 是先执行i&#x3D;i-1,然后再使用i的值, 这时的i值就是表达式–i的值。i– 是先使用i的值作为表达式i–的值,然后,执行i&#x3D;i-1操作。<br>++i和i++同理。</p>
-]]></content>
-      <categories>
-        <category>有用的知识</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Markdown学习</title>
     <url>/2022/03/08/Markdown%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><ol>
@@ -205,6 +139,72 @@
 <h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><h6 id="最高六级标题"><a href="#最高六级标题" class="headerlink" title="最高六级标题"></a>最高六级标题</h6>]]></content>
       <categories>
         <category>Markdown</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>First-plan</title>
+    <url>/2022/04/08/First-plan/</url>
+    <content><![CDATA[<p>简单地列一下目前要做的事情。</p>
+<ol>
+<li>算法与数据结构学习</li>
+<li>python学习，主要是数据开发与爬虫相关的内容</li>
+<li>英语学习，目前是六级听力和词汇</li>
+<li>看书和平时的锻炼</li>
+<li>c++ 这个，暂时先列出来吧</li>
+</ol>
+<p>目测解封还需要一个月左右，所以大胆地写一下一个月后要达到的目标</p>
+<ol>
+<li>熟练掌握算法与数据结构的内容，能做到老师布置的作业自主完成</li>
+<li>可以自主写代码爬取一些内容并进行数据分析</li>
+<li>词汇量增长至少1000词，听力感觉有点玄学，到时做六级真题验收吧</li>
+<li>看完传习录；锻炼这个也没法准确设置一个目标，至少做到一周四练，根据具体情况随时调整</li>
+<li>c++主要是看c++ primer，计划开始实行后看情况吧。</li>
+</ol>
+<p>另外还有刷编程题的计划，但之后进行补充。</p>
+<p>具体到每天每周的实行，这有点难想，目前有个不成熟的想法：</p>
+<ol>
+<li><p>首先要早睡早起，这大概是最困难的。最迟8点就该起床。</p>
+</li>
+<li><p>起床后首先是英语的学习，背单词和听力</p>
+</li>
+<li><p>顺利的话大概在十点左右结束英语，此时要上课（不过下周与下下周可以不太关心这个），根据上课情况来规划之后干什么</p>
+<ol>
+<li>如果说没课或者不太重要的课，学python</li>
+<li>反之，上课</li>
+<li>但是星期三的话就写算法与数据结构作业</li>
+</ol>
+</li>
+<li><p>午饭之后感觉会累，所以先这么安排：看书-&gt;锻炼-&gt;算法与数据结构学习</p>
+</li>
+<li><p>晚上就根据每天的情况来安排。</p>
+</li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
+    <title>end=&#39;&#39;与--i</title>
+    <url>/2022/03/28/end-%E4%B8%8E-i/</url>
+    <content><![CDATA[<h3 id="end-x3D-’’"><a href="#end-x3D-’’" class="headerlink" title="end&#x3D;’’"></a>end&#x3D;’’</h3><blockquote>
+<p>Python</p>
+</blockquote>
+<ul>
+<li>原理解释：为末尾end传递一个空字符串，这样print函数不会在字符串末尾添加一个换行符，而是添加一个空字符串，其实这也是一个语法要求，表示这个语句没结束。</li>
+</ul>
+<p>print默认是打印一行，结尾加换行。</p>
+<p>原文链接：<a href="https://blog.csdn.net/qq_40318284/article/details/96835229">https://blog.csdn.net/qq_40318284/article/details/96835229</a></p>
+<p>在打印</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">    *</span><br><span class="line">   ***</span><br><span class="line">  *****</span><br><span class="line"> *******</span><br><span class="line">*********</span><br></pre></td></tr></table></figure>
+<p>时遇到的问题</p>
+<p>当时想的是怎么能让空格和*在同一行上打印出来，然后看到了例子的代码</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">row = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&#x27;请输入行数: &#x27;</span>))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(row):</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(row - i - <span class="number">1</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27; &#x27;</span>, end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span> * i + <span class="number">1</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;*&#x27;</span>, end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="built_in">print</span>()</span><br></pre></td></tr></table></figure>
+<p>就去查了end&#x3D;’’的用法。</p>
+<p>自己写的：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&#x27;输入打印行数：&#x27;</span>))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,n+<span class="number">1</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27; &#x27;</span> * (n - i),end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;*&#x27;</span> * (<span class="number">2</span> * i -<span class="number">1</span>))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="–-i与i-–"><a href="#–-i与i-–" class="headerlink" title="–(++)i与i(++)–"></a>–(++)i与i(++)–</h3><p>–i 是先执行i&#x3D;i-1,然后再使用i的值, 这时的i值就是表达式–i的值。i– 是先使用i的值作为表达式i–的值,然后,执行i&#x3D;i-1操作。<br>++i和i++同理。</p>
+]]></content>
+      <categories>
+        <category>有用的知识</category>
       </categories>
   </entry>
   <entry>
