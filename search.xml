@@ -85,21 +85,21 @@
 <p>两端中间空一行<br>（为什么看起来没变化？）</p>
 </li>
 </ol>
-<p><br/><br/></p>
+<p><br><br></p>
 <ol start="2">
-<li><p>字体<br> <em>斜体文本</em>   *斜体文本*<br> <em>斜体文本</em>   _斜体文本_<br> <strong>粗体文本</strong>    **粗体文本**<br> <strong>粗体文本</strong>    __粗体文本__<br> <em><strong>粗斜体文本</strong></em>    ***粗斜体文本***<br> <em><strong>粗斜体文本</strong></em>    ___粗斜体文本___<br><br/><br/></p>
+<li><p>字体<br> <em>斜体文本</em>   *斜体文本*<br> <em>斜体文本</em>   _斜体文本_<br> <strong>粗体文本</strong>    **粗体文本**<br> <strong>粗体文本</strong>    __粗体文本__<br> <em><strong>粗斜体文本</strong></em>    ***粗斜体文本***<br> <em><strong>粗斜体文本</strong></em>    ___粗斜体文本___<br><br><br></p>
 </li>
-<li><p>分割线<br>可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。<br>(***)<br>(* * *)<br>(—)<br>(___)<br><br/><br/></p>
+<li><p>分割线<br>可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。<br>(***)<br>(* * *)<br>(—)<br>(___)<br><br><br></p>
 </li>
-<li><p>删除线<br>两边各加~~<br><del>两边各加</del><br><br/><br/></p>
+<li><p>删除线<br>两边各加~~<br><del>两边各加</del><br><br><br></p>
 </li>
-<li><p>下划线<br><u>下划线</u><br>&lt;u&gt;下划线&lt;&#x2F;u&gt;<br><br/><br/></p>
+<li><p>下划线<br><u>下划线</u><br>&lt;u&gt;下划线&lt;&#x2F;u&gt;<br><br><br></p>
 </li>
 <li><p>脚注<br>创建脚注：[^要注明的文本]</p>
 <p>脚注[^歪比歪比]<br>[^歪比歪比]: 所以是个脚注</p>
 </li>
 </ol>
-<p><br/><br/></p>
+<p><br><br></p>
 <ol start="7">
 <li><p>列表</p>
 <ol>
@@ -122,7 +122,7 @@
 </li>
 <li>第二项:<ul>
 <li>s</li>
-<li>a<br><br/><br/></li>
+<li>a<br><br><br></li>
 </ul>
 </li>
 </ol>
@@ -145,22 +145,22 @@
 </blockquote>
 </li>
 </ol>
-<p><br/><br/></p>
+<p><br><br></p>
 <ol start="9">
-<li><p>代码:<br> &amp;emsp;如果是段落上的一个函数或片段的代码可以用反引号把它包起来（`）<br> <code>int i = 1</code>     `int i &#x3D; 1`<br><br/><br/></p>
+<li><p>代码:<br> &amp;emsp;如果是段落上的一个函数或片段的代码可以用反引号把它包起来（`）<br> <code>int i = 1</code>     `int i &#x3D; 1`<br><br><br></p>
 <ol>
 <li>代码区块：<br> 用 &#96;&#96;&#96; 包裹一段代码，并指定一种语言（也可以不指定） <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> i = <span class="number">1</span>;</span><br><span class="line">cout &lt; &lt; i &lt; &lt; endl;</span><br></pre></td></tr></table></figure>
  `&#96;&#96;c++<br> int i &#x3D; 1;<br> cout &lt; &lt; i &lt; &lt; endl;<br> `&#96;&#96;</li>
 </ol>
 </li>
 </ol>
-<p><br/><br/></p>
+<p><br><br></p>
 <ol start="10">
 <li><p>链接：<br>[链接名称](链接地址)<br>或者<br>&lt;链接地址&gt;</p>
 <p><a href="https://www.runoob.com/">菜鸟教程</a><br><a href="https://www.runoob.com/">https://www.runoob.com</a></p>
 </li>
 </ol>
-<p><br/><br/></p>
+<p><br><br></p>
 <ol start="11">
 <li><p>图片：<br><img src="http://r91oo274o.hd-bkt.clouddn.com/test.png" alt="tom" title="tom"></p>
 <center>急</center>
@@ -171,15 +171,33 @@
 
 <img src="http://r91oo274o.hd-bkt.clouddn.com/test.png">
 
-<p>![alt 属性文本](文件夹下的图片 “可选标题”)<br>![alt 属性文本](图片链接 “可选标题”)<br></br></br></p>
+<p>![alt 属性文本](文件夹下的图片 “可选标题”)<br>![alt 属性文本](图片链接 “可选标题”)<br><br><br></p>
 <p>&lt;img src&#x3D;”url” width&#x3D;”400” height&#x3D;”400” alt&#x3D;”” title&#x3D;”” style&#x3D;”zoom:50%;”&#x2F;&gt;<br>其中，src：该图片的网址<br>alt：是图片没有加载成功时，显示的文字<br>title：该图片的标题<br>style：设置缩放</p>
-<p></br></br><br>表格和其他应该用不上，暂时不写</p>
+<p><br><br><br>表格和其他应该用不上，暂时不写</p>
 </li>
 </ol>
 <h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><h6 id="最高六级标题"><a href="#最高六级标题" class="headerlink" title="最高六级标题"></a>最高六级标题</h6>]]></content>
       <categories>
         <category>Markdown</category>
       </categories>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2022/03/08/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
   </entry>
   <entry>
     <title>end=&#39;&#39;与--i</title>
@@ -208,24 +226,6 @@
       </categories>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2022/03/08/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>python3.6安装pycrypto</title>
     <url>/2022/04/22/python3-6%E5%AE%89%E8%A3%85pycrypto/</url>
     <content><![CDATA[<p>在学习爬取网易云评论时需要用到pycrypto，但是python3.6似乎直接pip下载会有点困难，查了很多之后终于解决了。</p>
@@ -247,30 +247,13 @@
       </categories>
   </entry>
   <entry>
-    <title>python列表字符串转换</title>
-    <url>/2022/03/31/python%E5%88%97%E8%A1%A8%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2/</url>
-    <content><![CDATA[<h4 id="列表转字符串"><a href="#列表转字符串" class="headerlink" title="列表转字符串"></a>列表转字符串</h4><ol>
-<li><p>将列表转换为字符串的最基本用法和实现之一是使用join函数将字符串列表转换。 请记住，此方法只能使用仅包含字符串的列表。’ ‘之间是分隔符，如我们所见，每个元素在新字符串中都用单个空格分隔。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">mylist=[<span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;b&#x27;</span>,<span class="string">&#x27;c&#x27;</span>] </span><br><span class="line"><span class="string">&#x27; &#x27;</span>.join(mylist) </span><br><span class="line"><span class="comment">#&#x27;a b c&#x27;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>如前所述，我们可以转换仅包含字符串元素的列表。 但是，如果我们需要转换包含不同类型数据的列表，该怎么办？ 我们需要一些转换为字符串。 我们将使用str函数将不同的数据类型转换为字符串。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">mylist = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]      </span><br><span class="line"><span class="string">&#x27; &#x27;</span>.join(<span class="built_in">str</span>(e) <span class="keyword">for</span> e <span class="keyword">in</span> mylist)        </span><br><span class="line"><span class="comment">#&#x27;1 2 3&#x27;</span></span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>在写一个去除字符串中的空格时用到的，代码如下：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">trim</span>(<span class="params">s</span>):</span><br><span class="line">    list1 = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> s:</span><br><span class="line">        <span class="keyword">if</span> i != <span class="string">&#x27; &#x27;</span>:</span><br><span class="line">            list1.append(i)</span><br><span class="line">    s = <span class="string">&#x27;&#x27;</span>.join(list1)</span><br><span class="line">    <span class="keyword">return</span> s</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;输入：&quot;</span>)</span><br><span class="line">s = <span class="built_in">input</span>()</span><br><span class="line"><span class="built_in">print</span>(trim(s))</span><br></pre></td></tr></table></figure>
-
-<h4 id="字符串转列表"><a href="#字符串转列表" class="headerlink" title="字符串转列表"></a>字符串转列表</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&#x27;list&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(s.split())</span><br><span class="line">---&gt;[<span class="string">&#x27;list&#x27;</span>]</span><br></pre></td></tr></table></figure>
-<p>split()中可写分隔符(默认空格)，如</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&#x27;a,list&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(s.split(<span class="string">&#x27;,&#x27;</span>))</span><br><span class="line">---&gt;[<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;list&#x27;</span>]</span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
     <title>python爬虫-1</title>
     <url>/2022/04/10/python%E7%88%AC%E8%99%AB-1/</url>
     <content><![CDATA[<h3 id="Web请求过程"><a href="#Web请求过程" class="headerlink" title="Web请求过程"></a>Web请求过程</h3><ol>
-<li><p>服务器渲染：在服务器那边直接把数据和html整合在一起，统一返回给浏览器<br> <img src="/python%E7%88%AC%E8%99%AB-1/2022-04-10-19-36-06.png"></p>
+<li><p>服务器渲染：在服务器那边直接把数据和html整合在一起，统一返回给浏览器<br> <img src="/2022/04/10/python%E7%88%AC%E8%99%AB-1/2022-04-10-19-36-06.png"></p>
 </li>
-<li><p>客户端渲染：第一次请求只有一个html骨架，第二次请求拿到数据，进行数据展示，在页面源代码中，看不到数据<br> <img src="/python%E7%88%AC%E8%99%AB-1/2022-04-10-19-39-37.png"></p>
-<p> 对于客户端渲染，以豆瓣喜剧电影排行榜举例，在网页按下F12，然后点击network就可看到相应数据<br> <img src="/python%E7%88%AC%E8%99%AB-1/2022-04-10-19-46-42.png"><br> 同样地，在network的headers下可以查找到url，请求方式，user-agent等重要内容</p>
+<li><p>客户端渲染：第一次请求只有一个html骨架，第二次请求拿到数据，进行数据展示，在页面源代码中，看不到数据<br> <img src="/2022/04/10/python%E7%88%AC%E8%99%AB-1/2022-04-10-19-39-37.png"></p>
+<p> 对于客户端渲染，以豆瓣喜剧电影排行榜举例，在网页按下F12，然后点击network就可看到相应数据<br> <img src="/2022/04/10/python%E7%88%AC%E8%99%AB-1/2022-04-10-19-46-42.png"><br> 同样地，在network的headers下可以查找到url，请求方式，user-agent等重要内容</p>
 </li>
 </ol>
 <h3 id="HTTP协议"><a href="#HTTP协议" class="headerlink" title="HTTP协议"></a>HTTP协议</h3><p>HTTP协议把一条消息分为三大块内容，无论是请求还是响应</p>
@@ -298,6 +281,23 @@
       </categories>
   </entry>
   <entry>
+    <title>python列表字符串转换</title>
+    <url>/2022/03/31/python%E5%88%97%E8%A1%A8%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2/</url>
+    <content><![CDATA[<h4 id="列表转字符串"><a href="#列表转字符串" class="headerlink" title="列表转字符串"></a>列表转字符串</h4><ol>
+<li><p>将列表转换为字符串的最基本用法和实现之一是使用join函数将字符串列表转换。 请记住，此方法只能使用仅包含字符串的列表。’ ‘之间是分隔符，如我们所见，每个元素在新字符串中都用单个空格分隔。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">mylist=[<span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;b&#x27;</span>,<span class="string">&#x27;c&#x27;</span>] </span><br><span class="line"><span class="string">&#x27; &#x27;</span>.join(mylist) </span><br><span class="line"><span class="comment">#&#x27;a b c&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如前所述，我们可以转换仅包含字符串元素的列表。 但是，如果我们需要转换包含不同类型数据的列表，该怎么办？ 我们需要一些转换为字符串。 我们将使用str函数将不同的数据类型转换为字符串。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">mylist = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]      </span><br><span class="line"><span class="string">&#x27; &#x27;</span>.join(<span class="built_in">str</span>(e) <span class="keyword">for</span> e <span class="keyword">in</span> mylist)        </span><br><span class="line"><span class="comment">#&#x27;1 2 3&#x27;</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>在写一个去除字符串中的空格时用到的，代码如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">trim</span>(<span class="params">s</span>):</span><br><span class="line">    list1 = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> s:</span><br><span class="line">        <span class="keyword">if</span> i != <span class="string">&#x27; &#x27;</span>:</span><br><span class="line">            list1.append(i)</span><br><span class="line">    s = <span class="string">&#x27;&#x27;</span>.join(list1)</span><br><span class="line">    <span class="keyword">return</span> s</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;输入：&quot;</span>)</span><br><span class="line">s = <span class="built_in">input</span>()</span><br><span class="line"><span class="built_in">print</span>(trim(s))</span><br></pre></td></tr></table></figure>
+
+<h4 id="字符串转列表"><a href="#字符串转列表" class="headerlink" title="字符串转列表"></a>字符串转列表</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&#x27;list&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(s.split())</span><br><span class="line">---&gt;[<span class="string">&#x27;list&#x27;</span>]</span><br></pre></td></tr></table></figure>
+<p>split()中可写分隔符(默认空格)，如</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&#x27;a,list&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(s.split(<span class="string">&#x27;,&#x27;</span>))</span><br><span class="line">---&gt;[<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;list&#x27;</span>]</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
     <title>栈与递归</title>
     <url>/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/</url>
     <content><![CDATA[<p>首先，什么是递归？</p>
@@ -319,12 +319,12 @@
 <li>可递归求解的问题，如迷宫问题，汉诺塔问题</li>
 </ul>
 </li>
-<li><p>递归问题求解方法<br><img src="/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/2022-03-28-20-41-31.png"><br><img src="/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/2022-03-28-20-43-00.png"></p>
+<li><p>递归问题求解方法<br><img src="/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/2022-03-28-20-41-31.png"><br><img src="/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/2022-03-28-20-43-00.png"></p>
 </li>
 </ol>
 <h4 id="栈与递归"><a href="#栈与递归" class="headerlink" title="栈与递归"></a>栈与递归</h4><p>函数递归调用遵循后调用的先返回，与栈类似。</p>
 <ul>
-<li>函数调用过程<br><img src="/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/2022-03-28-20-50-06.png"></li>
+<li>函数调用过程<br><img src="/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/2022-03-28-20-50-06.png"></li>
 </ul>
 ]]></content>
       <categories>
@@ -344,14 +344,14 @@
 <li>同一线性表中的元素必定具有相同特性，数据元素间的关系是线性关系。</li>
 </ul>
 </li>
-<li>逻辑特征：<br>  <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-22-17-22-47.png">  </li>
-<li>类型定义：<br>  <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-22-18-42-57.png"></li>
+<li>逻辑特征：<br>  <img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-22-17-22-47.png">  </li>
+<li>类型定义：<br>  <img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-22-18-42-57.png"></li>
 </ol>
 <h3 id="线性表的顺序表示"><a href="#线性表的顺序表示" class="headerlink" title="线性表的顺序表示"></a>线性表的顺序表示</h3><ul>
 <li>顺序存储定义：把逻辑上相邻的数据元素存储在物理上相邻的存储单元中的存储结构。（逻辑上相邻，物理上也相邻）</li>
 <li>线性表存储结构占用一片连续的存储空间。</li>
 <li>在访问线性表时，可以快速计算出任何一个数据元素的存储地址。因此可以粗略认为，访问每个元素花费时间相等。是<strong>随机存取法</strong>。 </li>
-<li>线性表基本操作：<br>  <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-00-41-35.png"></li>
+<li>线性表基本操作：<br>  <img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-00-41-35.png"></li>
 <li>顺序表优缺点：<ol>
 <li>优点：<ul>
 <li>存储密度大</li>
@@ -392,9 +392,9 @@
 <li><p>链表：n个结点由指针链组成一个链表</p>
 <ul>
 <li>单链表、双链表和循环链表：<ul>
-<li>结点只有一个指针域的链表，称为<strong>单链表</strong>或线性链表<br>  <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-15-53-33.png"></li>
-<li>结点有两个指针域的链表，称为<strong>双链表</strong><br>  <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-15-54-32.png"> </li>
-<li>首尾相接的链表称为<strong>循环链表</strong><br>  <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-15-55-37.png"></li>
+<li>结点只有一个指针域的链表，称为<strong>单链表</strong>或线性链表<br>  <img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-15-53-33.png"></li>
+<li>结点有两个指针域的链表，称为<strong>双链表</strong><br>  <img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-15-54-32.png"> </li>
+<li>首尾相接的链表称为<strong>循环链表</strong><br>  <img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-15-55-37.png"></li>
 </ul>
 </li>
 </ul>
@@ -403,7 +403,7 @@
 <ul>
 <li>头指针：指向链表中第一个结点的指针</li>
 <li>首元结点：链表中存储第一个数据元素的结点</li>
-<li>头结点：在链表的首元结点之前附设的一个结点<br> <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-15-58-21.png"></li>
+<li>头结点：在链表的首元结点之前附设的一个结点<br> <img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-15-58-21.png"></li>
 </ul>
 </li>
 </ul>
@@ -447,11 +447,11 @@
 </ul>
 </li>
 </ul>
-<h4 id="单链表"><a href="#单链表" class="headerlink" title="单链表"></a>单链表</h4><p><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-16-12-17.png"></p>
+<h4 id="单链表"><a href="#单链表" class="headerlink" title="单链表"></a>单链表</h4><p><img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-16-12-17.png"></p>
 <ul>
 <li>单链表由头指针唯一确定，因此单链表可以用头指针的名字来命名。若头指针名是L，则把链表称为表L。</li>
 </ul>
-<p><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-16-16-06.png"></p>
+<p><img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-16-16-06.png"></p>
 <p>这里 next 包含了下一个结点</p>
 <ul>
 <li><p>通常，<br>   定义链表L：LinkList L；<br>   定义结点指针p：LNode *p；<br>   虽然说LinkList和LNode是等价的。</p>
@@ -459,18 +459,18 @@
 <li><p>为了统一链表的操作，通常这样定义链表：</p>
 </li>
 </ul>
-<p><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-16-22-34.png"></p>
+<p><img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-16-22-34.png"></p>
 <center>存储学生学号姓名成绩的单链表节点类型定义</center>
 
 <ul>
-<li>单链表基本操作：<br><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-20-57-10.png"><br>（操作的算法还是自己多动手去吧。）</li>
+<li>单链表基本操作：<br><img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-20-57-10.png"><br>（操作的算法还是自己多动手去吧。）</li>
 </ul>
 <h4 id="循环链表"><a href="#循环链表" class="headerlink" title="循环链表"></a>循环链表</h4><ul>
-<li><p>是一种头尾相接的链表，即表中最后一个结点的指针域指向头结点，整个链表形成一个环。<br><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-13-57.png"></p>
+<li><p>是一种头尾相接的链表，即表中最后一个结点的指针域指向头结点，整个链表形成一个环。<br><img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-13-57.png"></p>
 </li>
 <li><p>优点：从任何一个结点出发均可找到表中其他结点</p>
 </li>
-<li><p>循环链表的空表<br><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-18-03-33.png"> </p>
+<li><p>循环链表的空表<br><img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-18-03-33.png"> </p>
 </li>
 <li><p>循环链表中涉及遍历操作时，终止条件时判断是否等于头指针</p>
 </li>
@@ -478,17 +478,17 @@
 </li>
 </ul>
 <h4 id="双向链表"><a href="#双向链表" class="headerlink" title="双向链表"></a>双向链表</h4><ul>
-<li><p>在单链表的每个结点里再增加一个指向其直接前驱的指针域prior，这样链表中就形成了有两个方向不同的链，故称为双链表。<br><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-17-34.png"><br><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-18-11.png"></p>
+<li><p>在单链表的每个结点里再增加一个指向其直接前驱的指针域prior，这样链表中就形成了有两个方向不同的链，故称为双链表。<br><img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-17-34.png"><br><img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-18-11.png"></p>
 </li>
 <li><p>双向链表的对称性（设指针p指向某一结点）：<br>p-&gt;prior-&gt;next &#x3D; p &#x3D; p-&gt;next-&gt;prior</p>
 <h5 id="双向循环链表"><a href="#双向循环链表" class="headerlink" title="双向循环链表"></a>双向循环链表</h5></li>
 <li><p>让双向链表的头结点的前驱指针指向链表的最后一个结点</p>
 </li>
-<li><p>让最后一个结点的后继指针指向头结点。<br><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-19-35.png"></p>
+<li><p>让最后一个结点的后继指针指向头结点。<br><img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-19-35.png"></p>
 </li>
 </ul>
-<h4 id="单链表、循环链表和双向链表比较"><a href="#单链表、循环链表和双向链表比较" class="headerlink" title="单链表、循环链表和双向链表比较"></a>单链表、循环链表和双向链表比较</h4><p><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-40-35.png"></p>
-<h3 id="链表和顺序表比较"><a href="#链表和顺序表比较" class="headerlink" title="链表和顺序表比较"></a>链表和顺序表比较</h3><p><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-55-10.png"></p>
+<h4 id="单链表、循环链表和双向链表比较"><a href="#单链表、循环链表和双向链表比较" class="headerlink" title="单链表、循环链表和双向链表比较"></a>单链表、循环链表和双向链表比较</h4><p><img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-40-35.png"></p>
+<h3 id="链表和顺序表比较"><a href="#链表和顺序表比较" class="headerlink" title="链表和顺序表比较"></a>链表和顺序表比较</h3><p><img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-55-10.png"></p>
 ]]></content>
       <categories>
         <category>算法与数据结构</category>
@@ -513,7 +513,7 @@
 <ul>
 <li><p>栈与一般线性表只在运算规则有所不同</p>
 </li>
-<li><p>栈的示意图<br>表尾（a<del>n</del>端）称为栈顶Top，表头（a<del>1</del>端）称为栈底Base<br><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-03-27-22-30-06.png"></p>
+<li><p>栈的示意图<br>表尾（a<del>n</del>端）称为栈顶Top，表头（a<del>1</del>端）称为栈底Base<br><img src="/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-03-27-22-30-06.png"></p>
 </li>
 <li><p>插入元素到栈顶的操作叫入栈，从栈顶删除最后一个元素的操作叫出栈</p>
 <ul>
@@ -575,7 +575,7 @@
 <li><p>定义：链栈是运算受限的单链表，只能在链表头部进行操作。</p>
  <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">StackNode</span>&#123;</span><br><span class="line">    SElemType data;</span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">StackNode</span> *next;</span><br><span class="line">&#125;StackNode, *LinkStack;</span><br><span class="line">LinkStack S;</span><br></pre></td></tr></table></figure>
 
-<p> <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-03-28-20-16-27.png"> 链栈中指针的方向指向前驱元素。</p>
+<p> <img src="/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-03-28-20-16-27.png"> 链栈中指针的方向指向前驱元素。</p>
 <ul>
 <li>链栈的头指针就是栈顶</li>
 <li>不需要头结点</li>
@@ -607,7 +607,7 @@
 </li>
 </ol>
 <ul>
-<li>队列的示意图<br><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-03-27-22-48-56.png"></li>
+<li>队列的示意图<br><img src="/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-03-27-22-48-56.png"></li>
 </ul>
 <h3 id="队列的顺序表示————用一维数组base-MAXQSIZE"><a href="#队列的顺序表示————用一维数组base-MAXQSIZE" class="headerlink" title="队列的顺序表示————用一维数组base[MAXQSIZE]"></a>队列的顺序表示————用一维数组base[MAXQSIZE]</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> MAXQSIZE 100 <span class="comment">//最大队列长度</span></span></span><br><span class="line">Typedef <span class="keyword">struct</span></span><br><span class="line">&#123;</span><br><span class="line">    QElemType *base;</span><br><span class="line">    <span class="type">int</span> front;<span class="comment">//头指针</span></span><br><span class="line">    <span class="type">int</span> rear;<span class="comment">//尾指针</span></span><br><span class="line">&#125;SqQueue;</span><br></pre></td></tr></table></figure>
 
@@ -626,11 +626,11 @@
 </li>
 <li><p>溢出<br>  当rear &#x3D; MAXQSIZE 时，不能再入队，发生溢出</p>
 <ul>
-<li><p>真溢出<br>  若front &#x3D; 0<br>  rear &#x3D; MAXQSIZE 时，再入队————真溢出<br>  <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-28-46.png"></p>
+<li><p>真溢出<br>  若front &#x3D; 0<br>  rear &#x3D; MAXQSIZE 时，再入队————真溢出<br>  <img src="/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-28-46.png"></p>
 </li>
-<li><p>假溢出<br>  front !&#x3D; 0<br>  rear &#x3D; MAXQSIZE 时，再入队————假溢出<br>  <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-29-18.png"></p>
+<li><p>假溢出<br>  front !&#x3D; 0<br>  rear &#x3D; MAXQSIZE 时，再入队————假溢出<br>  <img src="/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-29-18.png"></p>
 </li>
-<li><p>解决假溢出——引入循环队列<br>  将base[0]接在base[MAXQSIZE-1]之后，若rear +1 &#x3D;&#x3D;MAXQSIZE，则令rear&#x3D;0;——就是想象把队列变成一个圈。<br>  <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-27-43.png"><br>  实现方法：对MAXQSIZE模运算<br>  base[n] 对 MAXQSIZE取模都是n，只有MAXQSIZE会等于0，就能做到base[0]接在base[MAXQSIZE-1]之后</p>
+<li><p>解决假溢出——引入循环队列<br>  将base[0]接在base[MAXQSIZE-1]之后，若rear +1 &#x3D;&#x3D;MAXQSIZE，则令rear&#x3D;0;——就是想象把队列变成一个圈。<br>  <img src="/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-27-43.png"><br>  实现方法：对MAXQSIZE模运算<br>  base[n] 对 MAXQSIZE取模都是n，只有MAXQSIZE会等于0，就能做到base[0]接在base[MAXQSIZE-1]之后</p>
 <ul>
 <li>插入元素：  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Q.base[Q.rear] = x;</span><br><span class="line">Q.rear = (Q.rear+1) % MAXQSIZE</span><br></pre></td></tr></table></figure></li>
 <li>删除元素：  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">x = Q.base[Q.front]</span><br><span class="line">Q.front = (Q.front+1) % MAXQSIZE</span><br></pre></td></tr></table></figure></li>
@@ -648,7 +648,7 @@
 <li>少用一个元素空间<br>  说实话觉得第二种好。。</li>
 </ol>
 </li>
-<li><p>循环队列解决队满时判断方法——少用一个元素空间<br>  <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-26-52.png"><br>  此时队满：队尾指针+1，就与队头指针重合<br>  队满标志：(rear+1) % MAXQSIZE &#x3D; front</p>
+<li><p>循环队列解决队满时判断方法——少用一个元素空间<br>  <img src="/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-26-52.png"><br>  此时队满：队尾指针+1，就与队头指针重合<br>  队满标志：(rear+1) % MAXQSIZE &#x3D; front</p>
 </li>
 </ul>
 </li>
@@ -662,7 +662,7 @@
 </li>
 <li><p>求队列长度</p>
  <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">QueueLength</span><span class="params">(SqQueue Q)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span>((Q.rear - Q.front + MAXQSIZE) % MAXQSIZE)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p> 这里是考虑到了<br> <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-40-09.png"><br> 第二种队列的情况 </p>
+<p> 这里是考虑到了<br> <img src="/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-40-09.png"><br> 第二种队列的情况 </p>
 </li>
 <li><p>循环队列入队</p>
  <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">Status <span class="title">EnQueue</span><span class="params">(SqQueue &amp;Q,QElemType e)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>((Q.rear+<span class="number">1</span>)%MAXQSIZE==Q.front) <span class="keyword">return</span> ERROR<span class="comment">//队满</span></span><br><span class="line">    Q.base[Q.rear]=e;</span><br><span class="line">    Q.rear=(Q.rear+<span class="number">1</span>)%MAXQSIZE;</span><br><span class="line">    <span class="keyword">return</span> OK;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
@@ -689,80 +689,6 @@
 6. 求队头元素
     <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function">Status <span class="title">GetHead</span><span class="params">(LinkQueue &amp;Q,QElemType &amp;e)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(Q.front==Q.rear) <span class="keyword">return</span> ERROR;</span><br><span class="line">    e=Q.front-&gt;next-&gt;data;</span><br><span class="line">    <span class="keyword">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </code></pre>
-]]></content>
-      <categories>
-        <category>算法与数据结构</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>算法与数据结构-4</title>
-    <url>/2022/04/04/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-4/</url>
-    <content><![CDATA[<h2 id="串"><a href="#串" class="headerlink" title="串"></a>串</h2><ol>
-<li><p>定义：零个或多个任意字符组成的有限序列</p>
-<p> <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-4/2022-04-04-15-14-20.png"></p>
-</li>
-</ol>
-<ul>
-<li>子串：一个串中任意个连续字符组成的子序列（含空串）称为该串的子串<br> 真子串是指不包含自身的所有子串。</li>
-<li>主串：包含子串的串相应地称为主串</li>
-<li>字符位置：字符在序列中的序号为该字符在串中的位置</li>
-<li>空格串：由一个或多个空格组成的串，与空串不同。</li>
-<li>串相等：当且仅当两个串的长度相等且各个对应位置上的字符都相同时，这两个串才是相等的。所有空串都是相等的。</li>
-</ul>
-<ol start="2">
-<li>串中元素逻辑关系与线性表的相同，串可以采用与线性表相同的存储结构</li>
-</ol>
-<h3 id="顺序串"><a href="#顺序串" class="headerlink" title="顺序串"></a>顺序串</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> MAXLEN 255</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">char</span> ch[MAXLEN+<span class="number">1</span>];<span class="comment">//存储串的一维数组，+1可以使下标为0-256，应该会方便研究一些算法。</span></span><br><span class="line">    <span class="type">int</span> length;<span class="comment">//串的当前长度</span></span><br><span class="line">&#125;SString;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>ps：研究串的某些算法时，通常从数组的一号位置开始存储，会方便一些。<br>顺序串用的比较多，因为对串进行插入和删除比较少，在查找和匹配时用顺序串比较方便。</li>
-</ul>
-<h3 id="链串"><a href="#链串" class="headerlink" title="链串"></a>链串</h3><p>链串可以将多个字符放在一个结点中，克服存储密度低的缺点。<br><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-4/2022-04-04-15-31-45.png"><br>被称为，块链结构</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> CHUNKSIZE 80</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">Chunk</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">char</span> ch[CHUNKSIZE];</span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">Chunk</span> *next;</span><br><span class="line">&#125;Chunk;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span></span><br><span class="line">&#123;</span><br><span class="line">    Chunk *head,*tail;<span class="comment">//串的头指针和尾指针</span></span><br><span class="line">    <span class="type">int</span> curlen;<span class="comment">//串的当前长度</span></span><br><span class="line">&#125;LString;</span><br></pre></td></tr></table></figure>
-
-<h3 id="串的模式匹配算法"><a href="#串的模式匹配算法" class="headerlink" title="串的模式匹配算法"></a>串的模式匹配算法</h3><ol>
-<li>算法目的：确定主串中所含子串（模式串）第一次出现的位置（定位）</li>
-<li>算法应用：<ul>
-<li>搜索引擎，拼写检查，语言翻译，数据压缩</li>
-</ul>
-</li>
-<li>算法种类：<ul>
-<li>BF算法（暴力破解），时间效率差一些</li>
-<li>KMP算法，速度快一些</li>
-</ul>
-</li>
-</ol>
-<h4 id="BF算法"><a href="#BF算法" class="headerlink" title="BF算法"></a>BF算法</h4><p>亦称简单匹配算法，采用穷举法的思路。</p>
-<ul>
-<li>算法思路：<br>  Index(S,T,pos)<br>  主串S：a a a a b c d<br>  模式串T: a b c<br>  将主串的第pos个字符和模式串的第一个字符比较，<ul>
-<li>若相等，继续逐个比较后续字符；</li>
-<li>若不等，从主串pos的下一个字符起，重新与模式串的第一个字符比较<ul>
-<li>直到主串的一个连续子串字符序列与模式串相等。返回值为S中与T匹配的第一个子序列第一个字符的序号，即匹配成功。</li>
-<li>否则，匹配失败，返回值0</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> Index <span class="title">BF</span><span class="params">(SString S, SString T,<span class="type">int</span> pos)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> i = pos, j = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(i&lt;=S.length &amp;&amp; j&lt;= T.length)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(s.ch[i]==t.ch[j])</span><br><span class="line">        &#123;</span><br><span class="line">            ++i;</span><br><span class="line">            ++j;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            i = i-j+<span class="number">2</span>;</span><br><span class="line">            j=<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (j&gt;=T.length) <span class="keyword">return</span> i-T.length<span class="comment">//返回匹配的第一个字符下标</span></span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> <span class="number">0</span>;<span class="comment">//匹配失败</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>算法时间复杂度：<br>  最好情况：一次匹配即成功，有m个字符，时间复杂度就为O(m)<br>  最差情况：<ul>
-<li>若n为主串长度，m为子串长度，主串前面n-m个位置都部分匹配到了子串的最后一位，即这n-m位各比较了m次</li>
-<li>最后m位也各比较了一次</li>
-<li>所以总次数为(n-m)*m+m &#x3D; (n-m+1)*m</li>
-<li>若m &lt;&lt; n,则算法时间复杂度为O(n<em>m),平均为$n</em>m\over2$</li>
-</ul>
-</li>
-</ul>
-<h4 id="KMP算法"><a href="#KMP算法" class="headerlink" title="KMP算法"></a>KMP算法</h4><p>大概就是利用部分匹配结果中与模式串相同的字符，从而加快模式串的滑动速度<br><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-4/2022-04-04-19-58-40.png"></p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> Index <span class="title">KMP</span><span class="params">(SString S, SString T,<span class="type">int</span> pos)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> i = pos, j = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(i&lt;=S.length &amp;&amp; j&lt;= T.length)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(j==<span class="number">0</span> || s.ch[i]==t.ch[j])</span><br><span class="line">        &#123;</span><br><span class="line">            ++i;</span><br><span class="line">            ++j;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            j = next[j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (j&gt;=T.length) <span class="keyword">return</span> i-T.length<span class="comment">//返回匹配的第一个字符下标</span></span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> <span class="number">0</span>;<span class="comment">//匹配失败</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">get_next</span><span class="params">(SString T,<span class="type">int</span> &amp;next[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    i=<span class="number">1</span>;next[<span class="number">1</span>]=<span class="number">0</span>;j=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(i&lt;T.length)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(j==<span class="number">0</span> || T.ch[i]==T.ch[j])</span><br><span class="line">        &#123;</span><br><span class="line">            ++i;++j;</span><br><span class="line">            next[i]=j;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            j=next[j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>定义next[j]:<br><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-4/2022-04-04-20-04-45.png"><br><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-4/2022-04-04-20-05-37.png"></p>
-<p>  比如说，j&#x3D;6的b字符，从6b的前一个字符（5a）开始与第一个字符（1a）比较，发现匹配成功，此时有k-1个元素相同，所以k&#x3D;2；再从6b的前两个字符（4a5a）与1a2b比较，匹配失败，之后以此类推。</p>
-</li>
-<li><p>next函数改进(好难。。整不明白)</p>
-  <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">get_nextval</span><span class="params">(SString T,<span class="type">int</span> &amp;nextval[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    i=<span class="number">1</span>;nextval[<span class="number">1</span>]=<span class="number">0</span>;j=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(i&lt;T.length)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(j==<span class="number">0</span> || T.ch[i]==T.ch[j])</span><br><span class="line">        &#123;</span><br><span class="line">            ++i;++j;</span><br><span class="line">            <span class="keyword">if</span>(T.ch[i] != T.ch[j]) nextval[i]=j;</span><br><span class="line">            <span class="keyword">else</span> nextval[i] = nextval[j];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            j=nextval[j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
 ]]></content>
       <categories>
         <category>算法与数据结构</category>
@@ -851,7 +777,7 @@
   <entry>
     <title>计算时间复杂度的练习</title>
     <url>/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/</url>
-    <content><![CDATA[<p><img src="/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-07-37.png"></p>
+    <content><![CDATA[<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-07-37.png"></p>
 <ol>
 <li>很容易看出语句频度最大的语句是<code>for(int j = 0;j &lt; n;j++)</code></li>
 <li>其执行次数为n(n+1),即n^2^<ul>
@@ -861,20 +787,20 @@
 <li>T(n)&#x3D;O(n^2^)</li>
 </ol>
 <p>####例1</p>
-<p><img src="/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-17-41.png" title="例1"></p>
+<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-17-41.png" title="例1"></p>
 <ol>
 <li>嵌套最深的语句为<code>sum[i] += x[i][j];</code> </li>
 <li>执行次数为 m $\times$ n 次</li>
 <li>T(n)&#x3D;O(m $\times$ n)</li>
 </ol>
-<p>####虽然但是这是例2<br><img src="/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-21-45.png"></p>
+<p>####虽然但是这是例2<br><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-21-45.png"></p>
 <ol>
 <li>嵌套最深语句为<code>c[i][j] = c[i][j] + a[i][k] * b[k][j];</code></li>
 <li>执行次数为n^3^</li>
 <li>T(n)&#x3D;O(n^3^)</li>
 </ol>
 <p>####例3</p>
-<p><img src="/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-26-30.png"></p>
+<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-26-30.png"></p>
 <ol>
 <li>可以看出嵌套最深语句是<code>x=x+1</code> </li>
 <li>但是计算时间复杂度时，需要用级数求和法</li>
@@ -886,7 +812,7 @@
 </li>
 </ol>
 <p>####例4</p>
-<p><img src="/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-22-00-05-42.png"></p>
+<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-22-00-05-42.png"></p>
 <ol>
 <li><p>执行次数最多为<code>i=i*2;</code></p>
 <ul>
@@ -906,6 +832,80 @@
 <li><p>T(n)&#x3D;O(${log_2{n}}$)</p>
 </li>
 </ol>
+]]></content>
+      <categories>
+        <category>算法与数据结构</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>算法与数据结构-4</title>
+    <url>/2022/04/04/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-4/</url>
+    <content><![CDATA[<h2 id="串"><a href="#串" class="headerlink" title="串"></a>串</h2><ol>
+<li><p>定义：零个或多个任意字符组成的有限序列</p>
+<p> <img src="/2022/04/04/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-4/2022-04-04-15-14-20.png"></p>
+</li>
+</ol>
+<ul>
+<li>子串：一个串中任意个连续字符组成的子序列（含空串）称为该串的子串<br> 真子串是指不包含自身的所有子串。</li>
+<li>主串：包含子串的串相应地称为主串</li>
+<li>字符位置：字符在序列中的序号为该字符在串中的位置</li>
+<li>空格串：由一个或多个空格组成的串，与空串不同。</li>
+<li>串相等：当且仅当两个串的长度相等且各个对应位置上的字符都相同时，这两个串才是相等的。所有空串都是相等的。</li>
+</ul>
+<ol start="2">
+<li>串中元素逻辑关系与线性表的相同，串可以采用与线性表相同的存储结构</li>
+</ol>
+<h3 id="顺序串"><a href="#顺序串" class="headerlink" title="顺序串"></a>顺序串</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> MAXLEN 255</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">char</span> ch[MAXLEN+<span class="number">1</span>];<span class="comment">//存储串的一维数组，+1可以使下标为0-256，应该会方便研究一些算法。</span></span><br><span class="line">    <span class="type">int</span> length;<span class="comment">//串的当前长度</span></span><br><span class="line">&#125;SString;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>ps：研究串的某些算法时，通常从数组的一号位置开始存储，会方便一些。<br>顺序串用的比较多，因为对串进行插入和删除比较少，在查找和匹配时用顺序串比较方便。</li>
+</ul>
+<h3 id="链串"><a href="#链串" class="headerlink" title="链串"></a>链串</h3><p>链串可以将多个字符放在一个结点中，克服存储密度低的缺点。<br><img src="/2022/04/04/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-4/2022-04-04-15-31-45.png"><br>被称为，块链结构</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> CHUNKSIZE 80</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">Chunk</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">char</span> ch[CHUNKSIZE];</span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">Chunk</span> *next;</span><br><span class="line">&#125;Chunk;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span></span><br><span class="line">&#123;</span><br><span class="line">    Chunk *head,*tail;<span class="comment">//串的头指针和尾指针</span></span><br><span class="line">    <span class="type">int</span> curlen;<span class="comment">//串的当前长度</span></span><br><span class="line">&#125;LString;</span><br></pre></td></tr></table></figure>
+
+<h3 id="串的模式匹配算法"><a href="#串的模式匹配算法" class="headerlink" title="串的模式匹配算法"></a>串的模式匹配算法</h3><ol>
+<li>算法目的：确定主串中所含子串（模式串）第一次出现的位置（定位）</li>
+<li>算法应用：<ul>
+<li>搜索引擎，拼写检查，语言翻译，数据压缩</li>
+</ul>
+</li>
+<li>算法种类：<ul>
+<li>BF算法（暴力破解），时间效率差一些</li>
+<li>KMP算法，速度快一些</li>
+</ul>
+</li>
+</ol>
+<h4 id="BF算法"><a href="#BF算法" class="headerlink" title="BF算法"></a>BF算法</h4><p>亦称简单匹配算法，采用穷举法的思路。</p>
+<ul>
+<li>算法思路：<br>  Index(S,T,pos)<br>  主串S：a a a a b c d<br>  模式串T: a b c<br>  将主串的第pos个字符和模式串的第一个字符比较，<ul>
+<li>若相等，继续逐个比较后续字符；</li>
+<li>若不等，从主串pos的下一个字符起，重新与模式串的第一个字符比较<ul>
+<li>直到主串的一个连续子串字符序列与模式串相等。返回值为S中与T匹配的第一个子序列第一个字符的序号，即匹配成功。</li>
+<li>否则，匹配失败，返回值0</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> Index <span class="title">BF</span><span class="params">(SString S, SString T,<span class="type">int</span> pos)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> i = pos, j = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(i&lt;=S.length &amp;&amp; j&lt;= T.length)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(s.ch[i]==t.ch[j])</span><br><span class="line">        &#123;</span><br><span class="line">            ++i;</span><br><span class="line">            ++j;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            i = i-j+<span class="number">2</span>;</span><br><span class="line">            j=<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (j&gt;=T.length) <span class="keyword">return</span> i-T.length<span class="comment">//返回匹配的第一个字符下标</span></span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> <span class="number">0</span>;<span class="comment">//匹配失败</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>算法时间复杂度：<br>  最好情况：一次匹配即成功，有m个字符，时间复杂度就为O(m)<br>  最差情况：<ul>
+<li>若n为主串长度，m为子串长度，主串前面n-m个位置都部分匹配到了子串的最后一位，即这n-m位各比较了m次</li>
+<li>最后m位也各比较了一次</li>
+<li>所以总次数为(n-m)*m+m &#x3D; (n-m+1)*m</li>
+<li>若m &lt;&lt; n,则算法时间复杂度为O(n<em>m),平均为$n</em>m\over2$</li>
+</ul>
+</li>
+</ul>
+<h4 id="KMP算法"><a href="#KMP算法" class="headerlink" title="KMP算法"></a>KMP算法</h4><p>大概就是利用部分匹配结果中与模式串相同的字符，从而加快模式串的滑动速度<br><img src="/2022/04/04/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-4/2022-04-04-19-58-40.png"></p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> Index <span class="title">KMP</span><span class="params">(SString S, SString T,<span class="type">int</span> pos)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> i = pos, j = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(i&lt;=S.length &amp;&amp; j&lt;= T.length)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(j==<span class="number">0</span> || s.ch[i]==t.ch[j])</span><br><span class="line">        &#123;</span><br><span class="line">            ++i;</span><br><span class="line">            ++j;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            j = next[j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (j&gt;=T.length) <span class="keyword">return</span> i-T.length<span class="comment">//返回匹配的第一个字符下标</span></span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> <span class="number">0</span>;<span class="comment">//匹配失败</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">get_next</span><span class="params">(SString T,<span class="type">int</span> &amp;next[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    i=<span class="number">1</span>;next[<span class="number">1</span>]=<span class="number">0</span>;j=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(i&lt;T.length)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(j==<span class="number">0</span> || T.ch[i]==T.ch[j])</span><br><span class="line">        &#123;</span><br><span class="line">            ++i;++j;</span><br><span class="line">            next[i]=j;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            j=next[j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>定义next[j]:<br><img src="/2022/04/04/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-4/2022-04-04-20-04-45.png"><br><img src="/2022/04/04/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-4/2022-04-04-20-05-37.png"></p>
+<p>  比如说，j&#x3D;6的b字符，从6b的前一个字符（5a）开始与第一个字符（1a）比较，发现匹配成功，此时有k-1个元素相同，所以k&#x3D;2；再从6b的前两个字符（4a5a）与1a2b比较，匹配失败，之后以此类推。</p>
+</li>
+<li><p>next函数改进(好难。。整不明白)</p>
+  <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">get_nextval</span><span class="params">(SString T,<span class="type">int</span> &amp;nextval[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    i=<span class="number">1</span>;nextval[<span class="number">1</span>]=<span class="number">0</span>;j=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(i&lt;T.length)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(j==<span class="number">0</span> || T.ch[i]==T.ch[j])</span><br><span class="line">        &#123;</span><br><span class="line">            ++i;++j;</span><br><span class="line">            <span class="keyword">if</span>(T.ch[i] != T.ch[j]) nextval[i]=j;</span><br><span class="line">            <span class="keyword">else</span> nextval[i] = nextval[j];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            j=nextval[j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
 ]]></content>
       <categories>
         <category>算法与数据结构</category>

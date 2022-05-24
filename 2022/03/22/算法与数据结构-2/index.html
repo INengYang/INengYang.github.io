@@ -15,10 +15,10 @@
 
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" integrity="sha256-jTIdiMuX/e3DGJUGwl3pKSxuc6YOuqtJYkM0bGQESA4=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"inengyang.github.io","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.10.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"inengyang.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.11.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="算法与数据结构的第二篇，线性表的内容">
 <meta property="og:type" content="article">
@@ -27,29 +27,29 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="算法与数据结构的第二篇，线性表的内容">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://inengyang.github.io/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-22-17-22-47.png">
-<meta property="og:image" content="https://inengyang.github.io/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-22-18-42-57.png">
-<meta property="og:image" content="https://inengyang.github.io/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-00-41-35.png">
-<meta property="og:image" content="https://inengyang.github.io/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-15-53-33.png">
-<meta property="og:image" content="https://inengyang.github.io/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-15-54-32.png">
-<meta property="og:image" content="https://inengyang.github.io/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-15-55-37.png">
-<meta property="og:image" content="https://inengyang.github.io/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-15-58-21.png">
-<meta property="og:image" content="https://inengyang.github.io/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-16-12-17.png">
-<meta property="og:image" content="https://inengyang.github.io/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-16-16-06.png">
-<meta property="og:image" content="https://inengyang.github.io/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-16-22-34.png">
-<meta property="og:image" content="https://inengyang.github.io/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-20-57-10.png">
-<meta property="og:image" content="https://inengyang.github.io/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-13-57.png">
-<meta property="og:image" content="https://inengyang.github.io/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-18-03-33.png">
-<meta property="og:image" content="https://inengyang.github.io/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-17-34.png">
-<meta property="og:image" content="https://inengyang.github.io/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-18-11.png">
-<meta property="og:image" content="https://inengyang.github.io/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-19-35.png">
-<meta property="og:image" content="https://inengyang.github.io/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-40-35.png">
-<meta property="og:image" content="https://inengyang.github.io/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-55-10.png">
+<meta property="og:image" content="https://inengyang.github.io/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-22-17-22-47.png">
+<meta property="og:image" content="https://inengyang.github.io/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-22-18-42-57.png">
+<meta property="og:image" content="https://inengyang.github.io/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-00-41-35.png">
+<meta property="og:image" content="https://inengyang.github.io/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-15-53-33.png">
+<meta property="og:image" content="https://inengyang.github.io/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-15-54-32.png">
+<meta property="og:image" content="https://inengyang.github.io/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-15-55-37.png">
+<meta property="og:image" content="https://inengyang.github.io/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-15-58-21.png">
+<meta property="og:image" content="https://inengyang.github.io/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-16-12-17.png">
+<meta property="og:image" content="https://inengyang.github.io/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-16-16-06.png">
+<meta property="og:image" content="https://inengyang.github.io/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-16-22-34.png">
+<meta property="og:image" content="https://inengyang.github.io/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-20-57-10.png">
+<meta property="og:image" content="https://inengyang.github.io/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-13-57.png">
+<meta property="og:image" content="https://inengyang.github.io/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-18-03-33.png">
+<meta property="og:image" content="https://inengyang.github.io/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-17-34.png">
+<meta property="og:image" content="https://inengyang.github.io/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-18-11.png">
+<meta property="og:image" content="https://inengyang.github.io/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-19-35.png">
+<meta property="og:image" content="https://inengyang.github.io/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-40-35.png">
+<meta property="og:image" content="https://inengyang.github.io/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-55-10.png">
 <meta property="article:published_time" content="2022-03-22T09:09:30.000Z">
 <meta property="article:modified_time" content="2022-03-24T16:22:21.535Z">
 <meta property="article:author" content="DXH">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://inengyang.github.io/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-22-17-22-47.png">
+<meta name="twitter:image" content="https://inengyang.github.io/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-22-17-22-47.png">
 
 
 <link rel="canonical" href="https://inengyang.github.io/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/">
@@ -79,9 +79,6 @@
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切换导航栏" role="button">
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
     </div>
   </div>
 
@@ -96,46 +93,15 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
-        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
 
 
 
-<nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
-      <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
-        </a>
-      </li>
-  </ul>
-</nav>
 
 
 
-  <div class="search-pop-overlay">
-    <div class="popup search-popup"><div class="search-header">
-  <span class="search-icon">
-    <i class="fa fa-search"></i>
-  </span>
-  <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off" maxlength="80"
-           placeholder="搜索..." spellcheck="false"
-           type="search" class="search-input">
-  </div>
-  <span class="popup-btn-close" role="button">
-    <i class="fa fa-times-circle"></i>
-  </span>
-</div>
-<div class="search-result-container no-result">
-  <div class="search-result-icon">
-    <i class="fa fa-spinner fa-pulse fa-5x"></i>
-  </div>
-</div>
-
-    </div>
-  </div>
 
 </div>
         
@@ -167,8 +133,6 @@
 
         <div class="site-overview-wrap sidebar-panel">
           <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="DXH"
-      src="/images/avatar.jpg">
   <p class="site-author-name" itemprop="name">DXH</p>
   <div class="site-description" itemprop="description"></div>
 </div>
@@ -187,11 +151,6 @@
       </div>
   </nav>
 </div>
-  <div class="links-of-author site-overview-item animated">
-      <span class="links-of-author-item">
-        <a href="https://github.com/INengYang" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;INengYang" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
-      </span>
-  </div>
 
 
 
@@ -209,7 +168,6 @@
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
-  <div class="reading-progress-bar"></div>
 
 <noscript>
   <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
@@ -230,7 +188,7 @@
     <link itemprop="mainEntityOfPage" href="https://inengyang.github.io/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="DXH">
     </span>
 
@@ -238,7 +196,7 @@
       <meta itemprop="name" content="Hexo">
       <meta itemprop="description" content="">
     </span>
-    
+
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="算法与数据结构(2) | Hexo">
       <meta itemprop="description" content="算法与数据结构的第二篇，线性表的内容">
@@ -296,14 +254,14 @@
 <li>同一线性表中的元素必定具有相同特性，数据元素间的关系是线性关系。</li>
 </ul>
 </li>
-<li>逻辑特征：<br>  <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-22-17-22-47.png">  </li>
-<li>类型定义：<br>  <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-22-18-42-57.png"></li>
+<li>逻辑特征：<br>  <img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-22-17-22-47.png">  </li>
+<li>类型定义：<br>  <img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-22-18-42-57.png"></li>
 </ol>
 <h3 id="线性表的顺序表示"><a href="#线性表的顺序表示" class="headerlink" title="线性表的顺序表示"></a>线性表的顺序表示</h3><ul>
 <li>顺序存储定义：把逻辑上相邻的数据元素存储在物理上相邻的存储单元中的存储结构。（逻辑上相邻，物理上也相邻）</li>
 <li>线性表存储结构占用一片连续的存储空间。</li>
 <li>在访问线性表时，可以快速计算出任何一个数据元素的存储地址。因此可以粗略认为，访问每个元素花费时间相等。是<strong>随机存取法</strong>。 </li>
-<li>线性表基本操作：<br>  <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-00-41-35.png"></li>
+<li>线性表基本操作：<br>  <img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-00-41-35.png"></li>
 <li>顺序表优缺点：<ol>
 <li>优点：<ul>
 <li>存储密度大</li>
@@ -344,9 +302,9 @@
 <li><p>链表：n个结点由指针链组成一个链表</p>
 <ul>
 <li>单链表、双链表和循环链表：<ul>
-<li>结点只有一个指针域的链表，称为<strong>单链表</strong>或线性链表<br>  <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-15-53-33.png"></li>
-<li>结点有两个指针域的链表，称为<strong>双链表</strong><br>  <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-15-54-32.png"> </li>
-<li>首尾相接的链表称为<strong>循环链表</strong><br>  <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-15-55-37.png"></li>
+<li>结点只有一个指针域的链表，称为<strong>单链表</strong>或线性链表<br>  <img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-15-53-33.png"></li>
+<li>结点有两个指针域的链表，称为<strong>双链表</strong><br>  <img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-15-54-32.png"> </li>
+<li>首尾相接的链表称为<strong>循环链表</strong><br>  <img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-15-55-37.png"></li>
 </ul>
 </li>
 </ul>
@@ -355,7 +313,7 @@
 <ul>
 <li>头指针：指向链表中第一个结点的指针</li>
 <li>首元结点：链表中存储第一个数据元素的结点</li>
-<li>头结点：在链表的首元结点之前附设的一个结点<br> <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-15-58-21.png"></li>
+<li>头结点：在链表的首元结点之前附设的一个结点<br> <img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-15-58-21.png"></li>
 </ul>
 </li>
 </ul>
@@ -399,11 +357,11 @@
 </ul>
 </li>
 </ul>
-<h4 id="单链表"><a href="#单链表" class="headerlink" title="单链表"></a>单链表</h4><p><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-16-12-17.png"></p>
+<h4 id="单链表"><a href="#单链表" class="headerlink" title="单链表"></a>单链表</h4><p><img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-16-12-17.png"></p>
 <ul>
 <li>单链表由头指针唯一确定，因此单链表可以用头指针的名字来命名。若头指针名是L，则把链表称为表L。</li>
 </ul>
-<p><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-16-16-06.png"></p>
+<p><img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-16-16-06.png"></p>
 <p>这里 next 包含了下一个结点</p>
 <ul>
 <li><p>通常，<br>   定义链表L：LinkList L；<br>   定义结点指针p：LNode *p；<br>   虽然说LinkList和LNode是等价的。</p>
@@ -411,18 +369,18 @@
 <li><p>为了统一链表的操作，通常这样定义链表：</p>
 </li>
 </ul>
-<p><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-16-22-34.png"></p>
+<p><img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-16-22-34.png"></p>
 <center>存储学生学号姓名成绩的单链表节点类型定义</center>
 
 <ul>
-<li>单链表基本操作：<br><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-20-57-10.png"><br>（操作的算法还是自己多动手去吧。）</li>
+<li>单链表基本操作：<br><img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-23-20-57-10.png"><br>（操作的算法还是自己多动手去吧。）</li>
 </ul>
 <h4 id="循环链表"><a href="#循环链表" class="headerlink" title="循环链表"></a>循环链表</h4><ul>
-<li><p>是一种头尾相接的链表，即表中最后一个结点的指针域指向头结点，整个链表形成一个环。<br><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-13-57.png"></p>
+<li><p>是一种头尾相接的链表，即表中最后一个结点的指针域指向头结点，整个链表形成一个环。<br><img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-13-57.png"></p>
 </li>
 <li><p>优点：从任何一个结点出发均可找到表中其他结点</p>
 </li>
-<li><p>循环链表的空表<br><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-18-03-33.png"> </p>
+<li><p>循环链表的空表<br><img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-18-03-33.png"> </p>
 </li>
 <li><p>循环链表中涉及遍历操作时，终止条件时判断是否等于头指针</p>
 </li>
@@ -430,17 +388,17 @@
 </li>
 </ul>
 <h4 id="双向链表"><a href="#双向链表" class="headerlink" title="双向链表"></a>双向链表</h4><ul>
-<li><p>在单链表的每个结点里再增加一个指向其直接前驱的指针域prior，这样链表中就形成了有两个方向不同的链，故称为双链表。<br><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-17-34.png"><br><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-18-11.png"></p>
+<li><p>在单链表的每个结点里再增加一个指向其直接前驱的指针域prior，这样链表中就形成了有两个方向不同的链，故称为双链表。<br><img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-17-34.png"><br><img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-18-11.png"></p>
 </li>
 <li><p>双向链表的对称性（设指针p指向某一结点）：<br>p-&gt;prior-&gt;next &#x3D; p &#x3D; p-&gt;next-&gt;prior</p>
 <h5 id="双向循环链表"><a href="#双向循环链表" class="headerlink" title="双向循环链表"></a>双向循环链表</h5></li>
 <li><p>让双向链表的头结点的前驱指针指向链表的最后一个结点</p>
 </li>
-<li><p>让最后一个结点的后继指针指向头结点。<br><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-19-35.png"></p>
+<li><p>让最后一个结点的后继指针指向头结点。<br><img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-19-35.png"></p>
 </li>
 </ul>
-<h4 id="单链表、循环链表和双向链表比较"><a href="#单链表、循环链表和双向链表比较" class="headerlink" title="单链表、循环链表和双向链表比较"></a>单链表、循环链表和双向链表比较</h4><p><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-40-35.png"></p>
-<h3 id="链表和顺序表比较"><a href="#链表和顺序表比较" class="headerlink" title="链表和顺序表比较"></a>链表和顺序表比较</h3><p><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-55-10.png"></p>
+<h4 id="单链表、循环链表和双向链表比较"><a href="#单链表、循环链表和双向链表比较" class="headerlink" title="单链表、循环链表和双向链表比较"></a>单链表、循环链表和双向链表比较</h4><p><img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-40-35.png"></p>
+<h3 id="链表和顺序表比较"><a href="#链表和顺序表比较" class="headerlink" title="链表和顺序表比较"></a>链表和顺序表比较</h3><p><img src="/2022/03/22/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2/2022-03-24-21-55-10.png"></p>
 
     </div>
 
@@ -488,21 +446,8 @@
   </span>
   <span class="author" itemprop="copyrightHolder">DXH</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>
-
-<div class="powered-by">
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <i class="fa fa-user-md"></i>
-    <span id="busuanzi_container_site_uv">
-        本站访客数:<span id="busuanzi_value_site_uv"></span>
-    </span>
-    <span class="post-meta-divider">|</span>
-    <span id="busuanzi_container_site_pv">
-        本站访问量<span id="busuanzi_value_site_pv"></span>
-    </span>
-</div>
-
 
     </div>
   </footer>
@@ -512,8 +457,6 @@
 <script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
 
   
-<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
-<script src="/js/third-party/search/local-search.js"></script>
 
 
 
@@ -522,12 +465,6 @@
   
 
 
-
-
-  
-
-  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
-<script src="/js/third-party/math/mathjax.js"></script>
 
 
 

@@ -15,10 +15,10 @@
 
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" integrity="sha256-jTIdiMuX/e3DGJUGwl3pKSxuc6YOuqtJYkM0bGQESA4=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"inengyang.github.io","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.10.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"inengyang.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.11.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="第三篇。栈与队列的内容。">
 <meta property="og:type" content="article">
@@ -27,19 +27,19 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="第三篇。栈与队列的内容。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://inengyang.github.io/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-03-27-22-30-06.png">
-<meta property="og:image" content="https://inengyang.github.io/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-03-28-20-16-27.png">
-<meta property="og:image" content="https://inengyang.github.io/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-03-27-22-48-56.png">
-<meta property="og:image" content="https://inengyang.github.io/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-28-46.png">
-<meta property="og:image" content="https://inengyang.github.io/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-29-18.png">
-<meta property="og:image" content="https://inengyang.github.io/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-27-43.png">
-<meta property="og:image" content="https://inengyang.github.io/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-26-52.png">
-<meta property="og:image" content="https://inengyang.github.io/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-40-09.png">
+<meta property="og:image" content="https://inengyang.github.io/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-03-27-22-30-06.png">
+<meta property="og:image" content="https://inengyang.github.io/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-03-28-20-16-27.png">
+<meta property="og:image" content="https://inengyang.github.io/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-03-27-22-48-56.png">
+<meta property="og:image" content="https://inengyang.github.io/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-28-46.png">
+<meta property="og:image" content="https://inengyang.github.io/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-29-18.png">
+<meta property="og:image" content="https://inengyang.github.io/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-27-43.png">
+<meta property="og:image" content="https://inengyang.github.io/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-26-52.png">
+<meta property="og:image" content="https://inengyang.github.io/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-40-09.png">
 <meta property="article:published_time" content="2022-03-27T12:56:13.000Z">
 <meta property="article:modified_time" content="2022-04-03T08:30:03.386Z">
 <meta property="article:author" content="DXH">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://inengyang.github.io/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-03-27-22-30-06.png">
+<meta name="twitter:image" content="https://inengyang.github.io/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-03-27-22-30-06.png">
 
 
 <link rel="canonical" href="https://inengyang.github.io/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/">
@@ -69,9 +69,6 @@
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切换导航栏" role="button">
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
-        <span class="toggle-line"></span>
     </div>
   </div>
 
@@ -86,46 +83,15 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
-        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
 
 
 
-<nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
-      <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
-        </a>
-      </li>
-  </ul>
-</nav>
 
 
 
-  <div class="search-pop-overlay">
-    <div class="popup search-popup"><div class="search-header">
-  <span class="search-icon">
-    <i class="fa fa-search"></i>
-  </span>
-  <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off" maxlength="80"
-           placeholder="搜索..." spellcheck="false"
-           type="search" class="search-input">
-  </div>
-  <span class="popup-btn-close" role="button">
-    <i class="fa fa-times-circle"></i>
-  </span>
-</div>
-<div class="search-result-container no-result">
-  <div class="search-result-icon">
-    <i class="fa fa-spinner fa-pulse fa-5x"></i>
-  </div>
-</div>
-
-    </div>
-  </div>
 
 </div>
         
@@ -157,8 +123,6 @@
 
         <div class="site-overview-wrap sidebar-panel">
           <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="DXH"
-      src="/images/avatar.jpg">
   <p class="site-author-name" itemprop="name">DXH</p>
   <div class="site-description" itemprop="description"></div>
 </div>
@@ -177,11 +141,6 @@
       </div>
   </nav>
 </div>
-  <div class="links-of-author site-overview-item animated">
-      <span class="links-of-author-item">
-        <a href="https://github.com/INengYang" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;INengYang" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
-      </span>
-  </div>
 
 
 
@@ -199,7 +158,6 @@
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
-  <div class="reading-progress-bar"></div>
 
 <noscript>
   <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
@@ -220,7 +178,7 @@
     <link itemprop="mainEntityOfPage" href="https://inengyang.github.io/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="DXH">
     </span>
 
@@ -228,7 +186,7 @@
       <meta itemprop="name" content="Hexo">
       <meta itemprop="description" content="">
     </span>
-    
+
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="算法与数据结构(3) | Hexo">
       <meta itemprop="description" content="第三篇。栈与队列的内容。">
@@ -292,7 +250,7 @@
 <ul>
 <li><p>栈与一般线性表只在运算规则有所不同</p>
 </li>
-<li><p>栈的示意图<br>表尾（a<del>n</del>端）称为栈顶Top，表头（a<del>1</del>端）称为栈底Base<br><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-03-27-22-30-06.png"></p>
+<li><p>栈的示意图<br>表尾（a<del>n</del>端）称为栈顶Top，表头（a<del>1</del>端）称为栈底Base<br><img src="/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-03-27-22-30-06.png"></p>
 </li>
 <li><p>插入元素到栈顶的操作叫入栈，从栈顶删除最后一个元素的操作叫出栈</p>
 <ul>
@@ -354,7 +312,7 @@
 <li><p>定义：链栈是运算受限的单链表，只能在链表头部进行操作。</p>
  <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">StackNode</span>&#123;</span><br><span class="line">    SElemType data;</span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">StackNode</span> *next;</span><br><span class="line">&#125;StackNode, *LinkStack;</span><br><span class="line">LinkStack S;</span><br></pre></td></tr></table></figure>
 
-<p> <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-03-28-20-16-27.png"> 链栈中指针的方向指向前驱元素。</p>
+<p> <img src="/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-03-28-20-16-27.png"> 链栈中指针的方向指向前驱元素。</p>
 <ul>
 <li>链栈的头指针就是栈顶</li>
 <li>不需要头结点</li>
@@ -386,7 +344,7 @@
 </li>
 </ol>
 <ul>
-<li>队列的示意图<br><img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-03-27-22-48-56.png"></li>
+<li>队列的示意图<br><img src="/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-03-27-22-48-56.png"></li>
 </ul>
 <h3 id="队列的顺序表示————用一维数组base-MAXQSIZE"><a href="#队列的顺序表示————用一维数组base-MAXQSIZE" class="headerlink" title="队列的顺序表示————用一维数组base[MAXQSIZE]"></a>队列的顺序表示————用一维数组base[MAXQSIZE]</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> MAXQSIZE 100 <span class="comment">//最大队列长度</span></span></span><br><span class="line">Typedef <span class="keyword">struct</span></span><br><span class="line">&#123;</span><br><span class="line">    QElemType *base;</span><br><span class="line">    <span class="type">int</span> front;<span class="comment">//头指针</span></span><br><span class="line">    <span class="type">int</span> rear;<span class="comment">//尾指针</span></span><br><span class="line">&#125;SqQueue;</span><br></pre></td></tr></table></figure>
 
@@ -405,11 +363,11 @@
 </li>
 <li><p>溢出<br>  当rear &#x3D; MAXQSIZE 时，不能再入队，发生溢出</p>
 <ul>
-<li><p>真溢出<br>  若front &#x3D; 0<br>  rear &#x3D; MAXQSIZE 时，再入队————真溢出<br>  <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-28-46.png"></p>
+<li><p>真溢出<br>  若front &#x3D; 0<br>  rear &#x3D; MAXQSIZE 时，再入队————真溢出<br>  <img src="/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-28-46.png"></p>
 </li>
-<li><p>假溢出<br>  front !&#x3D; 0<br>  rear &#x3D; MAXQSIZE 时，再入队————假溢出<br>  <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-29-18.png"></p>
+<li><p>假溢出<br>  front !&#x3D; 0<br>  rear &#x3D; MAXQSIZE 时，再入队————假溢出<br>  <img src="/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-29-18.png"></p>
 </li>
-<li><p>解决假溢出——引入循环队列<br>  将base[0]接在base[MAXQSIZE-1]之后，若rear +1 &#x3D;&#x3D;MAXQSIZE，则令rear&#x3D;0;——就是想象把队列变成一个圈。<br>  <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-27-43.png"><br>  实现方法：对MAXQSIZE模运算<br>  base[n] 对 MAXQSIZE取模都是n，只有MAXQSIZE会等于0，就能做到base[0]接在base[MAXQSIZE-1]之后</p>
+<li><p>解决假溢出——引入循环队列<br>  将base[0]接在base[MAXQSIZE-1]之后，若rear +1 &#x3D;&#x3D;MAXQSIZE，则令rear&#x3D;0;——就是想象把队列变成一个圈。<br>  <img src="/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-27-43.png"><br>  实现方法：对MAXQSIZE模运算<br>  base[n] 对 MAXQSIZE取模都是n，只有MAXQSIZE会等于0，就能做到base[0]接在base[MAXQSIZE-1]之后</p>
 <ul>
 <li>插入元素：  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Q.base[Q.rear] = x;</span><br><span class="line">Q.rear = (Q.rear+1) % MAXQSIZE</span><br></pre></td></tr></table></figure></li>
 <li>删除元素：  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x = Q.base[Q.front]</span><br><span class="line">Q.front = (Q.front+1) % MAXQSIZE</span><br></pre></td></tr></table></figure></li>
@@ -427,7 +385,7 @@
 <li>少用一个元素空间<br>  说实话觉得第二种好。。</li>
 </ol>
 </li>
-<li><p>循环队列解决队满时判断方法——少用一个元素空间<br>  <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-26-52.png"><br>  此时队满：队尾指针+1，就与队头指针重合<br>  队满标志：(rear+1) % MAXQSIZE &#x3D; front</p>
+<li><p>循环队列解决队满时判断方法——少用一个元素空间<br>  <img src="/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-26-52.png"><br>  此时队满：队尾指针+1，就与队头指针重合<br>  队满标志：(rear+1) % MAXQSIZE &#x3D; front</p>
 </li>
 </ul>
 </li>
@@ -441,7 +399,7 @@
 </li>
 <li><p>求队列长度</p>
  <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">QueueLength</span><span class="params">(SqQueue Q)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span>((Q.rear - Q.front + MAXQSIZE) % MAXQSIZE)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p> 这里是考虑到了<br> <img src="/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-40-09.png"><br> 第二种队列的情况 </p>
+<p> 这里是考虑到了<br> <img src="/2022/03/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3/2022-04-03-15-40-09.png"><br> 第二种队列的情况 </p>
 </li>
 <li><p>循环队列入队</p>
  <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">Status <span class="title">EnQueue</span><span class="params">(SqQueue &amp;Q,QElemType e)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>((Q.rear+<span class="number">1</span>)%MAXQSIZE==Q.front) <span class="keyword">return</span> ERROR<span class="comment">//队满</span></span><br><span class="line">    Q.base[Q.rear]=e;</span><br><span class="line">    Q.rear=(Q.rear+<span class="number">1</span>)%MAXQSIZE;</span><br><span class="line">    <span class="keyword">return</span> OK;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
@@ -515,21 +473,8 @@
   </span>
   <span class="author" itemprop="copyrightHolder">DXH</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>
-
-<div class="powered-by">
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <i class="fa fa-user-md"></i>
-    <span id="busuanzi_container_site_uv">
-        本站访客数:<span id="busuanzi_value_site_uv"></span>
-    </span>
-    <span class="post-meta-divider">|</span>
-    <span id="busuanzi_container_site_pv">
-        本站访问量<span id="busuanzi_value_site_pv"></span>
-    </span>
-</div>
-
 
     </div>
   </footer>
@@ -539,8 +484,6 @@
 <script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
 
   
-<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
-<script src="/js/third-party/search/local-search.js"></script>
 
 
 
@@ -549,12 +492,6 @@
   
 
 
-
-
-  
-
-  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
-<script src="/js/third-party/math/mathjax.js"></script>
 
 
 
