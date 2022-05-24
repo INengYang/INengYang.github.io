@@ -37,46 +37,6 @@
       </categories>
   </entry>
   <entry>
-    <title>First-plan</title>
-    <url>/2022/04/08/First-plan/</url>
-    <content><![CDATA[<p>简单地列一下目前要做的事情。</p>
-<ol>
-<li>算法与数据结构学习</li>
-<li>python学习，主要是数据开发与爬虫相关的内容</li>
-<li>英语学习，目前是六级听力和词汇</li>
-<li>看书和平时的锻炼</li>
-<li>c++ 这个，暂时先列出来吧</li>
-</ol>
-<p>目测解封还需要一个月左右，所以大胆地写一下一个月后要达到的目标</p>
-<ol>
-<li>熟练掌握算法与数据结构的内容，能做到老师布置的作业自主完成</li>
-<li>可以自主写代码爬取一些内容并进行数据分析</li>
-<li>词汇量增长至少1000词，听力感觉有点玄学，到时做六级真题验收吧</li>
-<li>看完传习录；锻炼这个也没法准确设置一个目标，至少做到一周四练，根据具体情况随时调整</li>
-<li>c++主要是看c++ primer，计划开始实行后看情况吧。</li>
-</ol>
-<p>另外还有刷编程题的计划，但之后进行补充。</p>
-<p>具体到每天每周的实行，这有点难想，目前有个不成熟的想法：</p>
-<ol>
-<li><p>首先要早睡早起，这大概是最困难的。最迟8点就该起床。</p>
-</li>
-<li><p>起床后首先是英语的学习，背单词和听力</p>
-</li>
-<li><p>顺利的话大概在十点左右结束英语，此时要上课（不过下周与下下周可以不太关心这个），根据上课情况来规划之后干什么</p>
-<ol>
-<li>如果说没课或者不太重要的课，学python</li>
-<li>反之，上课</li>
-<li>但是星期三的话就写算法与数据结构作业</li>
-</ol>
-</li>
-<li><p>午饭之后感觉会累，所以先这么安排：看书-&gt;锻炼-&gt;算法与数据结构学习</p>
-</li>
-<li><p>晚上就根据每天的情况来安排。</p>
-</li>
-</ol>
-]]></content>
-  </entry>
-  <entry>
     <title>Markdown学习</title>
     <url>/2022/03/08/Markdown%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><ol>
@@ -182,21 +142,43 @@
       </categories>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2022/03/08/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <title>First-plan</title>
+    <url>/2022/04/08/First-plan/</url>
+    <content><![CDATA[<p>简单地列一下目前要做的事情。</p>
+<ol>
+<li>算法与数据结构学习</li>
+<li>python学习，主要是数据开发与爬虫相关的内容</li>
+<li>英语学习，目前是六级听力和词汇</li>
+<li>看书和平时的锻炼</li>
+<li>c++ 这个，暂时先列出来吧</li>
+</ol>
+<p>目测解封还需要一个月左右，所以大胆地写一下一个月后要达到的目标</p>
+<ol>
+<li>熟练掌握算法与数据结构的内容，能做到老师布置的作业自主完成</li>
+<li>可以自主写代码爬取一些内容并进行数据分析</li>
+<li>词汇量增长至少1000词，听力感觉有点玄学，到时做六级真题验收吧</li>
+<li>看完传习录；锻炼这个也没法准确设置一个目标，至少做到一周四练，根据具体情况随时调整</li>
+<li>c++主要是看c++ primer，计划开始实行后看情况吧。</li>
+</ol>
+<p>另外还有刷编程题的计划，但之后进行补充。</p>
+<p>具体到每天每周的实行，这有点难想，目前有个不成熟的想法：</p>
+<ol>
+<li><p>首先要早睡早起，这大概是最困难的。最迟8点就该起床。</p>
+</li>
+<li><p>起床后首先是英语的学习，背单词和听力</p>
+</li>
+<li><p>顺利的话大概在十点左右结束英语，此时要上课（不过下周与下下周可以不太关心这个），根据上课情况来规划之后干什么</p>
+<ol>
+<li>如果说没课或者不太重要的课，学python</li>
+<li>反之，上课</li>
+<li>但是星期三的话就写算法与数据结构作业</li>
+</ol>
+</li>
+<li><p>午饭之后感觉会累，所以先这么安排：看书-&gt;锻炼-&gt;算法与数据结构学习</p>
+</li>
+<li><p>晚上就根据每天的情况来安排。</p>
+</li>
+</ol>
 ]]></content>
   </entry>
   <entry>
@@ -226,6 +208,24 @@
       </categories>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2022/03/08/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>python3.6安装pycrypto</title>
     <url>/2022/04/22/python3-6%E5%AE%89%E8%A3%85pycrypto/</url>
     <content><![CDATA[<p>在学习爬取网易云评论时需要用到pycrypto，但是python3.6似乎直接pip下载会有点困难，查了很多之后终于解决了。</p>
@@ -245,6 +245,23 @@
       <categories>
         <category>有用的知识</category>
       </categories>
+  </entry>
+  <entry>
+    <title>python列表字符串转换</title>
+    <url>/2022/03/31/python%E5%88%97%E8%A1%A8%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2/</url>
+    <content><![CDATA[<h4 id="列表转字符串"><a href="#列表转字符串" class="headerlink" title="列表转字符串"></a>列表转字符串</h4><ol>
+<li><p>将列表转换为字符串的最基本用法和实现之一是使用join函数将字符串列表转换。 请记住，此方法只能使用仅包含字符串的列表。’ ‘之间是分隔符，如我们所见，每个元素在新字符串中都用单个空格分隔。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">mylist=[<span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;b&#x27;</span>,<span class="string">&#x27;c&#x27;</span>] </span><br><span class="line"><span class="string">&#x27; &#x27;</span>.join(mylist) </span><br><span class="line"><span class="comment">#&#x27;a b c&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如前所述，我们可以转换仅包含字符串元素的列表。 但是，如果我们需要转换包含不同类型数据的列表，该怎么办？ 我们需要一些转换为字符串。 我们将使用str函数将不同的数据类型转换为字符串。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">mylist = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]      </span><br><span class="line"><span class="string">&#x27; &#x27;</span>.join(<span class="built_in">str</span>(e) <span class="keyword">for</span> e <span class="keyword">in</span> mylist)        </span><br><span class="line"><span class="comment">#&#x27;1 2 3&#x27;</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>在写一个去除字符串中的空格时用到的，代码如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">trim</span>(<span class="params">s</span>):</span><br><span class="line">    list1 = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> s:</span><br><span class="line">        <span class="keyword">if</span> i != <span class="string">&#x27; &#x27;</span>:</span><br><span class="line">            list1.append(i)</span><br><span class="line">    s = <span class="string">&#x27;&#x27;</span>.join(list1)</span><br><span class="line">    <span class="keyword">return</span> s</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;输入：&quot;</span>)</span><br><span class="line">s = <span class="built_in">input</span>()</span><br><span class="line"><span class="built_in">print</span>(trim(s))</span><br></pre></td></tr></table></figure>
+
+<h4 id="字符串转列表"><a href="#字符串转列表" class="headerlink" title="字符串转列表"></a>字符串转列表</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&#x27;list&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(s.split())</span><br><span class="line">---&gt;[<span class="string">&#x27;list&#x27;</span>]</span><br></pre></td></tr></table></figure>
+<p>split()中可写分隔符(默认空格)，如</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&#x27;a,list&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(s.split(<span class="string">&#x27;,&#x27;</span>))</span><br><span class="line">---&gt;[<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;list&#x27;</span>]</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>python爬虫-1</title>
@@ -279,23 +296,6 @@
       <categories>
         <category>爬虫</category>
       </categories>
-  </entry>
-  <entry>
-    <title>python列表字符串转换</title>
-    <url>/2022/03/31/python%E5%88%97%E8%A1%A8%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2/</url>
-    <content><![CDATA[<h4 id="列表转字符串"><a href="#列表转字符串" class="headerlink" title="列表转字符串"></a>列表转字符串</h4><ol>
-<li><p>将列表转换为字符串的最基本用法和实现之一是使用join函数将字符串列表转换。 请记住，此方法只能使用仅包含字符串的列表。’ ‘之间是分隔符，如我们所见，每个元素在新字符串中都用单个空格分隔。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">mylist=[<span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;b&#x27;</span>,<span class="string">&#x27;c&#x27;</span>] </span><br><span class="line"><span class="string">&#x27; &#x27;</span>.join(mylist) </span><br><span class="line"><span class="comment">#&#x27;a b c&#x27;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>如前所述，我们可以转换仅包含字符串元素的列表。 但是，如果我们需要转换包含不同类型数据的列表，该怎么办？ 我们需要一些转换为字符串。 我们将使用str函数将不同的数据类型转换为字符串。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">mylist = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]      </span><br><span class="line"><span class="string">&#x27; &#x27;</span>.join(<span class="built_in">str</span>(e) <span class="keyword">for</span> e <span class="keyword">in</span> mylist)        </span><br><span class="line"><span class="comment">#&#x27;1 2 3&#x27;</span></span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>在写一个去除字符串中的空格时用到的，代码如下：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">trim</span>(<span class="params">s</span>):</span><br><span class="line">    list1 = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> s:</span><br><span class="line">        <span class="keyword">if</span> i != <span class="string">&#x27; &#x27;</span>:</span><br><span class="line">            list1.append(i)</span><br><span class="line">    s = <span class="string">&#x27;&#x27;</span>.join(list1)</span><br><span class="line">    <span class="keyword">return</span> s</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;输入：&quot;</span>)</span><br><span class="line">s = <span class="built_in">input</span>()</span><br><span class="line"><span class="built_in">print</span>(trim(s))</span><br></pre></td></tr></table></figure>
-
-<h4 id="字符串转列表"><a href="#字符串转列表" class="headerlink" title="字符串转列表"></a>字符串转列表</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&#x27;list&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(s.split())</span><br><span class="line">---&gt;[<span class="string">&#x27;list&#x27;</span>]</span><br></pre></td></tr></table></figure>
-<p>split()中可写分隔符(默认空格)，如</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="string">&#x27;a,list&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(s.split(<span class="string">&#x27;,&#x27;</span>))</span><br><span class="line">---&gt;[<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;list&#x27;</span>]</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>栈与递归</title>
@@ -695,86 +695,6 @@
       </categories>
   </entry>
   <entry>
-    <title>算法与数据结构(1)</title>
-    <url>/2022/03/21/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
-    <content><![CDATA[<p>写在前面：因为之前就学了数据结构的内容，所以这篇数据结构就偷懒跳过不写了</p>
-<h1 id="算法："><a href="#算法：" class="headerlink" title="算法："></a>算法：</h1><ol>
-<li><p>定义：<br>对特定问题求解方法和步骤的一种描述，它是指令的有限序列。其中每个指令表示一个或多个操作。<br>简而言之，<strong>算法就是解决问题的方法和步骤</strong></p>
-</li>
-<li><p>算法特性：</p>
-<ol>
-<li>有穷性：一个算法必须总是在执行有穷步之后结束，且每一步都在有穷时间内完成。</li>
-<li>确定性：算法中的每一条指令必须有确切的含义，没有二义性，在任何条件下，只有唯一的一条执行路径，即对于相同的输入只能得到相同的输出。 </li>
-<li>可行性：算法是可执行的，算法描述的操作可以通过已经实现的基本操作执行有限次来实现。</li>
-<li>输入：一个算法有0个或多个输入。</li>
-<li>输出：一个算法有一个或多个输出。</li>
-</ol>
-</li>
-<li><p>算法设计要求：</p>
-<ol>
-<li>正确性：程序对于精心选择的，典型、苛刻且带有刁难性的几组输入数据能够得出满足要求的结果。</li>
-<li>可读性</li>
-<li>健壮性：<ol>
-<li>指输入非法数据时，算法恰当的做出反应或进行相应处理而不是产生奇怪的输出结果。</li>
-<li>处理出错的方法，不应是中断程序的执行，而是返回一个表示错误或者错误性质的值，以便在更高的抽象层次上进行处理。</li>
-</ol>
-</li>
-<li>高效性</li>
-</ol>
-</li>
-<li><p>算法的效率：</p>
-<ul>
-<li>算法有时间效率和空间效率</li>
-</ul>
-<ol>
-<li>时间效率：<br> 时间效率可以用依据该算法编制的程序在计算机上执行所消耗的时间来度量<ul>
-<li>度量方法：<ol>
-<li>事后统计：<br>  将算法实现，测算时间和空间开销。</li>
-<li>事前分析：<br>  对算法所消耗资源的一种估算方法。</li>
-</ol>
-<ul>
-<li>多采用事前分析，事后统计的方法，编写程序耗费时间和精力，结果依赖于计算机软硬件因素。</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-<ul>
-<li>算法运行时间 &#x3D; 一个简单操作所需时间 $\times$ 简单操作次数<br>        &#x3D; $\sum$ 每条语句执行次数（每条语句频度） $\times$ 该语句执行一次所需时间<ul>
-<li>假设执行每条语句所需时间均为单位时间，此时对算法的运行时间的讨论就可以转化为讨论该算法中的所有语句的执行次数，即频度和。</li>
-<li>即算法耗费时间为算法每条语句的频度之和，表示为T(n)。</li>
-<li>额外的，一般只考虑算法中的基本操作执行的次数，且仅比较数量级</li>
-</ul>
-</li>
-<li>算法时间复杂度：<ul>
-<li>算法中基本语句（执行最多的语句）重复执行的次数是问题规模n的某个函数f(n)，算法时间的量度记作T(n) &#x3D; O(f(n))</li>
-<li>它表示随着n增大，算法执行的时间的增长率和f(n)的增长率相同，称为渐近时间复杂度。</li>
-<li>对于复杂的算法，可以将它分为几个容易估算的部分，然后利用加法法则和乘法法则计算时间复杂度<ol>
-<li>加法法则：<br> T(n) &#x3D; T1(n) + T2(n) &#x3D; O(f(n)) + O(g(n)) &#x3D;O(max(f(n),g(n)))</li>
-<li>乘法法则：<br> T(n) &#x3D; T1(n) $\times$ T2(n) &#x3D; O(f(n)) $\times$ O(g(n)) &#x3D; O(f(n) $\times$ g(n))</li>
-</ol>
-</li>
-</ul>
-</li>
-</ul>
-<ol start="2">
-<li>算法空间复杂度：<br> S(n) &#x3D; O(f(n))<ul>
-<li>算法要占据的空间：<ol>
-<li>算法本身要占据的空间，输入&#x2F;输出，指令，常数，变量等</li>
-<li>算法要使用的辅助空间</li>
-</ol>
-</li>
-</ul>
-</li>
-</ol>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>算法与数据结构</category>
-      </categories>
-  </entry>
-  <entry>
     <title>计算时间复杂度的练习</title>
     <url>/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/</url>
     <content><![CDATA[<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-07-37.png"></p>
@@ -906,6 +826,86 @@
 <li><p>next函数改进(好难。。整不明白)</p>
   <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">get_nextval</span><span class="params">(SString T,<span class="type">int</span> &amp;nextval[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    i=<span class="number">1</span>;nextval[<span class="number">1</span>]=<span class="number">0</span>;j=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(i&lt;T.length)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(j==<span class="number">0</span> || T.ch[i]==T.ch[j])</span><br><span class="line">        &#123;</span><br><span class="line">            ++i;++j;</span><br><span class="line">            <span class="keyword">if</span>(T.ch[i] != T.ch[j]) nextval[i]=j;</span><br><span class="line">            <span class="keyword">else</span> nextval[i] = nextval[j];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            j=nextval[j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ul>
+]]></content>
+      <categories>
+        <category>算法与数据结构</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>算法与数据结构(1)</title>
+    <url>/2022/03/21/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<p>写在前面：因为之前就学了数据结构的内容，所以这篇数据结构就偷懒跳过不写了</p>
+<h1 id="算法："><a href="#算法：" class="headerlink" title="算法："></a>算法：</h1><ol>
+<li><p>定义：<br>对特定问题求解方法和步骤的一种描述，它是指令的有限序列。其中每个指令表示一个或多个操作。<br>简而言之，<strong>算法就是解决问题的方法和步骤</strong></p>
+</li>
+<li><p>算法特性：</p>
+<ol>
+<li>有穷性：一个算法必须总是在执行有穷步之后结束，且每一步都在有穷时间内完成。</li>
+<li>确定性：算法中的每一条指令必须有确切的含义，没有二义性，在任何条件下，只有唯一的一条执行路径，即对于相同的输入只能得到相同的输出。 </li>
+<li>可行性：算法是可执行的，算法描述的操作可以通过已经实现的基本操作执行有限次来实现。</li>
+<li>输入：一个算法有0个或多个输入。</li>
+<li>输出：一个算法有一个或多个输出。</li>
+</ol>
+</li>
+<li><p>算法设计要求：</p>
+<ol>
+<li>正确性：程序对于精心选择的，典型、苛刻且带有刁难性的几组输入数据能够得出满足要求的结果。</li>
+<li>可读性</li>
+<li>健壮性：<ol>
+<li>指输入非法数据时，算法恰当的做出反应或进行相应处理而不是产生奇怪的输出结果。</li>
+<li>处理出错的方法，不应是中断程序的执行，而是返回一个表示错误或者错误性质的值，以便在更高的抽象层次上进行处理。</li>
+</ol>
+</li>
+<li>高效性</li>
+</ol>
+</li>
+<li><p>算法的效率：</p>
+<ul>
+<li>算法有时间效率和空间效率</li>
+</ul>
+<ol>
+<li>时间效率：<br> 时间效率可以用依据该算法编制的程序在计算机上执行所消耗的时间来度量<ul>
+<li>度量方法：<ol>
+<li>事后统计：<br>  将算法实现，测算时间和空间开销。</li>
+<li>事前分析：<br>  对算法所消耗资源的一种估算方法。</li>
+</ol>
+<ul>
+<li>多采用事前分析，事后统计的方法，编写程序耗费时间和精力，结果依赖于计算机软硬件因素。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>算法运行时间 &#x3D; 一个简单操作所需时间 $\times$ 简单操作次数<br>        &#x3D; $\sum$ 每条语句执行次数（每条语句频度） $\times$ 该语句执行一次所需时间<ul>
+<li>假设执行每条语句所需时间均为单位时间，此时对算法的运行时间的讨论就可以转化为讨论该算法中的所有语句的执行次数，即频度和。</li>
+<li>即算法耗费时间为算法每条语句的频度之和，表示为T(n)。</li>
+<li>额外的，一般只考虑算法中的基本操作执行的次数，且仅比较数量级</li>
+</ul>
+</li>
+<li>算法时间复杂度：<ul>
+<li>算法中基本语句（执行最多的语句）重复执行的次数是问题规模n的某个函数f(n)，算法时间的量度记作T(n) &#x3D; O(f(n))</li>
+<li>它表示随着n增大，算法执行的时间的增长率和f(n)的增长率相同，称为渐近时间复杂度。</li>
+<li>对于复杂的算法，可以将它分为几个容易估算的部分，然后利用加法法则和乘法法则计算时间复杂度<ol>
+<li>加法法则：<br> T(n) &#x3D; T1(n) + T2(n) &#x3D; O(f(n)) + O(g(n)) &#x3D;O(max(f(n),g(n)))</li>
+<li>乘法法则：<br> T(n) &#x3D; T1(n) $\times$ T2(n) &#x3D; O(f(n)) $\times$ O(g(n)) &#x3D; O(f(n) $\times$ g(n))</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li>算法空间复杂度：<br> S(n) &#x3D; O(f(n))<ul>
+<li>算法要占据的空间：<ol>
+<li>算法本身要占据的空间，输入&#x2F;输出，指令，常数，变量等</li>
+<li>算法要使用的辅助空间</li>
+</ol>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
 ]]></content>
       <categories>
         <category>算法与数据结构</category>
