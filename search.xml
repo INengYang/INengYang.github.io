@@ -182,27 +182,6 @@
       </categories>
   </entry>
   <entry>
-    <title>python3.6安装pycrypto</title>
-    <url>/2022/04/22/python3-6%E5%AE%89%E8%A3%85pycrypto/</url>
-    <content><![CDATA[<p>在学习爬取网易云评论时需要用到pycrypto，但是python3.6似乎直接pip下载会有点困难，查了很多之后终于解决了。</p>
-<p>查到的切实有效的办法是这个<a href="https://blog.csdn.net/wg5foc08/article/details/100286913">链接</a>, 值得一提的是，顺带还学到了想找到vs的安装位置，直接桌面右键-&gt;打开文件所在位置就好。。</p>
-<p>ps:<br>在这之前还更新了pip：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python -m pip install --upgrade pip</span><br></pre></td></tr></table></figure>
-<p>但是这样报错了，所以使用下面的方法：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python -m ensurepip</span><br><span class="line"></span><br><span class="line">python -m pip install --upgrade pip</span><br></pre></td></tr></table></figure>
-
-<p>安装完成之后（此时文件夹已经存在），发现还是不能使用，所以继续搜索，尝试了这个<a href="https://blog.csdn.net/wdschn/article/details/80806613?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165061776616780271964810%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=165061776616780271964810&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-80806613.142%5Ev9%5Econtrol,157%5Ev4%5Econtrol&utm_term=python3.6%E5%AE%89%E8%A3%85crypto&spm=1018.2226.3001.4187">链接</a>中的办法,但很遗憾，没有效果。</p>
-<p>然后尝试下载：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install pycryptodemo</span><br></pre></td></tr></table></figure>
-<p>仍然木大。。<br>还尝试改变首字母大小写什么的，当然也是没有作用。</p>
-<p>但经一篇文章启发，我本地是有python的，而pycharm项目中会自己生成自己的python3.6（大概是这个意思），pycharm又在用anaconda，所以去对比了一下两边的库，发现anaconda中是没有Crypto这个文件夹的（同时自己的python中是有的。。），最后复制一份到pycharm的库中就好了。<br>（不过用到现在还不知道anaconda到底是啥，令人感叹。）</p>
-<p>本以为就此可以结束了，但又报错了，这次是“cannot import name ‘_AES’”，原因，简而言之就是计算机是64位的，但pip下载的pycrypto是32位的。<br>通过这篇<a href="https://blog.csdn.net/ychgyyn/article/details/88621236?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165062321216781683948872%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=165062321216781683948872&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-88621236.142%5Ev9%5Econtrol,157%5Ev4%5Econtrol&utm_term=cannot+import+name+_AES&spm=1018.2226.3001.4187">文章</a>解决了。</p>
-]]></content>
-      <categories>
-        <category>有用的知识</category>
-      </categories>
-  </entry>
-  <entry>
     <title>end=&#39;&#39;与--i</title>
     <url>/2022/03/28/end-%E4%B8%8E-i/</url>
     <content><![CDATA[<h3 id="end-x3D-’’"><a href="#end-x3D-’’" class="headerlink" title="end&#x3D;’’"></a>end&#x3D;’’</h3><blockquote>
@@ -223,6 +202,27 @@
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&#x27;输入打印行数：&#x27;</span>))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,n+<span class="number">1</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27; &#x27;</span> * (n - i),end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;*&#x27;</span> * (<span class="number">2</span> * i -<span class="number">1</span>))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <h3 id="–-i与i-–"><a href="#–-i与i-–" class="headerlink" title="–(++)i与i(++)–"></a>–(++)i与i(++)–</h3><p>–i 是先执行i&#x3D;i-1,然后再使用i的值, 这时的i值就是表达式–i的值。i– 是先使用i的值作为表达式i–的值,然后,执行i&#x3D;i-1操作。<br>++i和i++同理。</p>
+]]></content>
+      <categories>
+        <category>有用的知识</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>python3.6安装pycrypto</title>
+    <url>/2022/04/22/python3-6%E5%AE%89%E8%A3%85pycrypto/</url>
+    <content><![CDATA[<p>在学习爬取网易云评论时需要用到pycrypto，但是python3.6似乎直接pip下载会有点困难，查了很多之后终于解决了。</p>
+<p>查到的切实有效的办法是这个<a href="https://blog.csdn.net/wg5foc08/article/details/100286913">链接</a>, 值得一提的是，顺带还学到了想找到vs的安装位置，直接桌面右键-&gt;打开文件所在位置就好。。</p>
+<p>ps:<br>在这之前还更新了pip：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python -m pip install --upgrade pip</span><br></pre></td></tr></table></figure>
+<p>但是这样报错了，所以使用下面的方法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python -m ensurepip</span><br><span class="line"></span><br><span class="line">python -m pip install --upgrade pip</span><br></pre></td></tr></table></figure>
+
+<p>安装完成之后（此时文件夹已经存在），发现还是不能使用，所以继续搜索，尝试了这个<a href="https://blog.csdn.net/wdschn/article/details/80806613?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165061776616780271964810%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=165061776616780271964810&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-80806613.142%5Ev9%5Econtrol,157%5Ev4%5Econtrol&utm_term=python3.6%E5%AE%89%E8%A3%85crypto&spm=1018.2226.3001.4187">链接</a>中的办法,但很遗憾，没有效果。</p>
+<p>然后尝试下载：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install pycryptodemo</span><br></pre></td></tr></table></figure>
+<p>仍然木大。。<br>还尝试改变首字母大小写什么的，当然也是没有作用。</p>
+<p>但经一篇文章启发，我本地是有python的，而pycharm项目中会自己生成自己的python3.6（大概是这个意思），pycharm又在用anaconda，所以去对比了一下两边的库，发现anaconda中是没有Crypto这个文件夹的（同时自己的python中是有的。。），最后复制一份到pycharm的库中就好了。<br>（不过用到现在还不知道anaconda到底是啥，令人感叹。）</p>
+<p>本以为就此可以结束了，但又报错了，这次是“cannot import name ‘_AES’”，原因，简而言之就是计算机是64位的，但pip下载的pycrypto是32位的。<br>通过这篇<a href="https://blog.csdn.net/ychgyyn/article/details/88621236?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165062321216781683948872%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=165062321216781683948872&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-88621236.142%5Ev9%5Econtrol,157%5Ev4%5Econtrol&utm_term=cannot+import+name+_AES&spm=1018.2226.3001.4187">文章</a>解决了。</p>
 ]]></content>
       <categories>
         <category>有用的知识</category>
@@ -295,6 +295,40 @@
 ]]></content>
       <categories>
         <category>爬虫</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>栈与递归</title>
+    <url>/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/</url>
+    <content><![CDATA[<p>首先，什么是递归？</p>
+<h4 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h4><ol>
+<li>定义：<ul>
+<li>若一个对象部分地包含它自己，或用它自己给它自己定义，则称这个对象是递归的。</li>
+<li>若一个过程直接或间接地调用自己，则称这个过程是递归的过程</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>举例：<br>  递归求n的阶乘  <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">long</span> <span class="title">Fac</span><span class="params">(<span class="type">long</span> n)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (n == <span class="number">0</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> n * <span class="built_in">Fac</span>(n<span class="number">-1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ol start="2">
+<li><p>三种常常用到递归方法的情况：</p>
+<ul>
+<li>递归定义的数学函数，如阶乘函数，二阶斐波那契数列</li>
+<li>具有递归特性的数据结构，如二叉树，广义表</li>
+<li>可递归求解的问题，如迷宫问题，汉诺塔问题</li>
+</ul>
+</li>
+<li><p>递归问题求解方法<br><img src="/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/2022-03-28-20-41-31.png"><br><img src="/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/2022-03-28-20-43-00.png"></p>
+</li>
+</ol>
+<h4 id="栈与递归"><a href="#栈与递归" class="headerlink" title="栈与递归"></a>栈与递归</h4><p>函数递归调用遵循后调用的先返回，与栈类似。</p>
+<ul>
+<li>函数调用过程<br><img src="/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/2022-03-28-20-50-06.png"></li>
+</ul>
+]]></content>
+      <categories>
+        <category>算法与数据结构</category>
       </categories>
   </entry>
   <entry>
@@ -872,40 +906,6 @@
 <li><p>T(n)&#x3D;O(${log_2{n}}$)</p>
 </li>
 </ol>
-]]></content>
-      <categories>
-        <category>算法与数据结构</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>栈与递归</title>
-    <url>/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/</url>
-    <content><![CDATA[<p>首先，什么是递归？</p>
-<h4 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h4><ol>
-<li>定义：<ul>
-<li>若一个对象部分地包含它自己，或用它自己给它自己定义，则称这个对象是递归的。</li>
-<li>若一个过程直接或间接地调用自己，则称这个过程是递归的过程</li>
-</ul>
-</li>
-</ol>
-<ul>
-<li>举例：<br>  递归求n的阶乘  <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">long</span> <span class="title">Fac</span><span class="params">(<span class="type">long</span> n)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (n == <span class="number">0</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> n * <span class="built_in">Fac</span>(n<span class="number">-1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<ol start="2">
-<li><p>三种常常用到递归方法的情况：</p>
-<ul>
-<li>递归定义的数学函数，如阶乘函数，二阶斐波那契数列</li>
-<li>具有递归特性的数据结构，如二叉树，广义表</li>
-<li>可递归求解的问题，如迷宫问题，汉诺塔问题</li>
-</ul>
-</li>
-<li><p>递归问题求解方法<br><img src="/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/2022-03-28-20-41-31.png"><br><img src="/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/2022-03-28-20-43-00.png"></p>
-</li>
-</ol>
-<h4 id="栈与递归"><a href="#栈与递归" class="headerlink" title="栈与递归"></a>栈与递归</h4><p>函数递归调用遵循后调用的先返回，与栈类似。</p>
-<ul>
-<li>函数调用过程<br><img src="/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/2022-03-28-20-50-06.png"></li>
-</ul>
 ]]></content>
       <categories>
         <category>算法与数据结构</category>
