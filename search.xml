@@ -142,32 +142,6 @@
       </categories>
   </entry>
   <entry>
-    <title>end=&#39;&#39;与--i</title>
-    <url>/2022/03/28/end-%E4%B8%8E-i/</url>
-    <content><![CDATA[<h3 id="end-x3D-’’"><a href="#end-x3D-’’" class="headerlink" title="end&#x3D;’’"></a>end&#x3D;’’</h3><blockquote>
-<p>Python</p>
-</blockquote>
-<ul>
-<li>原理解释：为末尾end传递一个空字符串，这样print函数不会在字符串末尾添加一个换行符，而是添加一个空字符串，其实这也是一个语法要求，表示这个语句没结束。</li>
-</ul>
-<p>print默认是打印一行，结尾加换行。</p>
-<p>原文链接：<a href="https://blog.csdn.net/qq_40318284/article/details/96835229">https://blog.csdn.net/qq_40318284/article/details/96835229</a></p>
-<p>在打印</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">    *</span><br><span class="line">   ***</span><br><span class="line">  *****</span><br><span class="line"> *******</span><br><span class="line">*********</span><br></pre></td></tr></table></figure>
-<p>时遇到的问题</p>
-<p>当时想的是怎么能让空格和*在同一行上打印出来，然后看到了例子的代码</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">row = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&#x27;请输入行数: &#x27;</span>))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(row):</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(row - i - <span class="number">1</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27; &#x27;</span>, end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span> * i + <span class="number">1</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;*&#x27;</span>, end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="built_in">print</span>()</span><br></pre></td></tr></table></figure>
-<p>就去查了end&#x3D;’’的用法。</p>
-<p>自己写的：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&#x27;输入打印行数：&#x27;</span>))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,n+<span class="number">1</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27; &#x27;</span> * (n - i),end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;*&#x27;</span> * (<span class="number">2</span> * i -<span class="number">1</span>))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="–-i与i-–"><a href="#–-i与i-–" class="headerlink" title="–(++)i与i(++)–"></a>–(++)i与i(++)–</h3><p>–i 是先执行i&#x3D;i-1,然后再使用i的值, 这时的i值就是表达式–i的值。i– 是先使用i的值作为表达式i–的值,然后,执行i&#x3D;i-1操作。<br>++i和i++同理。</p>
-]]></content>
-      <categories>
-        <category>有用的知识</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2022/03/08/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -201,6 +175,32 @@
 <p>仍然木大。。<br>还尝试改变首字母大小写什么的，当然也是没有作用。</p>
 <p>但经一篇文章启发，我本地是有python的，而pycharm项目中会自己生成自己的python3.6（大概是这个意思），pycharm又在用anaconda，所以去对比了一下两边的库，发现anaconda中是没有Crypto这个文件夹的（同时自己的python中是有的。。），最后复制一份到pycharm的库中就好了。<br>（不过用到现在还不知道anaconda到底是啥，令人感叹。）</p>
 <p>本以为就此可以结束了，但又报错了，这次是“cannot import name ‘_AES’”，原因，简而言之就是计算机是64位的，但pip下载的pycrypto是32位的。<br>通过这篇<a href="https://blog.csdn.net/ychgyyn/article/details/88621236?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165062321216781683948872%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=165062321216781683948872&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-88621236.142%5Ev9%5Econtrol,157%5Ev4%5Econtrol&utm_term=cannot+import+name+_AES&spm=1018.2226.3001.4187">文章</a>解决了。</p>
+]]></content>
+      <categories>
+        <category>有用的知识</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>end=&#39;&#39;与--i</title>
+    <url>/2022/03/28/end-%E4%B8%8E-i/</url>
+    <content><![CDATA[<h3 id="end-x3D-’’"><a href="#end-x3D-’’" class="headerlink" title="end&#x3D;’’"></a>end&#x3D;’’</h3><blockquote>
+<p>Python</p>
+</blockquote>
+<ul>
+<li>原理解释：为末尾end传递一个空字符串，这样print函数不会在字符串末尾添加一个换行符，而是添加一个空字符串，其实这也是一个语法要求，表示这个语句没结束。</li>
+</ul>
+<p>print默认是打印一行，结尾加换行。</p>
+<p>原文链接：<a href="https://blog.csdn.net/qq_40318284/article/details/96835229">https://blog.csdn.net/qq_40318284/article/details/96835229</a></p>
+<p>在打印</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">    *</span><br><span class="line">   ***</span><br><span class="line">  *****</span><br><span class="line"> *******</span><br><span class="line">*********</span><br></pre></td></tr></table></figure>
+<p>时遇到的问题</p>
+<p>当时想的是怎么能让空格和*在同一行上打印出来，然后看到了例子的代码</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">row = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&#x27;请输入行数: &#x27;</span>))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(row):</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(row - i - <span class="number">1</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27; &#x27;</span>, end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span> * i + <span class="number">1</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;*&#x27;</span>, end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="built_in">print</span>()</span><br></pre></td></tr></table></figure>
+<p>就去查了end&#x3D;’’的用法。</p>
+<p>自己写的：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&#x27;输入打印行数：&#x27;</span>))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,n+<span class="number">1</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27; &#x27;</span> * (n - i),end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;*&#x27;</span> * (<span class="number">2</span> * i -<span class="number">1</span>))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="–-i与i-–"><a href="#–-i与i-–" class="headerlink" title="–(++)i与i(++)–"></a>–(++)i与i(++)–</h3><p>–i 是先执行i&#x3D;i-1,然后再使用i的值, 这时的i值就是表达式–i的值。i– 是先使用i的值作为表达式i–的值,然后,执行i&#x3D;i-1操作。<br>++i和i++同理。</p>
 ]]></content>
       <categories>
         <category>有用的知识</category>
@@ -255,40 +255,6 @@
 ]]></content>
       <categories>
         <category>爬虫</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>栈与递归</title>
-    <url>/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/</url>
-    <content><![CDATA[<p>首先，什么是递归？</p>
-<h4 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h4><ol>
-<li>定义：<ul>
-<li>若一个对象部分地包含它自己，或用它自己给它自己定义，则称这个对象是递归的。</li>
-<li>若一个过程直接或间接地调用自己，则称这个过程是递归的过程</li>
-</ul>
-</li>
-</ol>
-<ul>
-<li>举例：<br>  递归求n的阶乘  <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">long</span> <span class="title">Fac</span><span class="params">(<span class="type">long</span> n)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (n == <span class="number">0</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> n * <span class="built_in">Fac</span>(n<span class="number">-1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<ol start="2">
-<li><p>三种常常用到递归方法的情况：</p>
-<ul>
-<li>递归定义的数学函数，如阶乘函数，二阶斐波那契数列</li>
-<li>具有递归特性的数据结构，如二叉树，广义表</li>
-<li>可递归求解的问题，如迷宫问题，汉诺塔问题</li>
-</ul>
-</li>
-<li><p>递归问题求解方法<br><img src="/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/2022-03-28-20-41-31.png"><br><img src="/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/2022-03-28-20-43-00.png"></p>
-</li>
-</ol>
-<h4 id="栈与递归"><a href="#栈与递归" class="headerlink" title="栈与递归"></a>栈与递归</h4><p>函数递归调用遵循后调用的先返回，与栈类似。</p>
-<ul>
-<li>函数调用过程<br><img src="/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/2022-03-28-20-50-06.png"></li>
-</ul>
-]]></content>
-      <categories>
-        <category>算法与数据结构</category>
       </categories>
   </entry>
   <entry>
@@ -655,6 +621,40 @@
       </categories>
   </entry>
   <entry>
+    <title>栈与递归</title>
+    <url>/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/</url>
+    <content><![CDATA[<p>首先，什么是递归？</p>
+<h4 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h4><ol>
+<li>定义：<ul>
+<li>若一个对象部分地包含它自己，或用它自己给它自己定义，则称这个对象是递归的。</li>
+<li>若一个过程直接或间接地调用自己，则称这个过程是递归的过程</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>举例：<br>  递归求n的阶乘  <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">long</span> <span class="title">Fac</span><span class="params">(<span class="type">long</span> n)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (n == <span class="number">0</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> n * <span class="built_in">Fac</span>(n<span class="number">-1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ol start="2">
+<li><p>三种常常用到递归方法的情况：</p>
+<ul>
+<li>递归定义的数学函数，如阶乘函数，二阶斐波那契数列</li>
+<li>具有递归特性的数据结构，如二叉树，广义表</li>
+<li>可递归求解的问题，如迷宫问题，汉诺塔问题</li>
+</ul>
+</li>
+<li><p>递归问题求解方法<br><img src="/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/2022-03-28-20-41-31.png"><br><img src="/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/2022-03-28-20-43-00.png"></p>
+</li>
+</ol>
+<h4 id="栈与递归"><a href="#栈与递归" class="headerlink" title="栈与递归"></a>栈与递归</h4><p>函数递归调用遵循后调用的先返回，与栈类似。</p>
+<ul>
+<li>函数调用过程<br><img src="/2022/03/28/%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/2022-03-28-20-50-06.png"></li>
+</ul>
+]]></content>
+      <categories>
+        <category>算法与数据结构</category>
+      </categories>
+  </entry>
+  <entry>
     <title>算法与数据结构-4</title>
     <url>/2022/04/04/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-4/</url>
     <content><![CDATA[<h2 id="串"><a href="#串" class="headerlink" title="串"></a>串</h2><ol>
@@ -729,6 +729,168 @@
       </categories>
   </entry>
   <entry>
+    <title>计算时间复杂度的练习</title>
+    <url>/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/</url>
+    <content><![CDATA[<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-07-37.png"></p>
+<ol>
+<li>很容易看出语句频度最大的语句是<code>for(int j = 0;j &lt; n;j++)</code></li>
+<li>其执行次数为n(n+1),即n^2^<ul>
+<li>对于循环来说直接找嵌套最深的语句也可以，即<code>y++;</code>,执行次数为n^2^</li>
+</ul>
+</li>
+<li>T(n)&#x3D;O(n^2^)</li>
+</ol>
+<p>####例1</p>
+<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-17-41.png" title="例1"></p>
+<ol>
+<li>嵌套最深的语句为<code>sum[i] += x[i][j];</code> </li>
+<li>执行次数为 m $\times$ n 次</li>
+<li>T(n)&#x3D;O(m $\times$ n)</li>
+</ol>
+<p>####虽然但是这是例2<br><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-21-45.png"></p>
+<ol>
+<li>嵌套最深语句为<code>c[i][j] = c[i][j] + a[i][k] * b[k][j];</code></li>
+<li>执行次数为n^3^</li>
+<li>T(n)&#x3D;O(n^3^)</li>
+</ol>
+<p>####例3</p>
+<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-26-30.png"></p>
+<ol>
+<li>可以看出嵌套最深语句是<code>x=x+1</code> </li>
+<li>但是计算时间复杂度时，需要用级数求和法</li>
+<li>语句频度 &#x3D; $\sum_{i&#x3D;1}^n$$\sum_{j&#x3D;1}^i$$\sum_{k&#x3D;1}^j$1 &#x3D; $\sum_{i&#x3D;1}^n$$\sum_{j&#x3D;1}^i$j &#x3D; $\sum_{i&#x3D;1}^n$$i(i+1) \over 2$ &#x3D;$1\over2$($\sum_{i&#x3D;1}^n$i^2^ + $\sum_{i&#x3D;1}^n$i) &#x3D;$1\over2$($n(n+1)(2n+1)\over 6$ + $n(n+1)\over2$) &#x3D; $n(n+1)(n+2)\over 6$</li>
+<li>f(n) &#x3D; n^3^</li>
+<li>T(n)&#x3D;O(n^3^)<ul>
+<li>（计算语句频度最后一个求和不会。。）</li>
+</ul>
+</li>
+</ol>
+<p>####例4</p>
+<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-22-00-05-42.png"></p>
+<ol>
+<li><p>执行次数最多为<code>i=i*2;</code></p>
+<ul>
+<li>关键要找出执行次数x与n的关系，并表示成n的函数</li>
+<li>执行1次，i&#x3D;1*2&#x3D;2；</li>
+<li>执行2次，i&#x3D;2*2&#x3D;2^2^；</li>
+<li>执行3次，i&#x3D;2^2^*2&#x3D;2^3^；</li>
+<li>…</li>
+<li>执行x次，i&#x3D;2^x^</li>
+</ul>
+</li>
+<li><p>设语句<code>i=i*2</code>执行x次,由循环条件，</p>
+<p> i&lt;&#x3D;n,   $\because$ 2^x^&lt; n , $\therefore$ x&lt;&#x3D;${log_2{n}}$</p>
+</li>
+<li><p>所以f(n)&#x3D;${log_2{n}}$</p>
+</li>
+<li><p>T(n)&#x3D;O(${log_2{n}}$)</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>算法与数据结构</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>计组之总线</title>
+    <url>/2022/08/04/%E8%AE%A1%E7%BB%84%E4%B9%8B%E6%80%BB%E7%BA%BF/</url>
+    <content><![CDATA[<h2 id="一、总线的基本概念"><a href="#一、总线的基本概念" class="headerlink" title="一、总线的基本概念"></a>一、总线的基本概念</h2><h3 id="1-什么是总线"><a href="#1-什么是总线" class="headerlink" title="1.什么是总线"></a>1.什么是总线</h3><ul>
+<li>总线是连接各个部件的信息传输线，是各个部件共享的传输介质。</li>
+</ul>
+<h3 id="2-总线上信息的传输"><a href="#2-总线上信息的传输" class="headerlink" title="2.总线上信息的传输"></a>2.总线上信息的传输</h3><ul>
+<li>有串行和并行两种方式。</li>
+</ul>
+<ol>
+<li>串行：将要传输的信息一位一位地放到总线上去，接收方再一位一位地接收数据。支持距离比较长，可以在机器与机器之间进行传输。</li>
+<li>并行：将要传输的数据多位放在总线上，接收方也一次接收多位数据，并行传输需要多条数据线进行传输。并行传输传输距离比较短，一般在机箱内部进行传输。因为传输距离过长，数据线是平行向外走，线和线之间会产生干扰。</li>
+</ol>
+<h3 id="3-总线结构的计算机举例"><a href="#3-总线结构的计算机举例" class="headerlink" title="3.总线结构的计算机举例"></a>3.总线结构的计算机举例</h3><ol>
+<li>单总线结构框图：<br><img src="/2022/08/04/%E8%AE%A1%E7%BB%84%E4%B9%8B%E6%80%BB%E7%BA%BF/$YKQ%7D%5BS11G($H6S@)%5D~@6%254.png"></li>
+<li>面向CPU的双总线结构框图：<br><img src="/2022/08/04/%E8%AE%A1%E7%BB%84%E4%B9%8B%E6%80%BB%E7%BA%BF/O5VOKWJT%7D2MTAH%7DG1ZV4B4K.png"></li>
+<li>以存储器为中心的双总线结构框图：<br><img src="/2022/08/04/%E8%AE%A1%E7%BB%84%E4%B9%8B%E6%80%BB%E7%BA%BF/2022-08-04-12-14-32.png"></li>
+</ol>
+<h2 id="二、总线的分类"><a href="#二、总线的分类" class="headerlink" title="二、总线的分类"></a>二、总线的分类</h2><ol>
+<li>片内总线<br>芯片内部的总线</li>
+<li>系统总线<br>计算机各部件之间的信息传输线，根据总线上传输的不同，有：<ol>
+<li>数据总线<br>传输数据信号，双向的，总线条数与机器字长、存储字长有关，通常情况下，数据总线的宽度小于机器字长、存储字长</li>
+<li>地址总线<br>通常是单向的， 与存储地址、I&#x2F;O地址有关，通常情况下地址总线条数与地址单元个数相关</li>
+<li>控制总线<br>向系统的各个部件传输控制信号或者系统各个部件向外传输自己的状态信号，方向有出有入。存储器读写、总线运行、中断确认就是向外输出，中断请求、总线请求是向CPU输入</li>
+</ol>
+</li>
+<li>通信总线<br>用于计算机系统之间或者计算机系统与其它系统（如控制仪表、移动通信等）之间的通信，传输方式有串行通信总线和并行通信总线</li>
+</ol>
+<h2 id="三、总线特性以及性能指标"><a href="#三、总线特性以及性能指标" class="headerlink" title="三、总线特性以及性能指标"></a>三、总线特性以及性能指标</h2><ol>
+<li>总线特性：<ol>
+<li>机械特性：<br>  尺寸、形状、管脚数和排列顺序</li>
+<li>电气特性：<br>  传输方向和有效的电平范围</li>
+<li>功能特性：<br> 每根传输线的功能，地址总线、数据总线、控制总线。 </li>
+<li>时间特性：<br> 信号的时序关系</li>
+</ol>
+</li>
+<li>总线的性能指标：<ol>
+<li>总线宽度：数据线的根数，越多总线传输数据越多，总线性能越好</li>
+<li>标准传输率：每秒传输的最大字节数（MBps）</li>
+<li>时钟头部&#x2F;异步：同步或不同步</li>
+<li>总线复用：地址线与数据线复用，复用的目的主要是为了减少芯片的管脚数</li>
+<li>信号线数：地址线、数据线和控制线的总和</li>
+<li>总线控制方式：突发、自动、仲裁、逻辑、计数</li>
+<li>其他指标：负载能力</li>
+</ol>
+</li>
+<li>总线标准：<br>按照总线标准生产的部件可以集成成一个计算机。</li>
+</ol>
+<h2 id="四、总线结构"><a href="#四、总线结构" class="headerlink" title="四、总线结构"></a>四、总线结构</h2><ol>
+<li>单总线结构：<br><img src="/2022/08/04/%E8%AE%A1%E7%BB%84%E4%B9%8B%E6%80%BB%E7%BA%BF/$YKQ%7D%5BS11G($H6S@)%5D~@6%254.png"></li>
+<li>多总线结构：<ol>
+<li>双总线结构<br> <img src="/2022/08/04/%E8%AE%A1%E7%BB%84%E4%B9%8B%E6%80%BB%E7%BA%BF/2022-08-04-12-59-06.png"></li>
+<li>三总线结构<br><img src="/2022/08/04/%E8%AE%A1%E7%BB%84%E4%B9%8B%E6%80%BB%E7%BA%BF/2022-08-04-13-38-03.png"><br>又一种三总线结构：<br><img src="/2022/08/04/%E8%AE%A1%E7%BB%84%E4%B9%8B%E6%80%BB%E7%BA%BF/2022-08-04-13-38-50.png"></li>
+<li>四总线结构：<br> <img src="/2022/08/04/%E8%AE%A1%E7%BB%84%E4%B9%8B%E6%80%BB%E7%BA%BF/2022-08-04-13-40-43.png"></li>
+</ol>
+</li>
+</ol>
+<h2 id="五、总线控制"><a href="#五、总线控制" class="headerlink" title="五、总线控制"></a>五、总线控制</h2><ol>
+<li><p>总线判优控制</p>
+<ol>
+<li>基本概念<br>  根据是否能提出总线请求分为主设备（模块）和从设备（模块）。<ul>
+<li>主设备：对总线有控制权</li>
+<li>从设备：响应从主设备发来的总线命令</li>
+</ul>
+</li>
+<li>分类<ol>
+<li>集中式：<ol>
+<li>链式查询<br>  <img src="/2022/08/04/%E8%AE%A1%E7%BB%84%E4%B9%8B%E6%80%BB%E7%BA%BF/2022-08-04-16-09-09.png"></li>
+<li>计数器定时查询<br>  <img src="/2022/08/04/%E8%AE%A1%E7%BB%84%E4%B9%8B%E6%80%BB%E7%BA%BF/2022-08-04-16-13-04.png"> </li>
+<li>独立请求方式<br>  <img src="/2022/08/04/%E8%AE%A1%E7%BB%84%E4%B9%8B%E6%80%BB%E7%BA%BF/2022-08-04-16-17-24.png"></li>
+</ol>
+</li>
+<li>分布式</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>总线通信控制</p>
+<ol>
+<li>目的：解决通信双方协调配合问题</li>
+<li>总线传输周期：<ol>
+<li>申请分配阶段：主模块申请，总线仲裁决定</li>
+<li>寻址阶段：主模块向从模块给出地址和命令</li>
+<li>传数阶段：主模块和从模块交换数据</li>
+<li>结束阶段：主模块撤销有关消息</li>
+</ol>
+</li>
+<li>总线通信的四种方式：<ol>
+<li>同步通信：由统一时标控制数据传送</li>
+<li>异步通信：采用应答方式，没有公共时钟标准</li>
+<li>半同步通信：同步、异步通信</li>
+<li>分离式通信：充分挖掘系统总线每个瞬间</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
     <title>算法与数据结构(1)</title>
     <url>/2022/03/21/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
     <content><![CDATA[<p>写在前面：因为之前就学了数据结构的内容，所以这篇数据结构就偷懒跳过不写了</p>
@@ -801,69 +963,6 @@
 </ul>
 </li>
 </ol>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>算法与数据结构</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>计算时间复杂度的练习</title>
-    <url>/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/</url>
-    <content><![CDATA[<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-07-37.png"></p>
-<ol>
-<li>很容易看出语句频度最大的语句是<code>for(int j = 0;j &lt; n;j++)</code></li>
-<li>其执行次数为n(n+1),即n^2^<ul>
-<li>对于循环来说直接找嵌套最深的语句也可以，即<code>y++;</code>,执行次数为n^2^</li>
-</ul>
-</li>
-<li>T(n)&#x3D;O(n^2^)</li>
-</ol>
-<p>####例1</p>
-<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-17-41.png" title="例1"></p>
-<ol>
-<li>嵌套最深的语句为<code>sum[i] += x[i][j];</code> </li>
-<li>执行次数为 m $\times$ n 次</li>
-<li>T(n)&#x3D;O(m $\times$ n)</li>
-</ol>
-<p>####虽然但是这是例2<br><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-21-45.png"></p>
-<ol>
-<li>嵌套最深语句为<code>c[i][j] = c[i][j] + a[i][k] * b[k][j];</code></li>
-<li>执行次数为n^3^</li>
-<li>T(n)&#x3D;O(n^3^)</li>
-</ol>
-<p>####例3</p>
-<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-21-23-26-30.png"></p>
-<ol>
-<li>可以看出嵌套最深语句是<code>x=x+1</code> </li>
-<li>但是计算时间复杂度时，需要用级数求和法</li>
-<li>语句频度 &#x3D; $\sum_{i&#x3D;1}^n$$\sum_{j&#x3D;1}^i$$\sum_{k&#x3D;1}^j$1 &#x3D; $\sum_{i&#x3D;1}^n$$\sum_{j&#x3D;1}^i$j &#x3D; $\sum_{i&#x3D;1}^n$$i(i+1) \over 2$ &#x3D;$1\over2$($\sum_{i&#x3D;1}^n$i^2^ + $\sum_{i&#x3D;1}^n$i) &#x3D;$1\over2$($n(n+1)(2n+1)\over 6$ + $n(n+1)\over2$) &#x3D; $n(n+1)(n+2)\over 6$</li>
-<li>f(n) &#x3D; n^3^</li>
-<li>T(n)&#x3D;O(n^3^)<ul>
-<li>（计算语句频度最后一个求和不会。。）</li>
-</ul>
-</li>
-</ol>
-<p>####例4</p>
-<p><img src="/2022/03/21/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E7%BB%83%E4%B9%A0/2022-03-22-00-05-42.png"></p>
-<ol>
-<li><p>执行次数最多为<code>i=i*2;</code></p>
-<ul>
-<li>关键要找出执行次数x与n的关系，并表示成n的函数</li>
-<li>执行1次，i&#x3D;1*2&#x3D;2；</li>
-<li>执行2次，i&#x3D;2*2&#x3D;2^2^；</li>
-<li>执行3次，i&#x3D;2^2^*2&#x3D;2^3^；</li>
-<li>…</li>
-<li>执行x次，i&#x3D;2^x^</li>
-</ul>
-</li>
-<li><p>设语句<code>i=i*2</code>执行x次,由循环条件，</p>
-<p> i&lt;&#x3D;n,   $\because$ 2^x^&lt; n , $\therefore$ x&lt;&#x3D;${log_2{n}}$</p>
-</li>
-<li><p>所以f(n)&#x3D;${log_2{n}}$</p>
-</li>
-<li><p>T(n)&#x3D;O(${log_2{n}}$)</p>
 </li>
 </ol>
 ]]></content>
